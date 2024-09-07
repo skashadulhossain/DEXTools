@@ -1,12 +1,23 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import cardimg1 from './Image/Card image 1.webp';
+import cardimg2 from './Image/Card image 2.webp';
+import cardimg3 from './Image/Card image 3.webp';
+import cardimg4 from './Image/Card image 4.webp';
+import cardimg5 from './Image/Card image 5.webp';
+import cardimg6 from './Image/Card image 6.jpeg';
+import cardimg7 from './Image/Card image 7.jpeg';
+import cardimg8 from './Image/Card image 8.webp';
 
 const cardData = [
-  { id: 1, title: "Pump.Fun Integrated Into DEXTools", description: "Track Pump Fun Tokens On DEXTools!", new: false },
-  { id: 2, title: "10 Things You Should Never On DEXTools!", description: "Learn More Here!", new: true },
-  { id: 3, title: "TOP TRADERS", description: "Track Smart Money And Early Buyers", new: false },
-  { id: 4, title: "Tron Is Finally Here!", description: "Explore Tron On DEXTools Today.", new: false },
-  { id: 5, title: "The Ultimate TRON Guide", description: "Everything You Need To Know To", new: false },
+  { id: 1, title: "Pump.Fun Integrated Into DEXTools", description: "Track Pump Fun Tokens On DEXTools!", new: false, image: cardimg1 },
+  { id: 2, title: "10 Things You Should Never On DEXTools!", description: "Learn More Here!", new: true, image: cardimg2 },
+  { id: 3, title: "Grab your Token2049 tickets now!", description: "15% discount with DEXTOOLS15 code", new: false, image: cardimg8 },
+  { id: 4, title: "Tron Is Finally Here!", description: "Explore Tron On DEXTools Today.", new: false, image: cardimg3 },
+  { id: 5, title: "The Ultimate TRON Guide", description: "Everything You Need To Know To", new: false, image: cardimg4 },
+  { id: 6, title: "Follow us on Instagram!!", description: "Official DEXTools account. 📸", new: false, image: cardimg5 },
+  { id: 7, title: "DEXTools latest release", description: "Latest changes in version 2.99.0", new: false, image: cardimg6 },
+  { id: 8, title: "Metawin", description: "The Biggest Race in Crypto: $ 1 MILLION in prizes. $350k for 1st Place. Play Now!", new: false, image: cardimg7 },
 ];
 
 const CardSlider = () => {
@@ -33,7 +44,7 @@ const CardSlider = () => {
           {cardData.map((card) => (
             <div key={card.id} className="card">
               {card.new && <span className="new-badge">NEW</span>}
-              <img src={`/api/placeholder/300/150?text=Image ${card.id}`} alt={card.title} />
+              <img src={card.image} alt={card.title} />
               <h3>{card.title}</h3>
               <p>{card.description}</p>
             </div>
@@ -63,7 +74,7 @@ const CardSlider = () => {
           height: 100%;
         }
         .card {
-          flex: 0 0 calc(25% - 20px);
+          flex: 0 0 calc(30% - 20px);
           margin: 0 10px;
           background-color: #1e2a3a;
           color: white;
@@ -75,7 +86,7 @@ const CardSlider = () => {
         }
         .card img {
           width: 100%;
-          height: 120px;
+          height: 160px;
           object-fit: cover;
           border-radius: 5px;
         }
