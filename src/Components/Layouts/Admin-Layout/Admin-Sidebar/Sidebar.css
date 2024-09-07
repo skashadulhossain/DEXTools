@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sidebar-bg: #142028;
+    --text-color: #818ea3;
+    --text-color2: #ffffff;
+    --hover-bg: #2c2f36;
+    --hover-text-color: #fff;
+    --active-bg: #2c2f36;
+    --active-text-color: #fff;
+    --logo-bg: #142028;
+    --icon-color: #818ea3;
+    --badge-bg: #3a3f50;
+    --badge-text: #fff;
+    --offer-badge-bg: #4caf50;
+    --offer-badge-text: #fff;
+    --sidebar-border: #2f3336;
+    --extra-header-color: #818ea3;
+    --font-family: 'Poppins', sans-serif;
+}
+
+.admin_sidebar_main_Container {
+    display: flex;
+    font-family: var(--font-family);
+}
+
+.admin_sidebar_main_Container main {
+    flex-grow: 1;
+    background: #131722;
+    width: 100%;
+    overflow: hidden;
+    margin-left: 60px;
+    height: 100vh;
+    transition: margin-left 0.3s ease;
+}
+
+.admin_main_pages {
+    height: 100vh; /* Ensure it takes the full height of the viewport */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    padding: 20px; /* Optional: add some padding */
+
+    /* Custom scrollbar styles */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: black transparent; /* For Firefox */
+}
+
+/* Custom scrollbar for WebKit browsers (Chrome, Safari) */
+.admin_main_pages::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.admin_main_pages::-webkit-scrollbar-track {
+    background: transparent; /* Background of the scrollbar track */
+}
+
+.admin_main_pages::-webkit-scrollbar-thumb {
+    background-color: black; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+}
+
+
+
+.admin_sidebar {
+    background-color: var(--sidebar-bg);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    z-index: 999;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); 
+  
+}
+
+
+.admin_sidebar:hover {
+    width: 250px;
+}
+
+.admin_top_section {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    height: 70px;
+    background-color: var(--logo-bg);
+    flex-shrink: 0; /* Prevents resizing when the sidebar height changes */
+   /* Light black shadow on the right */
+}
+
+
+.admin_logo_image {
+    max-width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.admin_Main_Heading {
+    font-size: 18px;
+    color: var(--text-color2);
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.admin_sidebar:hover .admin_Main_Heading {
+    opacity: 1;
+}
+
+.admin_all_menus_container {
+    overflow-y: auto;
+    flex-grow: 1;
+    padding: 10px 0;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.admin_all_menus_container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.admin_all_menus_container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
+.admin_sidebar_link {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    padding: 8px 15px;
+    text-decoration: none;
+    transition: 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.admin_sidebar_link:hover,
+.admin_sidebar_link.admin_active {
+    background-color: var(--hover-bg);
+    color: var(--hover-text-color);
+    border-left-color: #1c7fe0;
+}
+
+.admin_icon {
+    color: var(--icon-color);
+    font-size: 19px;
+    min-width: 30px;
+}
+.admin_icon:hover{
+    color: var(--hover-text-color);
+}
+
+.admin_link_text {
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.admin_sidebar:hover .admin_link_text {
+    opacity: 1;
+}
+
+.badge {
+    background-color: var(--badge-bg);
+    color: var(--badge-text);
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.offer-badge {
+    background-color: var(--offer-badge-bg);
+    color: var(--offer-badge-text);
+}
+
+/* New styles for EXTRA section */
+.admin_extra_routes {
+    padding-top: 10px;
+}
+
+.admin_extra_header {
+    color: var(--extra-header-color);
+    font-size: 12px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.admin_sidebar:hover .admin_extra_header {
+    opacity: 1;
+}
+
+/* Style for the badge with Offer text */
+.badge.offer-badge {
+    background-color: #ffcc80; /* Light orange background */
+    color: #000; /* Black text color */
+    font-weight: bold; /* Bold text */
+    padding: 3px 8px; /* Padding for the badge */
+    border-radius: 12px; /* Rounded corners */
+    font-size: 12px; /* Slightly larger text */
+    margin-left: 10px; /* Space between text and badge */
+}
+
+/* Additional hover effect for the entire link */
+.admin_sidebar_link:hover .badge.offer-badge {
+    background-color: #ffa726; /* Darker orange on hover */
+}
+
+@media screen and (max-width: 768px) {
+    .admin_sidebar {
+        left: -250px;
+    }
+
+    .sidebar-open .admin_sidebar {
+        left: 0;
+        width: 250px;
+    }
+
+    .admin_sidebar_main_Container main {
+        margin-left: 0;
+    }
+
+    .sidebar-open .admin_sidebar_main_Container main {
+        opacity: 0.7;
+        pointer-events: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .admin_sidebar {
+        left: 0 !important;
+    }
+}

@@ -1,0 +1,149 @@
+:root {
+    --sidebar-bg: #142028;
+    --text-color: #818ea3;
+    --text-color2: #ffffff;
+    --hover-bg: #2c2f36;
+    --hover-text-color: #fff;
+    --active-bg: #2c2f36;
+    --active-text-color: #fff;
+    --logo-bg: #142028;
+    --icon-color: #818ea3;
+    --badge-bg: #3a3f50;
+    --badge-text: #fff;
+    --offer-badge-bg: #4caf50;
+    --offer-badge-text: #fff;
+    --sidebar-border: #2f3336;
+    --extra-header-color: #818ea3;
+    --font-family: 'Poppins', sans-serif;
+}
+
+.HeaderSetting_modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(73, 73, 73, 0.5);
+    z-index: 1000;
+    transition: width 0.3s ease-in-out;
+}
+
+.HeaderSetting_modal.open {
+    width: 100%;
+}
+
+.HeaderSetting_modal-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background-color: var(--sidebar-bg);
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    padding: 20px;
+    overflow: auto;
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+
+.HeaderSetting_modal-content.open {
+    transform: translateX(0);
+}
+
+.HeaderSetting_modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.HeaderSetting_close-button {
+    background: none;
+    border: none;
+    color: var(--text-color2);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.HeaderSetting_subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.HeaderSetting_setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.HeaderSetting_setting-item h3 {
+    color: var(--text-color2);
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.HeaderSetting_setting-item p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.HeaderSetting_notification-text {
+    font-size: 12px;
+    max-width: 300px;
+}
+
+.HeaderSetting_switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+}
+
+.HeaderSetting_switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.HeaderSetting_slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--hover-bg);
+    transition: .4s;
+    border-radius: 16px;
+}
+
+.HeaderSetting_slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .HeaderSetting_slider {
+    background-color: #3498db;
+}
+
+input:checked + .HeaderSetting_slider:before {
+    transform: translateX(14px);
+}
+
+.HeaderSetting_language-select {
+    background-color: var(--hover-bg);
+    color: var(--text-color2);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}

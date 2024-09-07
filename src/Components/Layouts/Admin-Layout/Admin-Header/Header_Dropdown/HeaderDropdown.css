@@ -1,0 +1,111 @@
+:root {
+    --sidebar-bg: #142028;
+    --text-color: #818ea3;
+    --text-color2: #ffffff;
+    --hover-bg: #e2e7ec25;
+    --hover-text-color: #fff;
+    --active-bg: #2c2f36;
+    --active-text-color: #fff;
+    --icon-color: #cfcfcf;
+    --connect-bg: #00c3ff;
+    --connect-hover-bg: #00a0cc;
+    --red-text: #ff4d4f;
+    --font-family: 'Poppins', sans-serif;
+}
+
+
+
+.ChainSelection {
+    position: absolute;
+    top: 55px;
+    left: 5;
+    width: 320px;
+    background-color: #1c2730;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+    font-family: var(--font-family);
+}
+
+.chain-search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #27343b;
+    color: var(--text-color2);
+    font-size: 14px;
+    outline: none;
+}
+
+.chain-search::placeholder {
+    color: var(--text-color);
+}
+
+.chain-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    height: 100%;
+    max-height: 650px; /* Set a max height */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none;  /* Hide scrollbar in IE and Edge */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+.chain-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.chain-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+  
+}
+
+.chain-logo {
+    width: 28px; 
+    margin-bottom: 5px;
+}
+
+.chain-item span {
+    color: var(--text-color2);
+    font-size: 12px;
+}
+
+.chain-item:hover {
+    background-color: var(--active-bg);
+    border-radius: 10px;
+}
+
+.ChainSelection h2 {
+    color: var(--text-color2);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .ChainSelection {
+        width: 100%;
+        left: 0;
+        top: 50px;
+    }
+
+    .chain-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .chain-grid {
+        grid-template-columns: 1fr;
+    }
+}

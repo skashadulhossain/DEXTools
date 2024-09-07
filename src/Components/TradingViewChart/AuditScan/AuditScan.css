@@ -1,0 +1,269 @@
+.AuditScan_headerStar_modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 32, 40, 0.5);
+    z-index: 1000;
+    display: none;
+  }
+  
+  .AuditScan_headerStar_modal.open {
+    display: block;
+  }
+  
+  .AuditScan_headerStar_modal-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 650px; /* Increased from 375px */
+    height: 100%;
+    background-color: #142028;
+    color: #818ea3;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .AuditScan_headerStar_modal-content.open {
+    transform: translateX(0);
+  }
+  
+  .AuditScan_audit-scan {
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+  }
+  
+  .AuditScan_audit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .AuditScan_audit-header h2 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .AuditScan_audit-status {
+    display: flex;
+    align-items: center;
+    background-color: rgba(76, 175, 80, 0.1);
+    padding: 4px 8px;
+    border-radius: 12px;
+  }
+  
+  .AuditScan_status-icon {
+    color: #4caf50;
+    margin-right: 4px;
+  }
+  
+  .AuditScan_status-text {
+    color: #4caf50;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .AuditScan_headerStar_close-icon {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .AuditScan_verify-external {
+    display: flex;
+    align-items: center;
+    color: #ffa500;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .AuditScan_verify-external svg {
+    margin-right: 8px;
+  }
+  
+  .AuditScan_alert-types {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .AuditScan_alert-type {
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .AuditScan_alert-type.danger {
+    background-color: rgba(255, 99, 71, 0.1);
+    color: #ff6347;
+  }
+  
+  .AuditScan_alert-type.warning {
+    background-color: rgba(255, 165, 0, 0.1);
+    color: #ffa500;
+  }
+  
+  .AuditScan_alert-type.neutral {
+    background-color: rgba(128, 128, 128, 0.1);
+    color: #808080;
+  }
+  
+  .AuditScan_audit-providers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .AuditScan_provider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .AuditScan_provider-icon {
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+  
+  .AuditScan_provider-name {
+    font-size: 12px;
+    color: #ffffff;
+  }
+  
+  .AuditScan_alert-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+  }
+  
+  .AuditScan_alert-list h3 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  .AuditScan_alert-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(129, 142, 163, 0.2);
+  }
+  
+  .AuditScan_alert-name {
+    display: flex;
+    align-items: center;
+  }
+  
+  .AuditScan_alert-name::before {
+    content: 'i';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(129, 142, 163, 0.2);
+    color: #818ea3;
+    font-size: 12px;
+    margin-right: 8px;
+  }
+  
+  .AuditScan_alert-value {
+    width: 50px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .AuditScan_alert-value::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4caf50;
+    margin-left: 4px;
+  }
+  
+  .AuditScan_more-info {
+    background-color: #1a2c38;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .AuditScan_more-info span {
+    color: #ffffff;
+  }
+  
+  .AuditScan_more-info-content {
+    display: none;
+    padding: 12px;
+    background-color: #1a2c38;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+  }
+  
+  .AuditScan_more-info.open .AuditScan_more-info-content {
+    display: block;
+  }
+  
+  .AuditScan_token-sniffer {
+    color: #4caf50;
+    text-decoration: none;
+  }
+  
+  .AuditScan_show-disclaimer {
+    width: 100%;
+    background-color: rgba(129, 142, 163, 0.1);
+    border: none;
+    color: #ffffff;
+    padding: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .AuditScan_share-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .AuditScan_share-button {
+    width: 30%;
+    background-color: rgba(129, 142, 163, 0.1);
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  /* Scrollbar styles */
+  .AuditScan_alert-list::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .AuditScan_alert-list::-webkit-scrollbar-track {
+    background: #1a2c38;
+  }
+  
+  .AuditScan_alert-list::-webkit-scrollbar-thumb {
+    background-color: #818ea3;
+    border-radius: 3px;
+  }

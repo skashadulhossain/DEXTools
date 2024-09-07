@@ -1,0 +1,57 @@
+:root {
+    --sidebar-bg: #142028;
+    --text-color: #818ea3;
+    --text-color2: #ffffff;
+    --hover-bg: #2c2f36;
+    --hover-text-color: #fff;
+    --active-bg: #2c2f36;
+    --active-text-color: #fff;
+    --logo-bg: #142028;
+    --icon-color: #818ea3;
+    --badge-bg: #3a3f50;
+    --badge-text: #fff;
+    --offer-badge-bg: #4caf50;
+    --offer-badge-text: #fff;
+    --sidebar-border: #2f3336;
+    --extra-header-color: #818ea3;
+    --redhover: #9d0000;
+    --font-family: 'Poppins', sans-serif;
+  }
+  
+  .slider-container {
+    padding: 20px;
+    background-color: var(--sidebar-bg);
+    color: var(--text-color2);
+  }
+  
+  .slider-item {
+    background-color: var(--hover-bg);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .slider-item:hover {
+    background-color: var(--active-bg);
+    transform: scale(1.05);
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .slider-title {
+    margin: 15px 0 5px;
+    font-size: 1.2rem;
+    color: var(--text-color2);
+  }
+  
+  .slider-subtitle {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  

@@ -1,0 +1,158 @@
+:root {
+  --sidebar-bg: #142028;
+  --text-color: #818ea3;
+  --text-color2: #ffffff;
+  --hover-bg: #2c2f36;
+  --hover-text-color: #fff;
+  --active-bg: #2c2f36;
+  --active-text-color: #fff;
+  --logo-bg: #142028;
+  --icon-color: #818ea3;
+  --badge-bg: #3a3f50;
+  --badge-text: #fff;
+  --offer-badge-bg: #4caf50;
+  --offer-badge-text: #fff;
+  --sidebar-border: #2f3336;
+  --extra-header-color: #818ea3;
+  --font-family: 'Poppins', sans-serif;
+
+  
+}.AdminHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: var(--sidebar-bg);
+
+  position: relative; /* To position search bar correctly */
+}
+
+.AdminHeader-left {
+  display: flex;
+  align-items: center;
+}
+
+.AdminHeader-chains {
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  color: var(--text-color2);
+  background: var(--hover-bg);
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.AdminHeader-chains:hover {
+  background-color: var(--active-bg);
+}
+
+.AdminHeader-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.AdminHeader-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--text-color);
+  margin-left: 20px;
+  font-size: 13px;
+}
+
+.red-text {
+  color: var(--red-text);
+}
+
+.gas-info {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.AdminHeader-search-container {
+  position: absolute; /* To center the search bar */
+  left: 55%;
+  transform: translateX(-50%); /* Centering the search bar */
+  width: 550px; /* Increased width */
+  margin: 0;
+}
+
+.AdminHeader-search {
+  width: 100%;
+  padding: 10px 15px;
+  padding-left: 40px;
+  border: none;
+  border-radius: 10px; /* Reduced border-radius */
+  background-color: #1c2730;
+  color: var(--text-color);
+  outline: none;
+  font-size: 14px;
+}
+
+.AdminHeader-search:hover {
+  background-color: #27343b; /* Hover effect */
+}
+
+.AdminHeader-search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--icon-color);
+}
+
+.AdminHeader-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto; /* Pushes icons to the right end */
+
+}
+
+.AdminHeader-icons svg {
+  color: var(--icon-color);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.AdminHeader-icons svg:hover {
+  color: #ffffff; /* Bright color on hover */
+}
+
+.AdminHeader-connect {
+  padding: 8px 20px;
+  background-color: var(--connect-bg);
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.AdminHeader-connect:hover {
+  background-color: var(--connect-hover-bg);
+}
+
+@media screen and (max-width: 768px) {
+  .AdminHeader {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .AdminHeader-search-container {
+    margin: 10px 0;
+    width: 100%;
+    position: static; /* Reset positioning for smaller screens */
+    transform: none; /* Reset transformation */
+  }
+
+  .AdminHeader-chains, .AdminHeader-connect {
+    padding: 5px 10px;
+  }
+}

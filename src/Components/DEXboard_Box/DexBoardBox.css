@@ -1,0 +1,148 @@
+.crypto-dashboard {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  .dashboard-section {
+    flex: 1;
+    margin-right: 10px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  
+  .dashboard-section:last-child {
+    margin-right: 0;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .tab {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tab.active {
+    background-color: #3a3a3a;
+  }
+  
+  .more {
+    color: #00b8d9;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #3a3a3a;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  
+  .icon.blue {
+    background-color: #00b8d9;
+  }
+  
+  .gainer-item, .token-item, .social-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .gainer-id {
+    color: #00b8d9;
+    width: 20px;
+    margin-right: 5px;
+  }
+  
+  .gainer-info, .token-info, .social-info {
+    flex: 1;
+  }
+  
+  .gainer-name-change {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .change {
+    color: #00ff00;
+  }
+  
+  .price {
+    color: #00b8d9;
+  }
+  
+  .title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .title-text {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .subtitle {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  
+  .time {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .chain {
+    background-color: #3a3a3a;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  .create-token-button {
+    background-color: #00b8d9;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .social-icons svg {
+    cursor: pointer;
+  }

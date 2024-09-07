@@ -1,0 +1,119 @@
+.SharePopup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .SharePopup-container {
+    background-color: var(--sidebar-bg);
+    color: var(--text-color2);
+    border-radius: 12px;
+    width: 480px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: zoomIn 0.3s ease-out;
+    font-family: var(--font-family);
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .SharePopup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--sidebar-border);
+  }
+  
+  .SharePopup-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color2);
+  }
+  
+  .SharePopup-close-icon {
+    cursor: pointer;
+    color: var(--icon-color);
+  }
+  
+  .SharePopup-content {
+    padding: 20px;
+  }
+  
+  .SharePopup-section {
+    margin-bottom: 20px;
+  }
+  
+  .SharePopup-section h4 {
+    margin-bottom: 10px;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .SharePopup-input-group {
+    display: flex;
+    margin-bottom: 5px;
+  }
+  
+  .SharePopup-input-group input {
+    flex-grow: 1;
+    background-color: var(--hover-bg);
+    border: 1px solid var(--sidebar-border);
+    color: var(--text-color2);
+    padding: 8px 12px;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+  }
+  
+  .SharePopup-input-group button {
+    background-color: #00b8d8;
+    color: var(--text-color2);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .SharePopup-info {
+    font-size: 12px;
+    color: var(--text-color);
+    margin-top: 5px;
+  }
+  
+  .SharePopup-social h4 {
+    margin-bottom: 10px;
+  }
+  
+  .SharePopup-social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .SharePopup-social-icons svg {
+    color: var(--icon-color);
+    cursor: pointer;
+  }
+  
+  .SharePopup-social-icons svg:hover {
+    color: var(--text-color2);
+  }
