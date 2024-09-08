@@ -1,0 +1,93 @@
+:root {
+    --sidebar-bg: #142028;
+    --text-color: #818ea3;
+    --text-color2: #ffffff;
+    --hover-bg: #2c2f36;
+    --hover-text-color: #fff;
+    --active-bg: #2c2f36;
+    --active-text-color: #fff;
+    --logo-bg: #142028;
+    --icon-color: #818ea3;
+    --badge-bg: #3a3f50;
+    --badge-text: #fff;
+    --offer-badge-bg: #4caf50;
+    --offer-badge-text: #fff;
+    --sidebar-border: #2f3336;
+    --extra-header-color: #818ea3;
+    --font-family: 'Poppins', sans-serif;
+  }
+  
+  .TokenUnlocks-container {
+    background-color: var(--sidebar-bg);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    padding: 20px;
+  }
+  
+  .TokenUnlocks-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .TokenUnlocks-table th,
+  .TokenUnlocks-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--sidebar-border);
+  }
+  
+  .TokenUnlocks-table th {
+    color: var(--text-color);
+    font-weight: normal;
+  }
+  
+  .TokenUnlocks-pair {
+    display: flex;
+    align-items: center;
+  }
+  
+  .TokenUnlocks-icon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--badge-bg);
+    color: var(--badge-text);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  
+  .TokenUnlocks-pair-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .TokenUnlocks-address {
+    font-size: 0.8em;
+    color: var(--text-color);
+  }
+  
+  .TokenUnlocks-next-unlock {
+    background-color: var(--offer-badge-bg);
+    color: var(--offer-badge-text);
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  
+  .TokenUnlocks-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .TokenUnlocks-action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  
+  .TokenUnlocks-action-btn:hover {
+    color: var(--hover-text-color);
+  }
