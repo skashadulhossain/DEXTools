@@ -1,63 +1,114 @@
-.liquidity-unlocks {
-    background-color: #1a1a1a;
+.TokenUnlocksTop-container {
+    background-color: #111214;
     color: white;
+    padding: 12px 16px;
     font-family: Arial, sans-serif;
-    padding: 20px;
   }
   
-  .header {
+  .TokenUnlocksTop-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
   
-  h1 {
-    font-size: 24px;
+  .TokenUnlocksTop-title {
+    font-size: 18px;
+    font-weight: bold;
     margin: 0;
   }
   
-  .tabs {
+  .TokenUnlocksTop-tabs {
     display: flex;
   }
   
-  .tab {
+  .TokenUnlocksTop-tab {
     background-color: transparent;
     border: none;
-    color: #808080;
+    color: #6c757d;
+    padding: 6px 12px;
     cursor: pointer;
     font-size: 14px;
-    padding: 5px 10px;
   }
   
-  .tab.active {
+  .TokenUnlocksTop-tab.TokenUnlocksTop-active {
     color: white;
     border-bottom: 2px solid #3498db;
   }
   
-  .controls {
+  .TokenUnlocksTop-tab.TokenUnlocksTop-inactive {
+    opacity: 0.6;
+  }
+  
+  .TokenUnlocksTop-controls {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  .percentage-control, .time-range-control {
+  .TokenUnlocksTop-percentage-control {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
   
-  label {
-    font-size: 12px;
-    margin-bottom: 5px;
+  .TokenUnlocksTop-percentage-control label {
+    font-size: 14px;
+    color: #a0a0a0;
   }
   
-  input[type="range"] {
+  .TokenUnlocksTop-slider-container {
+    display: flex;
+    align-items: center;
+    background-color: #1e2023;
+    border-radius: 4px;
+    padding: 4px 12px;
+  }
+  
+  .TokenUnlocksTop-percentage-control input[type="range"] {
+    -webkit-appearance: none;
     width: 200px;
+    height: 4px;
+    background: #3498db;
+    outline: none;
+    margin-right: 10px;
   }
   
-  select {
-    background-color: #2a2a2a;
-    border: none;
+  .TokenUnlocksTop-percentage-control input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #3498db;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .TokenUnlocksTop-percentage-value {
+    font-size: 14px;
     color: white;
-    padding: 5px 10px;
+  }
+  
+  .TokenUnlocksTop-time-range {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .TokenUnlocksTop-time-range span {
+    font-size: 14px;
+    color: #a0a0a0;
+  }
+  
+  .TokenUnlocksTop-time-range select {
+    background-color: #1e2023;
+    color: white;
+    border: none;
+    padding: 6px 24px 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
   }

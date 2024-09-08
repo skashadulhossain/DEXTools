@@ -2,7 +2,7 @@
     --sidebar-bg: #142028;
     --text-color: #818ea3;
     --text-color2: #ffffff;
-    --hover-bg: #2c2f36;
+    --hover-bg: #1e2832;
     --hover-text-color: #fff;
     --active-bg: #2c2f36;
     --active-text-color: #fff;
@@ -10,8 +10,8 @@
     --icon-color: #818ea3;
     --badge-bg: #3a3f50;
     --badge-text: #fff;
-    --offer-badge-bg: #4caf50;
-    --offer-badge-text: #fff;
+    --offer-badge-bg: #fca5a5;
+    --offer-badge-text: #142028;
     --sidebar-border: #2f3336;
     --extra-header-color: #818ea3;
     --font-family: 'Poppins', sans-serif;
@@ -26,19 +26,43 @@
   
   .TokenUnlocks-table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0 8px;
   }
   
   .TokenUnlocks-table th,
   .TokenUnlocks-table td {
-    padding: 12px;
+    padding: 12px 16px;
     text-align: left;
-    border-bottom: 1px solid var(--sidebar-border);
   }
   
   .TokenUnlocks-table th {
     color: var(--text-color);
     font-weight: normal;
+    border-bottom: 1px solid var(--sidebar-border);
+    position: relative;
+  }
+  
+  .TokenUnlocks-filter-icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  
+  .TokenUnlocks-filter-icon:hover {
+    opacity: 1;
+  }
+  
+  .TokenUnlocks-table tbody tr {
+    background-color: rgba(255, 255, 255, 0.03);
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .TokenUnlocks-table tbody tr:hover {
+    background-color: var(--hover-bg);
   }
   
   .TokenUnlocks-pair {
@@ -56,6 +80,19 @@
     align-items: center;
     justify-content: center;
     margin-right: 10px;
+    font-size: 0.8em;
+  }
+  
+  .TokenUnlocks-icon.dogz {
+    background-color: #4a4a4a;
+  }
+  
+  .TokenUnlocks-icon.bloom {
+    background-color: #4caf50;
+  }
+  
+  .TokenUnlocks-icon.pepedao {
+    background-color: #6c5ce7;
   }
   
   .TokenUnlocks-pair-info {
@@ -66,14 +103,34 @@
   .TokenUnlocks-address {
     font-size: 0.8em;
     color: var(--text-color);
+    display: flex;
+    align-items: center;
+  }
+  
+  .TokenUnlocks-copy-icon {
+    margin-left: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    color: white;
+  }
+  
+  .TokenUnlocks-address:hover .TokenUnlocks-copy-icon {
+    opacity: 1;
   }
   
   .TokenUnlocks-next-unlock {
     background-color: var(--offer-badge-bg);
     color: var(--offer-badge-text);
     padding: 4px 8px;
-    border-radius: 4px;
-    display: inline-block;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.9em;
+  }
+  
+  .TokenUnlocks-clock-icon {
+    margin-right: 4px;
   }
   
   .TokenUnlocks-actions {
@@ -85,7 +142,8 @@
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 1.2em;
+    color: var(--text-color);
+    padding: 0;
   }
   
   .TokenUnlocks-action-btn:hover {

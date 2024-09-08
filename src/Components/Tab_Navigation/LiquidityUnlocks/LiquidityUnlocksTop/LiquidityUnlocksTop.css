@@ -1,0 +1,63 @@
+.liquidity-unlocks {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .tabs {
+    display: flex;
+  }
+  
+  .tab {
+    background-color: transparent;
+    border: none;
+    color: #808080;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  
+  .tab.active {
+    color: white;
+    border-bottom: 2px solid #3498db;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .percentage-control, .time-range-control {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  
+  input[type="range"] {
+    width: 200px;
+  }
+  
+  select {
+    background-color: #2a2a2a;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+  }
