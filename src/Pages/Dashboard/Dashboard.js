@@ -4,6 +4,8 @@ import Footer from '../../Components/Layouts/Admin-Layout/Admin-Footer/AdminFoot
 import CardSlider from '../../Components/CardSlider/CardSlider'
 import CryptoDashboard from '../../Components/DEXboard_Box/DexBoardBox'
 import CryptoNewsComponent from '../../Components/CryptoNews/CryptoNews'
+import DEXTboardHeader from '../../Components/DEXboard_Box/BoardHeaders/BoardHeaders'
+
 
 
 
@@ -12,6 +14,7 @@ const Dashboard = () => {
     <Sidebar>
     <div>
     <CardSlider/>
+    <DEXTboardHeader/>
     <CryptoDashboard/>
     <CryptoNewsComponent/>
       <Footer/>
