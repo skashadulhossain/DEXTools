@@ -2,14 +2,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #142028;
     color: #818ea3;
     padding: 10px 20px;
     font-family: Arial, sans-serif;
   }
+
+  .dextboard-title-container{
+    gap: 20px;
+    display: flex;
+    align-items: flex-end;
+  }
   
   .dextboard-logo {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
     color: #ffffff;
   }
@@ -17,10 +22,14 @@
   .dextboard-stats {
     display: flex;
     gap: 20px;
+    align-items: center;
   }
   
   .stat-item {
-    font-size: 14px;
+    gap: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
   }
   
   .stat-item strong {
@@ -29,6 +38,18 @@
   
   .burn-icon {
     margin-left: 5px;
+  }
+
+  .stat-item button{
+    border: none;
+    outline: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #00b8d9;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 15px;
+    background-color: #1f3340;
   }
   
   .trending-tokens {

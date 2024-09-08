@@ -4,6 +4,7 @@ import './BoardHeader.css'
 const DEXTboardHeader = () => {
   return (
     <header className="dextboard-header">
+     <div className="dextboard-title-container">
       <div className="dextboard-logo">DEXTboard</div>
       <div className="dextboard-stats">
         <span className="stat-item">Networks: <strong>96</strong></span>
@@ -11,9 +12,10 @@ const DEXTboardHeader = () => {
         <span className="stat-item">Pools: <strong>4,744,366</strong></span>
         <span className="stat-item">Tokens: <strong>6,398,332</strong></span>
         <span className="stat-item">
-          Next token burn: <strong>6,831,607 DEXT</strong> 
-          <span className="burn-icon">🔥</span>
+          Next token burn: <button>6,831,607 DEXT 
+          <span className="burn-icon">🔥</span></button>
         </span>
+      </div>
       </div>
       <div className="trending-tokens">
         Today's trending tokens
