@@ -1,37 +1,43 @@
 import React from 'react';
-import { FaTelegramPlane, FaInstagram, FaTiktok, FaYoutube, FaTwitter } from 'react-icons/fa'; 
-import { SiAppstore, SiGoogleplay } from 'react-icons/si'; 
+import footerimg1 from './Image/appstore.svg';
+import footerimg2 from './Image/googleplay.svg';
+import { FaIdCard, FaInstagram, FaTelegram, FaTiktok, FaXTwitter, FaYoutube } from 'react-icons/fa6';
 import '../Admin-Footer/AdminFooter.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer__social-icons">
-        <a href="#" className="footer__icon-link"><FaTwitter /></a>
-        <a href="#" className="footer__icon-link"><FaTelegramPlane /></a>
-        <a href="#" className="footer__icon-link"><FaInstagram /></a>
-        <a href="#" className="footer__icon-link"><FaTiktok /></a>
-        <a href="#" className="footer__icon-link"><FaYoutube /></a>
-      </div>
-
-      <div className="footer__app-links">
-        <a href="#" className="footer__app-link"><SiAppstore /> App Store</a>
-        <a href="#" className="footer__app-link"><SiGoogleplay /> Google Play</a>
-      </div>
-
-      <div className="footer__info-links">
-        <a href="#" className="footer__info-link">General Statement</a>
-        <a href="#" className="footer__info-link">Legal Advice</a>
-        <a href="#" className="footer__info-link">About Us</a>
-        <a href="#" className="footer__info-link">DEXT Token</a>
-        <a href="#" className="footer__info-link">Team</a>
-        <a href="#" className="footer__info-link">Contact</a>
-      </div>
-
-      <div className="footer__copyright">
-        © DEXT.io 2024 – <a href="mailto:info@dextools.io" className="footer__email">info@dextools.io</a> | Ads & Marketing: <a href="mailto:marketing@dextools.io" className="footer__email">marketing@dextools.io</a>
-      </div>
-    </footer>
+            <footer className="Token-footer-section">
+                <div className="Token-footer-container">
+                    <div className="Token-footer-icon-box">
+                        <a href="#"><FaXTwitter className="Token-footer-icon" /></a>
+                        <a href="#"><FaTelegram className="Token-footer-icon" /></a>
+                        <a href="#"><FaIdCard className="Token-footer-icon" /></a>
+                        <a href="#"><FaInstagram className="Token-footer-icon" /></a>
+                        <a href="#"><FaTiktok className="Token-footer-icon" /></a>
+                        <a href="#"><FaYoutube className="Token-footer-icon" /></a>
+                    </div>
+                    <div className="Token-footer-content">
+                        <div className="Token-footer-img-box">
+                            <img src={footerimg1} alt="" />
+                            <img src={footerimg2} alt="" />
+                        </div>
+                        <div className="Token-footer-link-content">
+                            <div className="Token-footer-link-box">
+                                <a href="#">General Statement</a>
+                                <a href="#">Legal Advice</a>
+                                <a href="#">Aout us</a>
+                                <a href="#">DEXT Token</a>
+                                <a href="#">Team</a>
+                                <a href="#">Contact</a>
+                            </div>
+                            <div className="Token-footer-link-box">
+                                <p><span>&copy; DEXTools.io 2024 - <a href="#">info@dextools.io</a></span>
+                                <span>|</span><span>Ads & Marketing: <a href="#">marketing@dextools.io</a></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
   );
 };
 

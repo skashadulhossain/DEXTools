@@ -24,7 +24,7 @@
     width: 0;
     height: 100%;
     overflow: hidden;
-    background-color: rgba(73, 73, 73, 0.5);
+    background-color: rgba(21, 22, 24, 0.404);
     z-index: 1000;
     transition: width 0.3s ease-in-out;
 }
@@ -42,7 +42,7 @@
     background-color: var(--sidebar-bg);
     transition: transform 0.3s ease-in-out;
     transform: translateX(100%);
-    padding: 20px;
+    padding: 30px 20px;
     overflow: auto;
     color: var(--text-color);
     font-family: var(--font-family);
@@ -56,15 +56,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
+}
+
+.HeaderSetting_modal-header h2{
+    color: var(--text-color2);
 }
 
 .HeaderSetting_close-button {
-    background: none;
+    background: #23323c;
+    border-radius: 50%;
+    padding: 3px 5px;
     border: none;
-    color: var(--text-color2);
-    font-size: 24px;
+    color: var(--text-color);
+    font-size: 28px;
     cursor: pointer;
+}
+
+.HeaderSetting_close-button:hover{
+    color: var(--text-color2);
 }
 
 .HeaderSetting_subtitle {
@@ -76,12 +86,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .HeaderSetting_setting-item h3 {
     color: var(--text-color2);
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 500;
     margin-bottom: 5px;
 }
 

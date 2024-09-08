@@ -118,31 +118,68 @@
   
   .searchpopup-token-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 12px;
     margin-bottom: 24px;
   }
   
   .searchpopup-token-box {
-    background: linear-gradient(135deg, #141e30, #243b55); /* Gradient background */
+    background: linear-gradient(135deg, #141e30, #243b55);
     border-radius: 8px;
-    padding: 8px;
+    padding: 12px;
+    width: 100%;
+    gap: 15px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     color: var(--text-color2);
-    transition: background 0.4s ease, color 0.3s ease;
+    transition: background 0.3s ease;
     cursor: pointer;
   }
   
   .searchpopup-token-box:hover {
-    background: linear-gradient(135deg, #667db6, #0082c8, #0082c8, #667db6); /* Hover gradient */
-    color: var(--hover-text-color);
+    background: linear-gradient(135deg, #667db6, #0082c8, #0082c8, #667db6);
+  }
+  
+  .searchpopup-token-img-box {
+    position: relative;
+    margin-right: 8px;
   }
   
   .searchpopup-token-symbol {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #23323c;
     font-weight: bold;
     font-size: 18px;
+    color: #fff;
+  }
+  
+  .searchpopup-token-img-box img {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+  }
+  
+  .searchpopup-token-img-box img:first-of-type {
+    top: -3px;
+    right: -5px;
+  }
+  
+  .searchpopup-token-img-box img:last-of-type {
+    bottom: -3px;
+    right: -5px;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: #00b8d8;
+  }
+  
+  .searchpopup-token-name {
+    font-size: 14px;
+    color: #fff;
   }
   
   .searchpopup-token-icon {
@@ -155,3 +192,55 @@
     text-align: center;
   }
   
+  .searchpopup-token-image{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+  }
+
+  .searchpopup-tokenUpdate-box {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    gap: 22px;
+    display: flex;
+    align-items: center;
+    color: var(--text-color2);
+    transition: background 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .searchpopup-tokenUpdate-box:hover {
+    background: linear-gradient(135deg, #667db6, #0082c8, #0082c8, #667db6);
+  }
+
+  .searchpopup-tokenUpdate-img-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .searchpopup-tokenUpdate-img-box img:last-child{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: -3px;
+    right: -5px;
+  }
+
+  .searchpopup-token-subtitle-box{
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+  }
+
+  .searchpopup-tokenUpdate-name {
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .searchpopup-tokenUpdate-icon{
+    display: flex;
+    gap: 5px;
+  }

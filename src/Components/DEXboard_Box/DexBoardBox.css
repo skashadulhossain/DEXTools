@@ -229,9 +229,9 @@
 
 .CryptoDashboard-social-icons svg {
   cursor: pointer;
-  color: var(--icon-color);
+  color: var(--hover-text-color);
 }
 
 .CryptoDashboard-social-icons svg:hover {
-  color: var(--hover-text-color);
+  color: var(--icon-color);
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { FaTimes } from 'react-icons/fa';
 import '../Header_Setting/HeaderSetting.css';
+import { FiX } from 'react-icons/fi';
 
 const HeaderSetting = ({ isSettingOpen, toggleSetting }) => {
     const [settings, setSettings] = useState({
@@ -24,7 +24,7 @@ const HeaderSetting = ({ isSettingOpen, toggleSetting }) => {
                 <div className={`HeaderSetting_modal-content ${isSettingOpen ? 'open' : ''}`}>
                     <div className="HeaderSetting_modal-header">
                         <h2>App settings</h2>
-                        <FaTimes className="HeaderSetting_close-button" onClick={toggleSetting} />
+                        <FiX  className="HeaderSetting_close-button" onClick={toggleSetting} />
                     </div>
 
                     <p className="HeaderSetting_subtitle">Configurable parameters</p>
@@ -102,7 +102,14 @@ const HeaderSetting = ({ isSettingOpen, toggleSetting }) => {
                         </div>
                         <select className="HeaderSetting_language-select">
                             <option>English</option>
-                            {/* Add more language options if needed */}
+                            <option>中文</option>
+                            <option>Español</option>
+                            <option>русский</option>
+                            <option>عربي</option>
+                            <option>Français</option>
+                            <option>हिंदी</option>
+                            <option>Türkçe</option>
+                            <option>Português</option>
                         </select>
                     </div>
 

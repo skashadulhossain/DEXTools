@@ -73,7 +73,7 @@ const CardSlider = () => {
           transition: transform 0.5s ease;
           height: 100%;
         }
-        .card {
+        .card-container .card {
           flex: 0 0 calc(30% - 20px);
           margin: 0 10px;
           background-color: #142028;
