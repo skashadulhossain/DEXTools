@@ -76,7 +76,7 @@ const CardSlider = () => {
         .card {
           flex: 0 0 calc(30% - 20px);
           margin: 0 10px;
-          background-color: #1e2a3a;
+          background-color: #142028;
           color: white;
           border-radius: 10px;
           padding: 10px;

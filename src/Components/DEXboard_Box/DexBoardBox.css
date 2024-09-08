@@ -20,8 +20,7 @@
 .CryptoDashboard-container {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
-  background-color: var(--sidebar-bg);
+  padding: 10px 0;
   color: var(--text-color);
   font-family: var(--font-family);
   font-size: 14px;
@@ -30,7 +29,7 @@
 .CryptoDashboard-section {
   flex: 1;
   margin-right: 10px;
-  background-color: #1a2735;
+  background-color: var(--sidebar-bg);
   border-radius: 10px;
   padding: 15px;
 }
@@ -43,7 +42,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .CryptoDashboard-tab {
@@ -73,7 +72,6 @@
   height: 24px;
   border-radius: 50%;
   background-color: var(--badge-bg);
-  margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,12 +82,20 @@
   background-color: #00b8d9;
 }
 
+.CryptoDashboard-gainer-item{
+  gap: 5px;
+}
+
 .CryptoDashboard-gainer-item, .CryptoDashboard-token-item, .CryptoDashboard-social-item {
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: 8px 5px;
   border-radius: 5px;
   transition: background-color 0.3s;
+}
+
+.CryptoDashboard-token-item{
+  justify-content: space-between;
 }
 
 .CryptoDashboard-gainer-item:hover, .CryptoDashboard-token-item:hover, .CryptoDashboard-social-item:hover {
@@ -97,33 +103,72 @@
 }
 
 .CryptoDashboard-gainer-id {
-  color: #0fe688;
+  color: var(--badge-text);
   width: 20px;
-  margin-right: 5px;
 }
 
-.CryptoDashboard-chevron, .CryptoDashboard-plus {
+.CryptoDashboard-chevron {
   color: var(--text-color);
   margin-right: 5px;
 }
 
-.CryptoDashboard-gainer-info, .CryptoDashboard-token-info, .CryptoDashboard-social-info {
+.CryptoDashboard-gainer-info{
   flex: 1;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.CryptoDashboard-social-info {
+  flex: 1;
+}
+
+.CryptoDashboard-token-info,
+.CryptoDashboard-social-info{
+  gap: 8px;
+  flex: 1 1 40%;
+  display: flex;
+  color: var(--badge-text);
+  align-items: center;
+}
+
+.CryptoDashboard-time{
+  flex: 1 1 40%;
 }
 
 .CryptoDashboard-gainer-name {
   color: var(--text-color2);
 }
 
-.CryptoDashboard-gainer-price {
-  color: #00b8d9;
+.CryptoDashboard-gainer-name span{
+  font-size: 12px;
+  color: var(--icon-color);
 }
 
-.CryptoDashboard-gainer-change {
+.CryptoDashboard-gainer-price {
   color: #0fe688;
 }
 
+.CryptoDashboard-gainer-price-2{
+  color: #ff0000;
+}
+
+.CryptoDashboard-gainer-change {
+  gap: 5px;
+  display: flex;
+  color: #0fe688;
+  align-items: center;
+}
+
+.CryptoDashboard-gainer-change-2{
+  gap: 5px;
+  display: flex;
+  color: #ff0000;
+  align-items: center;
+}
+
 .CryptoDashboard-title {
+  gap: 8px;
   display: flex;
   align-items: center;
 }
@@ -142,7 +187,7 @@
 
 .CryptoDashboard-description {
   font-size: 13px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   color: var(--text-color);
 }
 
@@ -163,12 +208,13 @@
   background-color: #00b8d9;
   color: white;
   border: none;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 6px 10px;
+  border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s;
   font-size: 14px;
   margin-right: 5px;
+  margin-top: 5px;
 }
 
 .CryptoDashboard-button-subtext {
@@ -178,7 +224,7 @@
 
 .CryptoDashboard-social-icons {
   display: flex;
-  gap: 5px;
+  gap: 8px;
 }
 
 .CryptoDashboard-social-icons svg {
