@@ -1,0 +1,105 @@
+:root {
+    --sidebar-bg: #142028;
+    --card-bg: #1d2b34;
+    --text-color: #818ea3;
+    --text-color2: #ffffff;
+    --hover-bg: #2c2f36;
+    --hover-text-color: #fff;
+    --active-bg: #2c2f36;
+    --active-text-color: #fff;
+    --logo-bg: #142028;
+    --icon-color: #818ea3;
+    --badge-bg: #3a3f50;
+    --badge-text: #fff;
+    --offer-badge-bg: #4caf50;
+    --offer-badge-text: #fff;
+    --sidebar-border: #2f3336;
+    --extra-header-color: #818ea3;
+    --font-family: 'Poppins', sans-serif;
+  }
+  
+  .token-list {
+    background-color: var(--sidebar-bg);
+    font-family: var(--font-family);
+    padding: 20px;
+  }
+  
+  .token-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+  }
+  
+  .token-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 15px;
+  }
+  
+  .token-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .token-name-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .token-image {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .token-names {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .token-name {
+    font-weight: bold;
+    color: var(--text-color2);
+    font-size: 14px;
+  }
+  
+  .token-full-name {
+    font-size: 12px;
+    color: var(--text-color);
+  }
+  
+  .token-date {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: var(--text-color);
+  }
+  
+  .ethereum-icon {
+    margin-right: 5px;
+    color: var(--icon-color);
+  }
+  
+  .days-ago {
+    margin-left: 5px;
+  }
+  
+  .token-address {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: var(--text-color);
+  }
+  
+  .copy-icon {
+    margin-left: 5px;
+    cursor: pointer;
+    color: var(--icon-color);
+  }
+  
+  .copy-icon:hover {
+    color: var(--text-color2);
+  }
