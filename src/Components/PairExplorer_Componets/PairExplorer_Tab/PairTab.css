@@ -1,0 +1,73 @@
+:root {
+    --sidebar-bg: #142028;
+    --text-color: #818ea3;
+    --text-color2: #ffffff;
+    --hover-bg: #2c2f36;
+    --hover-text-color: #fff;
+    --active-bg: #2c2f36;
+    --active-text-color: #fff;
+    --logo-bg: #142028;
+    --icon-color: #818ea3;
+    --badge-bg: #3a3f50;
+    --badge-text: #fff;
+    --offer-badge-bg: #4caf50;
+    --offer-badge-text: #fff;
+    --sidebar-border: #2f3336;
+    --extra-header-color: #818ea3;
+    --font-family: 'Poppins', sans-serif;
+  }
+  
+  .PairTab-container {
+    font-family: var(--font-family);
+    background-color: var(--sidebar-bg);
+    padding: 10px;
+  }
+  
+  .PairTab-tabList {
+    display: flex;
+    border-bottom: 1px solid var(--sidebar-border);
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .PairTab-tabList::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .PairTab-tabButton {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .PairTab-tabButton:hover {
+    color: var(--hover-text-color);
+    background-color: var(--hover-bg);
+  }
+  
+  .PairTab-tabButton.PairTab-active {
+    color: var(--active-text-color);
+    background-color: var(--active-bg);
+  }
+  
+  .PairTab-newBadge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--offer-badge-bg);
+    color: var(--offer-badge-text);
+    font-size: 10px;
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+  
+  .PairTab-content {
+    padding: 20px 0;
+    color: var(--text-color2);
+  }

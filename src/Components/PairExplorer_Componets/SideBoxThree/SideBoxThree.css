@@ -1,0 +1,157 @@
+.sideboxthree-container {
+    background-color: var(--sidebar-bg);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .sideboxthree-score-circle {
+    width: 100px;
+    margin: 0 auto;
+  }
+  
+  .sideboxthree-circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+  }
+  
+  .sideboxthree-circle-bg {
+    fill: none;
+    stroke: #3e4a56;
+    stroke-width: 2.8;
+  }
+  
+  .sideboxthree-circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    stroke: #00b8d8;
+  }
+  
+  .sideboxthree-percentage {
+    fill: var(--text-color2);
+    font-size: 0.5em;
+    text-anchor: middle;
+  }
+  
+  .sideboxthree-score-label {
+    text-align: center;
+    color: var(--text-color2);
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .sideboxthree-reliability {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  .sideboxthree-reliability-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .sideboxthree-icon {
+    margin: 0 5px;
+    font-size: 12px;
+  }
+  
+  .sideboxthree-audit-section {
+    margin-top: 20px;
+  }
+  
+  .sideboxthree-audit-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .sideboxthree-verify {
+    color: #f5b50c;
+    font-size: 12px;
+  }
+  
+  .sideboxthree-audit-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .sideboxthree-status {
+    font-weight: bold;
+  }
+  
+  .sideboxthree-yes, .sideboxthree-no, .sideboxthree-zero {
+    color: #4caf50;
+  }
+  
+  .sideboxthree-check-audits {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  
+  .sideboxthree-community-trust {
+    margin-top: 20px;
+  }
+  
+  .sideboxthree-trust-header {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .sideboxthree-trust-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sideboxthree-bar-container {
+    flex-grow: 1;
+    height: 4px;
+    background-color: #f44336;
+    margin: 0 10px;
+  }
+  
+  .sideboxthree-bar-positive {
+    height: 100%;
+    background-color: #4caf50;
+  }
+  
+  .sideboxthree-trust-percentages {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .sideboxthree-token-description {
+    margin-top: 20px;
+  }
+  
+  .sideboxthree-token-description h3 {
+    font-size: 14px;
+    color: var(--text-color2);
+    margin-bottom: 10px;
+  }
+  
+  .sideboxthree-token-description p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .sideboxthree-update-link {
+    color: #00b8d8;
+    text-decoration: none;
+    font-size: 12px;
+  }

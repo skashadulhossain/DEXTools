@@ -4,7 +4,7 @@ import { Monitor, Mail, Send, Twitter, Plus } from 'lucide-react';
 
 const NewSocials = () => {
   const tokens = [
-    { name: 'OPCAT', symbol: 'OP_CAT', time: '2 h ago', icons: ['monitor', 'mail', 'send', 'twitter', 'circle', 'plus'] },
+    { name: 'OPCAT', symbol: 'OP_CAT', time: '2 h ago', icons: ['monitor', 'mail', 'send', 'twitter', 'plus'] },
     { name: 'RUG', symbol: 'Rug', time: '2 h ago', icons: ['monitor', 'mail', 'send', 'twitter'] },
     { name: 'WIN69', symbol: 'Window Meme', time: '3 h ago', icons: ['monitor', 'send', 'twitter'] },
     { name: 'BROKIE', symbol: 'Brokie', time: '3 h ago', icons: ['monitor', 'send', 'twitter'] },
@@ -24,6 +24,7 @@ const NewSocials = () => {
         <h2>Last updated tokens</h2>
         <button className="NewSocials-update-btn">Update socials</button>
       </div>
+
       <div className="NewSocials-top-tokens">
         {tokens.slice(0, 3).map((token, index) => (
           <div key={index} className="NewSocials-token-card">
@@ -46,7 +47,6 @@ const NewSocials = () => {
                   {icon === 'mail' && <Mail size={16} />}
                   {icon === 'send' && <Send size={16} />}
                   {icon === 'twitter' && <Twitter size={16} />}
-                  {icon === 'circle' && <div className="NewSocials-circle-icon" />}
                   {icon === 'plus' && <Plus size={16} />}
                 </span>
               ))}
@@ -54,9 +54,11 @@ const NewSocials = () => {
           </div>
         ))}
       </div>
+
       <p className="NewSocials-description">
         Below is a list of the cryptocurrencies and token social links that have been updated most recently.
       </p>
+
       <div className="NewSocials-token-grid">
         {tokens.slice(3).map((token, index) => (
           <div key={index} className="NewSocials-token-card">

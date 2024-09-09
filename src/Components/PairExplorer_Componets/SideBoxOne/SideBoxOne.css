@@ -1,0 +1,131 @@
+.sideboxone-container {
+    background-color: var(--sidebar-bg);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  .sideboxone-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .sideboxone-logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sideboxone-logo, .sideboxone-robot-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  .sideboxone-pool-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sideboxone-pool-badge {
+    background-color: #ff3b9a;
+    color: var(--badge-text);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-right: 8px;
+  }
+  
+  .sideboxone-pool-name {
+    color: var(--text-color2);
+    font-size: 14px;
+    margin-right: 8px;
+  }
+  
+  .sideboxone-binoculars {
+    font-size: 16px;
+  }
+  
+  .sideboxone-pair-info {
+    margin-bottom: 16px;
+  }
+  
+  .sideboxone-pair-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+  }
+  
+  .sideboxone-pair-label {
+    color: var(--text-color);
+    font-size: 12px;
+  }
+  
+  .sideboxone-pair-value {
+    color: var(--text-color2);
+    font-size: 12px;
+  }
+  
+  .sideboxone-copy-icon {
+    margin-left: 4px;
+    cursor: pointer;
+  }
+  
+  .sideboxone-defi-label {
+    background-color: var(--badge-bg);
+    color: var(--badge-text);
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .sideboxone-defi-icon {
+    margin-right: 4px;
+  }
+  
+  .sideboxone-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .sideboxone-metric-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sideboxone-metric-label {
+    color: var(--text-color);
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  
+  .sideboxone-metric-value {
+    color: var(--text-color2);
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .sideboxone-up-icon {
+    color: #4caf50;
+    margin-left: 4px;
+  }
+  
+  .sideboxone-info-icon {
+    font-size: 10px;
+    margin-left: 2px;
+    color: var(--text-color);
+  }
+  
+  .sideboxone-more-info {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 12px;
+    cursor: pointer;
+  }

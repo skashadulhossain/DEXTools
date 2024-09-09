@@ -1,0 +1,189 @@
+:root {
+    --sidebar-bg: #142028;
+    --text-color: #818ea3;
+    --text-color2: #ffffff;
+    --hover-bg: #1e2c37;
+    --hover-text-color: #fff;
+    --active-bg: #2c2f36;
+    --active-text-color: #fff;
+    --logo-bg: #142028;
+    --icon-color: #818ea3;
+    --badge-bg: #3a3f50;
+    --badge-text: #fff;
+    --offer-badge-bg: #4caf50;
+    --offer-badge-text: #fff;
+    --sidebar-border: #2f3336;
+    --extra-header-color: #818ea3;
+    --font-family: 'Poppins', sans-serif;
+    --input-bg: #0b1217;
+    --button-bg: #3772ff;
+}
+
+.SideboxTop-accordion {
+    background-color: var(--sidebar-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.SideboxTop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--sidebar-border);
+}
+
+.SideboxTop-title {
+    color: var(--text-color2);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.SideboxTop-icon {
+    margin-right: 8px;
+    color: var(--icon-color);
+}
+
+.SideboxTop-arrow {
+    color: var(--text-color);
+    transition: transform 0.3s ease;
+}
+
+.SideboxTop-arrow.open {
+    transform: rotate(180deg);
+}
+
+.SideboxTop-content {
+    padding: 15px;
+}
+
+.SideboxTop-token-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--input-bg);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 12px;
+}
+
+.SideboxTop-token-input input {
+    background: transparent;
+    border: none;
+    color: var(--text-color2);
+    font-size: 18px;
+    width: 50%;
+    outline: none;
+}
+
+.SideboxTop-token-selector {
+    display: flex;
+    align-items: center;
+    background: var(--hover-bg);
+    border: none;
+    color: var(--text-color2);
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.SideboxTop-token-selector:hover {
+    background-color: var(--active-bg);
+}
+
+.SideboxTop-token-selector img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.SideboxTop-dropdown-arrow {
+    margin-left: 5px;
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+.SideboxTop-swap-icon {
+    text-align: center;
+    margin: 10px 0;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.SideboxTop-connect-wallet {
+    width: 100%;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.SideboxTop-connect-wallet:hover {
+    background-color: #2d5ed9;
+}
+
+.SideboxTop-info {
+    margin-top: 20px;
+}
+
+.SideboxTop-info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.SideboxTop-auto {
+    display: flex;
+    align-items: center;
+    color: var(--text-color2);
+}
+
+.SideboxTop-settings-icon {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.SideboxTop-provider {
+    display: flex;
+    align-items: center;
+}
+
+.SideboxTop-provider img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.SideboxTop-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+.SideboxTop-try-uniswap {
+    display: flex;
+    align-items: center;
+    color: var(--text-color2);
+}
+
+.SideboxTop-try-uniswap img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
