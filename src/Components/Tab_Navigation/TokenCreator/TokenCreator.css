@@ -47,12 +47,28 @@
     display: flex;
     align-items: center;
   }
+
+  .token-img-box{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
   
   .token-image {
-    width: 24px;
-    height: 24px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 15px;
+  }
+
+  .token-img-box img:last-child{
+    position: absolute;
+    bottom: -3px;
+    right: 3px;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: #00b8d8;
   }
   
   .token-names {
@@ -75,7 +91,18 @@
     display: flex;
     align-items: center;
     font-size: 12px;
+    flex-direction: column;
     color: var(--text-color);
+  }
+
+  .token-date-title{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  .token-date-title img{
+    width: 20px;
   }
   
   .ethereum-icon {

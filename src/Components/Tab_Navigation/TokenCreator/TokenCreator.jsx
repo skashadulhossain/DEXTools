@@ -1,24 +1,32 @@
 import React from 'react';
 import { FiCopy } from 'react-icons/fi';
 import './TokenCreator.css';
+import boximg1 from './Image/box img 1.jpeg';
+import boximg2 from './Image/box img 2.png';
+import boximg3 from './Image/box img 3.jpeg';
+import boximg4 from './Image/box img 4.jpg';
+import iconimg1 from './Image/dext-gray-small.svg';
+import iconimg2 from './Image/base.png';
+import iconimg3 from './Image/ether.png';
+import iconimg4 from './Image/bsc.png';
 
 const TokenCreator = () => {
   const tokens = [
-    { name: 'BKITTY', fullName: 'Brucey Kitty', address: '0xf76...188a', days: 8, image: '/api/placeholder/24/24' },
-    { name: 'SONDON', fullName: 'SONDON', address: '0x668...fa38', days: 8, image: '/api/placeholder/24/24' },
-    { name: 'TURBO', fullName: 'TURBO', address: '0x3e7...4c86', days: 13, image: '/api/placeholder/24/24' },
-    { name: 'ETH', fullName: 'Egidso', address: '0x25e...0fbb', days: 13, image: '/api/placeholder/24/24' },
-    { name: '$REWARDS', fullName: 'USDC Rewards', address: '0x3bd...ec9a', days: 14, image: '/api/placeholder/24/24' },
-    { name: 'COOPER', fullName: 'Cooper The Turtle', address: '0xf18...f70c', days: 16, image: '/api/placeholder/24/24' },
-    { name: 'BRICS', fullName: 'BRICS', address: '0xd75...9a57', days: 16, image: '/api/placeholder/24/24' },
-    { name: 'TAS', fullName: 'Take A Stand', address: '0xaf1...1576', days: 16, image: '/api/placeholder/24/24' },
-    { name: 'ORACLE', fullName: 'Oracle', address: '0x5e3...b8d1', days: 17, image: '/api/placeholder/24/24' },
-    { name: 'BREAD', fullName: 'Bread', address: '0xe25...798e', days: 17, image: '/api/placeholder/24/24' },
-    { name: 'MARO', fullName: 'Maga Neiro', address: '0x609...0f5e', days: 18, image: '/api/placeholder/24/24' },
-    { name: 'GRU', fullName: 'Elons Minions', address: '0xf19...cb64', days: 20, image: '/api/placeholder/24/24' },
-    { name: 'UMXO', fullName: 'Unimatrix Zero', address: '0x38a...ef54', days: 21, image: '/api/placeholder/24/24' },
-    { name: '$WOLF', fullName: 'Drunk$Wolf', address: '0x371...a44e', days: 23, image: '/api/placeholder/24/24' },
-    { name: 'FLUFFI', fullName: 'Fluffington', address: '0x603...509d', days: 23, image: '/api/placeholder/24/24' },
+    { name: 'SIGMA', fullName: 'What is the sigma', address: '0xf3e...2f6b', days: 1, image: boximg1, icon: iconimg3, title: 'Ethereum' },
+    { name: 'BESO', fullName: 'BESO COIN MEME', address: '0xf846...120a', days: 1, image: boximg2, icon: iconimg4, title: 'BNC Chain' },
+    { name: 'GROWLY', fullName: 'GROWLY', address: '0x535...d392', days: 1, image: boximg3, icon: iconimg3, title: 'Ethereum' },
+    { name: 'OLYMPIC', fullName: 'Paris 2024', address: '0x59d...b1dc', days: 1, image: boximg4, icon: iconimg3, title: 'Ethereum' },
+    { name: 'SIGMA', fullName: 'What is the sigma', address: '0xf3e...2f6b', days: 1, image: boximg1, icon: iconimg3, title: 'Ethereum' },
+    { name: 'SIGMA', fullName: 'What is the sigma', address: '0xf3e...2f6b', days: 1, image: boximg1, icon: iconimg3, title: 'Ethereum' },
+    { name: 'SIGMA', fullName: 'What is the sigma', address: '0xf3e...2f6b', days: 1, image: boximg1, icon: iconimg3, title: 'Ethereum' },
+    { name: 'SIGMA', fullName: 'What is the sigma', address: '0xf3e...2f6b', days: 1, image: boximg1, icon: iconimg3, title: 'Ethereum' },
+    { name: 'SIGMA', fullName: 'What is the sigma', address: '0xf3e...2f6b', days: 1, image: boximg1, icon: iconimg3, title: 'Ethereum' },
+    { name: 'SIGMA', fullName: 'What is the sigma', address: '0xf3e...2f6b', days: 1, image: boximg1, icon: iconimg3, title: 'Ethereum' },
+    { name: 'SIGMA', fullName: 'What is the sigma', address: '0xf3e...2f6b', days: 1, image: boximg1, icon: iconimg3, title: 'Ethereum' },
+    { name: 'SIGMA', fullName: 'What is the sigma', address: '0xf3e...2f6b', days: 1, image: boximg1, icon: iconimg3, title: 'Ethereum' },
+    { name: 'SIGMA', fullName: 'What is the sigma', address: '0xf3e...2f6b', days: 1, image: boximg1, icon: iconimg3, title: 'Ethereum' },
+    { name: 'SIGMA', fullName: 'What is the sigma', address: '0xf3e...2f6b', days: 1, image: boximg1, icon: iconimg3, title: 'Ethereum' },
+    { name: 'SIGMA', fullName: 'What is the sigma', address: '0xf3e...2f6b', days: 1, image: boximg1, icon: iconimg3, title: 'Ethereum' },
   ];
 
   return (
@@ -28,16 +36,21 @@ const TokenCreator = () => {
           <div key={index} className="token-card">
             <div className="token-info">
               <div className="token-name-wrapper">
-                <img src={token.image} alt={token.name} className="token-image" />
+                <div className="token-img-box">
+                  <img src={token.image} alt={token.name} className="token-image" />
+                  <img src={iconimg1} alt="#" />
+                </div>
                 <div className="token-names">
                   <span className="token-name">{token.name}</span>
                   <span className="token-full-name">{token.fullName}</span>
                 </div>
               </div>
               <div className="token-date">
-                <span className="ethereum-icon">Ξ</span>
-                <span>Ethereum</span>
-                <span className="days-ago">{token.days} days ago</span>
+                <div className="token-date-title">
+                  <img src={token.icon} alt="" />
+                  <span>{token.title}</span>
+                </div>
+                <span className="days-ago">{token.days} months ago</span>
               </div>
             </div>
             <div className="token-address">

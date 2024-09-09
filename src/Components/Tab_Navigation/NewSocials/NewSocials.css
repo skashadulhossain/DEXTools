@@ -50,7 +50,7 @@
   background-color: #1e2730;
   border-radius: 8px;
   padding: 16px;
-  width: calc(33.33% - 14px);
+  width: 100%;
 }
 
 .NewSocials-token-info {

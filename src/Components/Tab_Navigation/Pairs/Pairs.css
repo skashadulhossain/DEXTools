@@ -1,0 +1,197 @@
+/* CryptoTable.css */
+:root {
+    --bg-color: #0e1217;
+    --text-color: #818ea3;
+    --text-color-light: #ffffff;
+    --row-bg: #151b22;
+    --row-hover-bg: #1c2430;
+    --positive-color: #00b8a9;
+    --negative-color: #ef534f;
+    --badge-bg: #2c3e50;
+    --audit-badge-bg: #ffa500;
+    --dext-score-bg: #2a3d52;
+  }
+  
+  .crypto-table-container {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    padding: 5px;
+    overflow-x: auto ;
+    scrollbar-width: thin;
+  }
+  
+  .crypto-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 4px;
+  }
+  
+  .crypto-table th {
+    text-align: left;
+    padding: 10px 15px;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 0.85rem;
+  }
+
+  .crypto-table th:last-child
+  .pair-header {
+    justify-content: flex-end;
+  }
+
+  .pair-header{
+    gap: 0px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .crypto-table td {
+    padding: 12px 15px;
+    background-color: var(--row-bg);
+    color: var(--text-color-light);
+    font-size: 0.9rem;
+  }
+  
+  .crypto-table tr:hover td {
+    background-color: var(--row-hover-bg);
+  }
+  
+  .sort-icon {
+    cursor: pointer;
+    font-size: 0.7rem;
+    margin-left: 5px;
+    color: var(--text-color);
+  }
+  
+  .pair-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .pair-number {
+    color: var(--text-color);
+    font-size: 0.8rem;
+  }
+  
+  .sort-arrow {
+    font-size: 0.7rem;
+  }
+  
+  .sort-arrow.up {
+    color: var(--positive-color);
+  }
+  
+  .sort-arrow.down {
+    color: var(--negative-color);
+  }
+  
+  .pair-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  
+  .pair-info {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pair-name {
+    gap: 5px;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+  }
+
+  .crypto-table tr:hover 
+  .pair-name span:first-child{
+    color: #00c9ff;
+  }
+
+  .pair-name span:last-child{
+    font-size: 12px;
+    color: var(--text-color);
+  }
+  
+  .pair-address {
+    color: var(--text-color-light);
+    font-size: 0.75rem;
+  }
+  
+  .copy-icon {
+    font-size: 0.7rem;
+    margin-left: 2px;
+    cursor: pointer;
+  }
+
+  .change-cell{
+    display: flex;
+    align-items: center;
+  }
+  
+  .change-cell.positive {
+    color: var(--positive-color);
+  }
+  
+  .change-cell.negative {
+    color: var(--negative-color);
+  }
+  
+  .dext-score-wrapper {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .dext-score-circle {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: var(--dext-score-bg);
+    stroke-width: 2.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke: #00c9ff;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+  }
+  
+  .dext-score {
+    font-size: 12px;
+    fill: var(--text-color-light);
+    font-weight: bold;
+    text-anchor: middle;
+  }
+  
+  .audit-badge {
+    background-color: var(--badge-bg);
+    color: var(--text-color-light);
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    display: flex;
+    width: 50px;
+  }
+  
+  .audit-badge.with-audits {
+    background-color: var(--audit-badge-bg);
+  }
+  
+  .actions-cell {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .action-icon {
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
