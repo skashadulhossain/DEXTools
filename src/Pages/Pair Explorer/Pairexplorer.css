@@ -20,7 +20,7 @@
   }
   
   .Pairexplorer-left-panel {
-    width: 800px;
+    width: 400px;
     display: flex;
     flex-direction: column;
  
@@ -33,7 +33,7 @@
     background-color: #333;
     color: #fff;
     padding: 10px;
-    border: 2px solid red;
+ 
   
   }
   

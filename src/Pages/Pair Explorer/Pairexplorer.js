@@ -9,6 +9,7 @@ import SideBoxThree from '../../Components/PairExplorer_Componets/SideBoxThree/S
 import PairNavigation from '../../Components/PairExplorer_Componets/PairNavigation/PairNavigation';
 import PairTab from '../../Components/PairExplorer_Componets/PairExplorer_Tab/PairTab';
 import SideboxTop from '../../Components/PairExplorer_Componets/SideboxTop/SideboxTop';
+import Footer from '../../Components/Layouts/Admin-Layout/Admin-Footer/AdminFooter';
 
 
 
@@ -27,7 +28,7 @@ const Pairexplorer = () => {
 
           {/* Left Panel with multiple sections */}
           <div className="Pairexplorer-left-panel">
-   <SideboxTop/>
+        <SideboxTop/>
          <SideBoxOne/>  
          <SideBoxTwo/>
          <SideBoxThree/>
@@ -44,11 +45,13 @@ const Pairexplorer = () => {
             {/* Trade History Section */}
             <div className="Pairexplorer-trade-history">
               <PairTab/>
-             <HotPairs/>
+           
+             
             </div>
           </div>
         </div>
       </div>
+      <Footer/>
     </Sidebar>
   );
 };
