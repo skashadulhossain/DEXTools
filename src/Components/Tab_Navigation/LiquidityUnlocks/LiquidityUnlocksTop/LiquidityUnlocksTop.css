@@ -1,63 +1,132 @@
-.liquidity-unlocks {
-    background-color: #1a1a1a;
-    color: white;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  h1 {
-    font-size: 24px;
-    margin: 0;
-  }
-  
-  .tabs {
-    display: flex;
-  }
-  
-  .tab {
-    background-color: transparent;
-    border: none;
-    color: #808080;
-    cursor: pointer;
-    font-size: 14px;
-    padding: 5px 10px;
-  }
-  
-  .tab.active {
-    color: white;
-    border-bottom: 2px solid #3498db;
-  }
-  
-  .controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .percentage-control, .time-range-control {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-  
-  input[type="range"] {
-    width: 200px;
-  }
-  
-  select {
-    background-color: #2a2a2a;
-    border: none;
-    color: white;
-    padding: 5px 10px;
-  }
+.LiquidityUnlocksTop-container {
+  color: white;
+  padding: 16px 20px;
+  background-color: var(--bg-color);
+  font-family: 'Arial', sans-serif;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.LiquidityUnlocksTop-header {
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.LiquidityUnlocksTop-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.LiquidityUnlocksTop-tabs {
+  display: flex;
+  padding: 5px;
+  gap: 3px;
+  background-color: var(--sidebar-bg);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.LiquidityUnlocksTop-tab {
+  background-color: transparent;
+  border: none;
+  color: #6c757d;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.LiquidityUnlocksTop-tab:hover {
+  color: #fff;
+  background-color: #101418;
+}
+
+.LiquidityUnlocksTop-tab:focus{
+  color: #fff;
+  background-color: #101418;
+}
+
+.LiquidityUnlocksTop-active {
+  color: #fff;
+  background-color: #101418;
+}
+
+.LiquidityUnlocksTop-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+}
+
+.LiquidityUnlocksTop-percentage-control {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.LiquidityUnlocksTop-percentage-control label {
+  font-size: 14px;
+  color: #9ea7ad;
+}
+
+.LiquidityUnlocksTop-slider-container {
+  display: flex;
+  align-items: center;
+  background-color: #101418;
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+
+.LiquidityUnlocksTop-percentage-control input[type="range"] {
+  -webkit-appearance: none;
+  width: 160px;
+  height: 4px;
+  background: #2a2f35;
+  outline: none;
+  margin-right: 12px;
+  border-radius: 2px;
+}
+
+.LiquidityUnlocksTop-percentage-control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: #02d9fa;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.LiquidityUnlocksTop-percentage-value {
+  font-size: 14px;
+  color: white;
+}
+
+.LiquidityUnlocksTop-time-range {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.LiquidityUnlocksTop-time-range span {
+  font-size: 14px;
+  color: #9ea7ad;
+}
+
+.LiquidityUnlocksTop-time-range select {
+  background-color: #101418;
+  color: white;
+  border: none;
+  padding: 8px 24px 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}

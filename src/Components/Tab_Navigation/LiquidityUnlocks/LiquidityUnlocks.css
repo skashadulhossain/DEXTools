@@ -1,0 +1,164 @@
+:root {
+    --sidebar-bg: #142028;
+    --text-color: #818ea3;
+    --text-color2: #ffffff;
+    --hover-bg: #1e2832;
+    --hover-text-color: #fff;
+    --active-bg: #2c2f36;
+    --active-text-color: #fff;
+    --logo-bg: #142028;
+    --icon-color: #818ea3;
+    --badge-bg: #3a3f50;
+    --badge-text: #fff;
+    --offer-badge-bg2: #fca5a5;
+    --offer-badge-text: #142028;
+    --sidebar-border: #2f3336;
+    --extra-header-color: #818ea3;
+    --font-family: 'Poppins', sans-serif;
+  }
+  
+  .LiquidityUnlocks-container {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 5px;
+    overflow-x: auto ;
+    scrollbar-width: thin;
+  }
+  
+  .LiquidityUnlocks-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+  }
+
+  .LiquidityUnlocks-table thead th:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .LiquidityUnlocks-table thead th:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .LiquidityUnlocks-table th,
+  .LiquidityUnlocks-table td {
+    padding: 15px 16px;
+    text-align: left;
+  }
+
+  .LiquidityUnlocks-table td {
+    padding: 10px 15px;
+    text-align: left;
+  }
+  
+  .LiquidityUnlocks-table th {
+    background-color: var(--sidebar-bg);
+    color: var(--badge-text);
+    font-weight: normal;
+    font-size: 0.9em;
+    position: relative;
+  }
+  
+  .LiquidityUnlocks-filter-icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  
+  .LiquidityUnlocks-filter-icon:hover {
+    opacity: 1;
+  }
+  
+  .LiquidityUnlocks-table tbody tr:hover {
+    background-color: var(--hover-bg);
+  }
+  
+  .LiquidityUnlocks-pair {
+    display: flex;
+    align-items: center;
+  }
+  
+  .LiquidityUnlocks-icon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--badge-bg);
+    color: var(--badge-text);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 0.8em;
+  }
+  
+  .LiquidityUnlocks-icon.dogz {
+    background-color: #4a4a4a;
+  }
+  
+  .LiquidityUnlocks-icon.bloom {
+    background-color: #4caf50;
+  }
+  
+  .LiquidityUnlocks-icon.pepedao {
+    background-color: #6c5ce7;
+  }
+  
+  .LiquidityUnlocks-pair-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .LiquidityUnlocks-address {
+    font-size: 0.8em;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+  }
+  
+  .LiquidityUnlocks-copy-icon {
+    margin-left: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    color: white;
+  }
+  
+  .LiquidityUnlocks-address:hover .LiquidityUnlocks-copy-icon {
+    opacity: 1;
+  }
+  
+  .LiquidityUnlocks-next-unlock {
+    background-color: var(--offer-badge-bg2);
+    color: var(--active-bg);
+    padding: 4px 8px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.9em;
+  }
+  
+  .LiquidityUnlocks-clock-icon {
+    margin-right: 4px;
+  }
+  
+  .LiquidityUnlocks-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .LiquidityUnlocks-action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+    padding: 0;
+  }
+  
+  .LiquidityUnlocks-action-btn:hover {
+    color: var(--hover-text-color);
+  }

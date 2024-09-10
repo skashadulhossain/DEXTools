@@ -1,114 +1,132 @@
 .TokenUnlocksTop-container {
-    background-color: #111214;
-    color: white;
-    padding: 12px 16px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .TokenUnlocksTop-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12px;
-  }
-  
-  .TokenUnlocksTop-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .TokenUnlocksTop-tabs {
-    display: flex;
-  }
-  
-  .TokenUnlocksTop-tab {
-    background-color: transparent;
-    border: none;
-    color: #6c757d;
-    padding: 6px 12px;
-    cursor: pointer;
-    font-size: 14px;
-  }
-  
-  .TokenUnlocksTop-tab.TokenUnlocksTop-active {
-    color: white;
-    border-bottom: 2px solid #3498db;
-  }
-  
-  .TokenUnlocksTop-tab.TokenUnlocksTop-inactive {
-    opacity: 0.6;
-  }
-  
-  .TokenUnlocksTop-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .TokenUnlocksTop-percentage-control {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  
-  .TokenUnlocksTop-percentage-control label {
-    font-size: 14px;
-    color: #a0a0a0;
-  }
-  
-  .TokenUnlocksTop-slider-container {
-    display: flex;
-    align-items: center;
-    background-color: #1e2023;
-    border-radius: 4px;
-    padding: 4px 12px;
-  }
-  
-  .TokenUnlocksTop-percentage-control input[type="range"] {
-    -webkit-appearance: none;
-    width: 200px;
-    height: 4px;
-    background: #3498db;
-    outline: none;
-    margin-right: 10px;
-  }
-  
-  .TokenUnlocksTop-percentage-control input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 16px;
-    height: 16px;
-    background: #3498db;
-    cursor: pointer;
-    border-radius: 50%;
-  }
-  
-  .TokenUnlocksTop-percentage-value {
-    font-size: 14px;
-    color: white;
-  }
-  
-  .TokenUnlocksTop-time-range {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  
-  .TokenUnlocksTop-time-range span {
-    font-size: 14px;
-    color: #a0a0a0;
-  }
-  
-  .TokenUnlocksTop-time-range select {
-    background-color: #1e2023;
-    color: white;
-    border: none;
-    padding: 6px 24px 6px 12px;
-    border-radius: 4px;
-    font-size: 14px;
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 8px center;
-  }
+  color: white;
+  padding: 16px 20px;
+  background-color: var(--bg-color);
+  font-family: 'Arial', sans-serif;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TokenUnlocksTop-header {
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TokenUnlocksTop-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.TokenUnlocksTop-tabs {
+  display: flex;
+  padding: 5px;
+  gap: 3px;
+  background-color: var(--sidebar-bg);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.TokenUnlocksTop-tab {
+  background-color: transparent;
+  border: none;
+  color: #6c757d;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.TokenUnlocksTop-tab:hover {
+  color: #fff;
+  background-color: #101418;
+}
+
+.TokenUnlocksTop-tab:focus{
+  color: #fff;
+  background-color: #101418;
+}
+
+.TokenUnlocksTop-active {
+  color: #fff;
+  background-color: #101418;
+}
+
+.TokenUnlocksTop-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+}
+
+.TokenUnlocksTop-percentage-control {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.TokenUnlocksTop-percentage-control label {
+  font-size: 14px;
+  color: #9ea7ad;
+}
+
+.TokenUnlocksTop-slider-container {
+  display: flex;
+  align-items: center;
+  background-color: #101418;
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+
+.TokenUnlocksTop-percentage-control input[type="range"] {
+  -webkit-appearance: none;
+  width: 160px;
+  height: 4px;
+  background: #2a2f35;
+  outline: none;
+  margin-right: 12px;
+  border-radius: 2px;
+}
+
+.TokenUnlocksTop-percentage-control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: #02d9fa;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.TokenUnlocksTop-percentage-value {
+  font-size: 14px;
+  color: white;
+}
+
+.TokenUnlocksTop-time-range {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.TokenUnlocksTop-time-range span {
+  font-size: 14px;
+  color: #9ea7ad;
+}
+
+.TokenUnlocksTop-time-range select {
+  background-color: #101418;
+  color: white;
+  border: none;
+  padding: 8px 24px 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}

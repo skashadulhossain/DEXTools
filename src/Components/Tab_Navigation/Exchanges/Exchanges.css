@@ -22,9 +22,11 @@
   
   .Exchanges-container {
     font-family: var(--font-family);
-    background-color: var(--sidebar-bg);
+    background-color: var(--bg-color);
     color: var(--text-color);
-    padding: 20px;
+    padding: 5px;
+    overflow-x: auto ;
+    scrollbar-width: thin;
   }
   
   .Exchanges-table {
@@ -32,16 +34,30 @@
     border-collapse: separate;
     border-spacing: 0 4px;
   }
+
+  .Exchanges-table thead th:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
   
-  .Exchanges-table th,
+  .Exchanges-table thead th:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .Exchanges-table th {
+    padding: 15px;
+    text-align: left;
+  }
+
   .Exchanges-table td {
-    padding: 12px;
+    padding: 10px 15px;
     text-align: left;
   }
   
   .Exchanges-table th {
-    background-color: var(--table-header-bg);
-    color: var(--text-color);
+    background-color: var(--sidebar-bg);
+    color: var(--badge-text);
     font-weight: normal;
     font-size: 0.9em;
   }
@@ -60,10 +76,11 @@
   }
   
   .Exchanges-logo {
-    width: 24px;
-    height: 24px;
+    width: 34px;
+    height: 34px;
     margin-right: 10px;
     border-radius: 50%;
+    background-color: var(--active-text-color);
   }
   
   .Exchanges-icon {

@@ -10,7 +10,7 @@
     --icon-color: #818ea3;
     --badge-bg: #3a3f50;
     --badge-text: #fff;
-    --offer-badge-bg: #fca5a5;
+    --offer-badge-bg2: #fca5a5;
     --offer-badge-text: #142028;
     --sidebar-border: #2f3336;
     --extra-header-color: #818ea3;
@@ -18,10 +18,12 @@
   }
   
   .TokenUnlocks-container {
-    background-color: var(--sidebar-bg);
-    color: var(--text-color);
     font-family: var(--font-family);
-    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 5px;
+    overflow-x: auto ;
+    scrollbar-width: thin;
   }
   
   .TokenUnlocks-table {
@@ -29,24 +31,40 @@
     border-collapse: separate;
     border-spacing: 0 8px;
   }
+
+  .TokenUnlocks-table thead th:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .TokenUnlocks-table thead th:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
   
   .TokenUnlocks-table th,
   .TokenUnlocks-table td {
-    padding: 12px 16px;
+    padding: 15px 16px;
+    text-align: left;
+  }
+
+  .TokenUnlocks-table td {
+    padding: 10px 15px;
     text-align: left;
   }
   
   .TokenUnlocks-table th {
-    color: var(--text-color);
+    background-color: var(--sidebar-bg);
+    color: var(--badge-text);
     font-weight: normal;
-    border-bottom: 1px solid var(--sidebar-border);
+    font-size: 0.9em;
     position: relative;
   }
   
   .TokenUnlocks-filter-icon {
     position: absolute;
-    right: 8px;
     top: 50%;
+    margin-left: 5px;
     transform: translateY(-50%);
     cursor: pointer;
     opacity: 0.6;
@@ -54,11 +72,6 @@
   
   .TokenUnlocks-filter-icon:hover {
     opacity: 1;
-  }
-  
-  .TokenUnlocks-table tbody tr {
-    background-color: rgba(255, 255, 255, 0.03);
-    transition: background-color 0.2s ease-in-out;
   }
   
   .TokenUnlocks-table tbody tr:hover {
@@ -120,8 +133,8 @@
   }
   
   .TokenUnlocks-next-unlock {
-    background-color: var(--offer-badge-bg);
-    color: var(--offer-badge-text);
+    background-color: var(--offer-badge-bg2);
+    color: var(--active-bg);
     padding: 4px 8px;
     border-radius: 12px;
     display: inline-flex;

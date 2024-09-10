@@ -8,10 +8,10 @@ const TokenUnlocksTop = () => {
   return (
     <div className="TokenUnlocksTop-container">
       <div className="TokenUnlocksTop-header">
-        <h2 className="TokenUnlocksTop-title">Liquidity Unlocks</h2>
+        <h2 className="TokenUnlocksTop-title">Token Unlocks</h2>
         <div className="TokenUnlocksTop-tabs">
-          <button className="TokenUnlocksTop-tab TokenUnlocksTop-active">Upcoming</button>
-          <button className="TokenUnlocksTop-tab TokenUnlocksTop-inactive">Recent</button>
+          <button className="TokenUnlocksTop-tab">Upcoming</button>
+          <button className="TokenUnlocksTop-tab">Recent</button>
         </div>
       </div>
       <div className="TokenUnlocksTop-controls">

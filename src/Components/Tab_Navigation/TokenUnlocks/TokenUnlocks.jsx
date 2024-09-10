@@ -2,6 +2,7 @@ import React from 'react';
 import './TokenUnlocks.css';
 import { Copy, Binoculars, Trash2, Clock, Filter } from 'lucide-react';
 import TokenUnlocksTop from './TokenUnlocksTop/TokenUnlocksTop';
+import { PiCaretUpDown } from 'react-icons/pi';
 
 const TokenUnlocks = () => {
   const data = [
@@ -23,11 +24,11 @@ const TokenUnlocks = () => {
       <table className="TokenUnlocks-table">
         <thead>
           <tr>
-            <th>Pair <Filter size={14} className="TokenUnlocks-filter-icon" /></th>
-            <th>Tokens To Unlock <Filter size={14} className="TokenUnlocks-filter-icon" /></th>
-            <th>Current Price <Filter size={14} className="TokenUnlocks-filter-icon" /></th>
-            <th>Value <Filter size={14} className="TokenUnlocks-filter-icon" /></th>
-            <th>Next Unlock <Filter size={14} className="TokenUnlocks-filter-icon" /></th>
+            <th>Pair <PiCaretUpDown  size={14} className="TokenUnlocks-filter-icon" /></th>
+            <th>Tokens To Unlock <PiCaretUpDown  size={14} className="TokenUnlocks-filter-icon" /></th>
+            <th>Current Price <PiCaretUpDown  size={14} className="TokenUnlocks-filter-icon" /></th>
+            <th>Value <PiCaretUpDown  size={14} className="TokenUnlocks-filter-icon" /></th>
+            <th>Next Unlock <PiCaretUpDown  size={14} className="TokenUnlocks-filter-icon" /></th>
             <th>Actions</th>
           </tr>
         </thead>
