@@ -7,20 +7,20 @@
   .Pairexplorer-top-bar {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    background-color: #222;
+
+
     color: #fff;
-    border: 2px solid red;
+
   }
   
   .Pairexplorer-content {
     display: flex;
     flex: 1;
-    border: 3px solid rgb(70, 140, 0);
+    
   }
   
   .Pairexplorer-left-panel {
-    width: 400px;
+    width: 350px;
     display: flex;
     flex-direction: column;
  

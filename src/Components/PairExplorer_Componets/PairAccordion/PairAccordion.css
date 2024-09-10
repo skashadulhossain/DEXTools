@@ -1,3 +1,4 @@
+
 :root {
     --sidebar-bg: #142028;
     --text-color: #818ea3;
@@ -79,19 +80,64 @@
 .PairAccordion-question {
     background-color: var(--hover-bg);
     color: var(--text-color2);
-    padding: 15px;
-    margin-bottom: 10px;
     border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.PairAccordion-question-header {
+    padding: 15px;
     cursor: pointer;
     display: flex;
     align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.PairAccordion-question-header:hover {
+    background-color: var(--active-bg);
 }
 
 .PairAccordion-arrow {
     margin-right: 10px;
-    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
 }
 
-.PairAccordion-question:hover {
-    background-color: var(--active-bg);
+.PairAccordion-arrow.rotated {
+    transform: rotate(180deg);
+}
+
+.PairAccordion-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.PairAccordion-answer.expanded {
+    max-height: 500px; /* Adjust this value based on your maximum expected content height */
+}
+
+.PairAccordion-answer-content {
+    padding: 0 15px 15px;
+    color: var(--text-color);
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.PairAccordion-answer-content p {
+    margin: 0;
+}
+
+.PairAccordion-answer-content ol {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.PairAccordion-answer-content li {
+    margin-bottom: 8px;
+}
+
+.PairAccordion-answer-content li:last-child {
+    margin-bottom: 0;
 }
