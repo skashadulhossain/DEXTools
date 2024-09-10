@@ -1,0 +1,228 @@
+:root {
+    --background-color: #0e1621;
+    --table-header-bg: #13202c;
+    --table-row-bg: #192734;
+    --table-row-hover-bg: #1e3044;
+    --text-color: #818ea3;
+    --text-color-light: #b9bec7;
+    --text-color-lighter: #ffffff;
+    --accent-color: #3b82f6;
+    --buy-color: #22c55e;
+    --sell-color: #ef4444;
+    --font-family: 'Inter', sans-serif;
+}
+
+.BigSwapContainer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.BigSwapTitle {
+    color: var(--text-color-lighter);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.BigSwapControls {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.BigSwapDescription {
+    margin-bottom: 10px;
+}
+
+.BigSwapEthereumText {
+    color: var(--accent-color);
+}
+
+.BigSwapFilters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.BigSwapToggle {
+    display: flex;
+    align-items: center;
+    color: var(--text-color-light);
+    font-size: 14px;
+}
+
+.BigSwapToggleSlider {
+    width: 44px;
+    height: 22px;
+    background-color: var(--table-header-bg);
+    margin-right: 10px;
+    border-radius: 11px;
+    position: relative;
+    cursor: pointer;
+}
+
+.BigSwapToggleSlider::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    top: 2px;
+    left: 2px;
+    transition: 0.3s;
+}
+
+.BigSwapToggle input:checked + .BigSwapToggleSlider {
+    background-color: var(--accent-color);
+}
+
+.BigSwapToggle input:checked + .BigSwapToggleSlider::before {
+    transform: translateX(22px);
+    background-color: var(--text-color-lighter);
+}
+
+.BigSwapInfoIcon {
+    color: var(--text-color);
+    font-size: 14px;
+    cursor: help;
+}
+
+.BigSwapSearch, .BigSwapAmount {
+    background-color: var(--table-header-bg);
+    border: none;
+    color: var(--text-color-light);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.BigSwapSearch {
+    flex-grow: 1;
+}
+
+.BigSwapTableContainer {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.BigSwapTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 2px;
+}
+
+.BigSwapTable thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.BigSwapTable th {
+    background-color: var(--table-header-bg);
+    padding: 10px;
+    text-align: left;
+    color: var(--text-color);
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.BigSwapTable tbody {
+    display: block;
+    overflow-y: auto;
+    height: calc(100vh - 200px);
+}
+
+.BigSwapTable thead, .BigSwapTable tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.BigSwapTable td {
+    padding: 10px;
+    background-color: var(--table-row-bg);
+    color: var(--text-color-light);
+}
+
+.BigSwapTable tr:hover td {
+    background-color: var(--table-row-hover-bg);
+}
+
+.BigSwapPair {
+    display: flex;
+    align-items: center;
+}
+
+.BigSwapPair img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.BigSwapPairName {
+    color: var(--text-color-lighter);
+    display: block;
+    font-size: 14px;
+}
+
+.BigSwapContractAddress {
+    color: var(--text-color);
+    font-size: 12px;
+    display: block;
+}
+
+.BigSwapTypeBuy {
+    color: var(--buy-color);
+    font-weight: bold;
+}
+
+.BigSwapTypeSell {
+    color: var(--sell-color);
+    font-weight: bold;
+}
+
+.BigSwapVariation {
+    background-color: var(--table-header-bg);
+    color: var(--text-color-light);
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.BigSwapMaker {
+    color: var(--accent-color);
+    font-size: 14px;
+}
+
+.BigSwapActionButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--text-color);
+    margin-right: 5px;
+}
+
+.BigSwapActionButton:hover {
+    color: var(--text-color-lighter);
+}
+
+/* Customize scrollbar */
+.BigSwapTable tbody::-webkit-scrollbar {
+    width: 8px;
+}
+
+.BigSwapTable tbody::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+
+.BigSwapTable tbody::-webkit-scrollbar-thumb {
+    background-color: var(--text-color);
+    border-radius: 4px;
+}

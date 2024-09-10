@@ -1,0 +1,6 @@
+.MultiChartTab-smallChart {
+    height: 300px;
+    background-color: #0b1217;
+    border-radius: 8px;
+    overflow: hidden;
+}

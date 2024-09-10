@@ -1,6 +1,7 @@
 import React from 'react';
 import './TokenUnlocks.css';
 import { Copy, Binoculars, Trash2, Clock, Filter } from 'lucide-react';
+import TokenUnlocksTop from './TokenUnlocksTop/TokenUnlocksTop';
 
 const TokenUnlocks = () => {
   const data = [
@@ -15,7 +16,10 @@ const TokenUnlocks = () => {
   ];
 
   return (
-    <div className="TokenUnlocks-container">
+    <>
+       <TokenUnlocksTop/>
+
+       <div className="TokenUnlocks-container">
       <table className="TokenUnlocks-table">
         <thead>
           <tr>
@@ -60,6 +64,8 @@ const TokenUnlocks = () => {
         </tbody>
       </table>
     </div>
+    </>
+
   );
 };
 

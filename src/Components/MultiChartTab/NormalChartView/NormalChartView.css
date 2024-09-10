@@ -1,0 +1,6 @@
+.MultiChartTab-normalChart {
+    height: 500px; /* You can adjust the height if needed */
+    background-color: #0b1217;
+    border-radius: 8px;
+    overflow: hidden;
+}

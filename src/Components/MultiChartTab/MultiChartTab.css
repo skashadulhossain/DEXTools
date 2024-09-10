@@ -1,0 +1,106 @@
+.MultiChartTab-container {
+    background-color: var(--sidebar-bg);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    padding: 20px;
+}
+
+.MultiChartTab-title {
+    color: var(--text-color2);
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.MultiChartTab-subtitle {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.MultiChartTab-note {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: var(--extra-header-color);
+}
+
+.MultiChartTab-noteIcon {
+    background-color: var(--extra-header-color);
+    color: var(--sidebar-bg);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    font-style: italic;
+}
+
+.MultiChartTab-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.MultiChartTab-searchContainer {
+    position: relative;
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.MultiChartTab-searchIcon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--icon-color);
+}
+
+.MultiChartTab-searchInput {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    background-color: var(--sidebar-bg);
+    border: 1px solid var(--sidebar-border);
+    border-radius: 5px;
+    color: var(--text-color);
+}
+
+.MultiChartTab-searchInput::placeholder {
+    color: var(--text-color);
+}
+
+.MultiChartTab-tabContainer {
+    display: flex;
+    align-items: center;
+}
+
+.MultiChartTab-tabLabel {
+    margin-right: 10px;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.MultiChartTab-tabs {
+    display: flex;
+}
+
+.MultiChartTab-tab {
+    background-color: var(--sidebar-bg);
+    color: var(--text-color);
+    border: 1px solid var(--sidebar-border);
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.MultiChartTab-tab.active {
+    background-color: var(--active-bg);
+    color: var(--active-text-color);
+}
+
+.MultiChartTab-tab:hover:not(.active) {
+    background-color: var(--hover-bg);
+    color: var(--hover-text-color);
+}

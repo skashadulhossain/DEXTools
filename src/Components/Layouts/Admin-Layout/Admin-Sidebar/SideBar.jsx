@@ -13,7 +13,7 @@ const mainRoutes = [
   { path: '/LiveNewPairs', name: 'Live New Pairs', icon: <FaRocket /> },
   { path: '/BigSwapExplorer', name: 'Big Swap Explorer', icon: <FaExchangeAlt /> },
   { path: '/TokenCreator', name: 'Token Creator', icon: <FaPlus /> },
-  { path: '/Multichart', name: 'Multichart', icon: <AiFillPieChart /> },
+  { path: '/MultiChart', name: 'Multichart', icon: <AiFillPieChart /> },
   { path: '/Multiswap', name: 'Multiswap', icon: <AiFillSetting /> },
   { path: '/Stats', name: 'Stats', icon: <FaSearch /> },
   { path: '/WalletInfo', name: 'Wallet Info', icon: <FaWallet /> },

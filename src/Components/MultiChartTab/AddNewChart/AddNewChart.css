@@ -1,0 +1,53 @@
+.MultiChartTab-addNewChart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--text-color);
+    transition: transform 0.3s ease-in-out;
+}
+
+.MultiChartTab-addNewChart:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.MultiChartTab-addIcon {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+.MultiChartTab-addIcon:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Change background on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+}
+
+.MultiChartTab-addText {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: var(--text-color);
+    transition: color 0.3s ease-in-out;
+}
+
+.MultiChartTab-addNewChart:hover .MultiChartTab-addText {
+    color: var(--active-text-color); /* Change text color on hover */
+}
+
+.MultiChartTab-slotsRemaining {
+    font-size: 14px;
+    color: var(--extra-header-color);
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.MultiChartTab-addNewChart:hover .MultiChartTab-slotsRemaining {
+    opacity: 1; /* Make it more visible on hover */
+}
