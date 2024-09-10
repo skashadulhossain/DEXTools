@@ -12,8 +12,7 @@
 }
 
 .TabNavigation-container {
-    background-color: var(--main-bg);
-    padding: 20px;
+    margin: 10px 0;
     border-radius: 12px;
 }
 
@@ -51,7 +50,7 @@
 
 .TabNavigation-tab.TabNavigation-active {
     color: var(--active-text-color);
-    background-color: var(--active-bg);
+    background-color: var(--main-bg);
 }
 
 .TabNavigation-new-badge {

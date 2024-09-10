@@ -59,7 +59,7 @@ const CardSlider = () => {
           position: relative;
           width: 100%;
           height: 300px;
-          background-color: #0f1723;
+          background-color: #0e1217;
           padding: 20px 0;
           overflow: hidden;
         }

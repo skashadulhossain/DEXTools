@@ -1,5 +1,6 @@
 :root {
   --sidebar-bg: #142028;
+  --card-bg: #1d2b34;
   --text-color: #818ea3;
   --text-color2: #ffffff;
   --hover-bg: #2c2f36;
@@ -13,10 +14,9 @@
 }
 
 .NewSocials-container {
-  background-color: var(--sidebar-bg);
-  color: var(--text-color);
+  background-color: var(--bg-color);
   font-family: var(--font-family);
-  padding: 20px;
+  padding: 10px 0px; 
 }
 
 .NewSocials-header {
@@ -47,13 +47,19 @@
 }
 
 .NewSocials-token-card {
-  background-color: #1e2730;
+  background-color: var(--sidebar-bg);
   border-radius: 8px;
   padding: 16px;
   width: 100%;
 }
 
+.NewSocials-token-info-box{
+  display: flex;
+  justify-content: space-between;
+}
+
 .NewSocials-token-info {
+  gap: 5px;
   display: flex;
   align-items: center;
   margin-bottom: 12px;
@@ -72,6 +78,12 @@
   margin-right: 12px;
 }
 
+.NewSocials-token-icon img{
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+
 .NewSocials-token-details h3 {
   color: var(--text-color2);
   margin: 0;
@@ -86,14 +98,28 @@
 
 .NewSocials-token-network {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  gap: 5px;
+  color: var(--text-color);
+  flex-direction: column;
   margin-bottom: 12px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .NewSocials-ethereum-icon {
-  color: #627eea;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.NewSocials-ethereum-icon img{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.NewSocials-ethereum-icon span{
+  color: var(--text-color2);
+  font-size: 16px;
 }
 
 .NewSocials-token-socials {
@@ -101,9 +127,13 @@
   gap: 8px;
 }
 
-.NewSocials-social-icon {
-  color: var(--icon-color);
+.NewSocials-social-icon{
+  color: var(--text-color2);
   cursor: pointer;
+}
+
+.NewSocials-social-icon:hover{
+  color: var(--icon-color);
 }
 
 .NewSocials-description {

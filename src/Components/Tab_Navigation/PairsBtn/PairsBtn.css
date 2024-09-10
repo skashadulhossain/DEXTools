@@ -1,0 +1,46 @@
+
+.crypto-Pair-table-btn-container {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+  
+.crypto-pair-buttons {
+    display: flex;
+    gap: 5px;
+}
+  
+.crypto-pair-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--sidebar-bg);
+    color: var(--text-color);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+.crypto-pair-button:hover {
+    background-color: var(--row-hover-bg);
+    color: var(--text-color-light);
+}
+  
+.crypto-pair-button img{
+    width: 18px;
+}
+  
+/* Add responsive styles */
+@media (max-width: 768px) {
+    .crypto-pair-button span {
+      display: none;
+    }
+  
+    .crypto-pair-button {
+      padding: 8px;
+    }
+}

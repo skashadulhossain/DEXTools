@@ -1,21 +1,49 @@
 import React from 'react';
 import './NewSocials.css';
-import { Monitor, Mail, Send, Twitter, Plus } from 'lucide-react';
+import { Monitor, Mail} from 'lucide-react';
+import { FaTelegram } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
+import salana from './Image/solana.png';
+import bull from './Image/bull.jpg';
+import cate from './Image/cate.jpeg';
+import zawg from './Image/zawg.jpg';
+import snrepy from './Image/snrepy.png';
+import popdog from './Image/popdog.png';
+import kid from './Image/kid.jpeg';
+import benji from './Image/benji.jpg';
+import btc2 from './Image/btc2.png';
+import fcb from './Image/fcb.jpeg';
+import bof from './Image/bof.jpg';
+import phyou from './Image/phyou.png';
+import sel from './Image/sel.png';
+import nuki from './Image/nuki.png';
+import aight from './Image/aight.jpg';
+import avi from './Image/avi.jpg';
+import gapcat from './Image/gapcat.png';
+import space from './Image/space.jpg';
+import solama from './Image/solama.jpeg';
+import btc from './Image/btc.jpg';
 
 const NewSocials = () => {
   const tokens = [
-    { name: 'OPCAT', symbol: 'OP_CAT', time: '2 h ago', icons: ['monitor', 'mail', 'send', 'twitter', 'plus'] },
-    { name: 'RUG', symbol: 'Rug', time: '2 h ago', icons: ['monitor', 'mail', 'send', 'twitter'] },
-    { name: 'WIN69', symbol: 'Window Meme', time: '3 h ago', icons: ['monitor', 'send', 'twitter'] },
-    { name: 'BROKIE', symbol: 'Brokie', time: '3 h ago', icons: ['monitor', 'send', 'twitter'] },
-    { name: 'MBAKER', symbol: 'Master Baker', time: '6 h ago', icons: ['monitor', 'send', 'twitter'] },
-    { name: 'MOONDOGE', symbol: 'MOONDOGE', time: '8 h ago', icons: ['monitor', 'mail', 'send', 'twitter'] },
-    { name: 'SHIB', symbol: 'Strategic Hu...', time: '10 h ago', icons: ['monitor', 'send', 'twitter'] },
-    { name: 'MW3', symbol: 'MILADYWARFAR...', time: '10 h ago', icons: ['monitor', 'send', 'twitter'] },
-    { name: '$MOCHICAT', symbol: 'MochiCat Mem...', time: '15 h ago', icons: ['monitor', 'send', 'twitter'] },
-    { name: 'WUKONG', symbol: 'WUKONG', time: '15 h ago', icons: ['monitor', 'send', 'twitter'] },
-    { name: 'ADoge', symbol: 'ADoge', time: '15 h ago', icons: ['monitor', 'mail', 'send', 'twitter'] },
-    { name: '$Cafe', symbol: 'CAFE MEME', time: '15 h ago', icons: ['monitor', 'send', 'twitter'] },
+    { image: bull,name: 'BULL', symbol: 'BULLISH KING', iconimg: salana, title: 'Salana', time: '1 h ago', icons: ['monitor', 'telegram', 'twitter',] },
+    { image: cate,name: 'CATE', symbol: 'CATE', iconimg: salana, title: 'Salana', time: '1 h ago', icons: ['monitor', 'telegram', 'twitter',] },
+    { image: zawg,name: 'ZAWG', symbol: 'Zawg', iconimg: salana, title: 'Salana', time: '2 h ago', icons: ['monitor', 'telegram', 'twitter',] },
+    { image: snrepy,name: 'SNREPY', symbol: 'Snrepy', iconimg: salana, title: 'Salana', time: '1 h ago', icons: ['monitor', 'telegram', 'twitter',] },
+    { image: popdog,name: 'Popdog', symbol: 'BULLISH KING', iconimg: salana, title: 'Salana', time: '1 h ago', icons: ['monitor', 'telegram', 'twitter',] },
+    { image: kid,name: 'BULL', symbol: 'BULLISH KING', iconimg: salana, title: 'Salana', time: '1 h ago', icons: ['monitor', 'telegram', 'twitter',] },
+    { image: benji,name: 'BULL', symbol: 'BULLISH KING', iconimg: salana, title: 'Salana', time: '1 h ago', icons: ['monitor', 'telegram', 'twitter',] },    
+    { image: btc2,name: 'BULL', symbol: 'BULLISH KING', iconimg: salana, title: 'Salana', time: '1 h ago', icons: ['monitor', 'telegram', 'twitter',] },
+    { image: fcb,name: 'BULL', symbol: 'BULLISH KING', iconimg: salana, title: 'Salana', time: '1 h ago', icons: ['monitor', 'telegram', 'twitter',] },    
+    { image: bof,name: 'BULL', symbol: 'BULLISH KING', iconimg: salana, title: 'Salana', time: '1 h ago', icons: ['monitor', 'telegram', 'twitter',] },
+    { image: phyou,name: 'BULL', symbol: 'BULLISH KING', iconimg: salana, title: 'Salana', time: '1 h ago', icons: ['monitor', 'telegram', 'twitter',] },    
+    { image: nuki,name: 'BULL', symbol: 'BULLISH KING', iconimg: salana, title: 'Salana', time: '1 h ago', icons: ['monitor', 'telegram', 'twitter',] },  
+    { image: aight,name: 'BULL', symbol: 'BULLISH KING', iconimg: salana, title: 'Salana', time: '1 h ago', icons: ['monitor', 'telegram', 'twitter',] },  
+    { image: avi,name: 'BULL', symbol: 'BULLISH KING', iconimg: salana, title: 'Salana', time: '1 h ago', icons: ['monitor', 'telegram', 'twitter',] },  
+    { image: gapcat,name: 'BULL', symbol: 'BULLISH KING', iconimg: salana, title: 'Salana', time: '1 h ago', icons: ['monitor', 'telegram', 'twitter',] },  
+    { image: space,name: 'BULL', symbol: 'BULLISH KING', iconimg: salana, title: 'Salana', time: '1 h ago', icons: ['monitor', 'telegram', 'twitter',] },  
+    { image: solama,name: 'BULL', symbol: 'BULLISH KING', iconimg: salana, title: 'Salana', time: '1 h ago', icons: ['monitor', 'telegram', 'twitter',] },  
+    { image: btc,name: 'BULL', symbol: 'BULLISH KING', iconimg: salana, title: 'Salana', time: '1 h ago', icons: ['monitor', 'telegram', 'twitter',] },  
   ];
 
   return (
@@ -28,26 +56,31 @@ const NewSocials = () => {
       <div className="NewSocials-top-tokens">
         {tokens.slice(0, 3).map((token, index) => (
           <div key={index} className="NewSocials-token-card">
-            <div className="NewSocials-token-info">
-              <div className="NewSocials-token-icon">{token.name[0]}</div>
-              <div className="NewSocials-token-details">
-                <h3>{token.name}</h3>
-                <p>{token.symbol}</p>
+            <div className="NewSocials-token-info-box">
+              <div className="NewSocials-token-info">
+                <div className="NewSocials-token-icon">
+                  <img src={token.image} alt="" />
+                </div>
+                <div className="NewSocials-token-details">
+                  <h3>{token.name}</h3>
+                  <p>{token.symbol}</p>
+                </div>
               </div>
-            </div>
-            <div className="NewSocials-token-network">
-              <span className="NewSocials-ethereum-icon">Ξ</span>
-              <span>Ethereum</span>
-              <span>{token.time}</span>
+              <div className="NewSocials-token-network">
+                <div className="NewSocials-ethereum-icon">
+                  <img src={token.iconimg} alt="" />
+                  <span>{token.title}</span>
+                </div>
+                <span>{token.time}</span>
+              </div>
             </div>
             <div className="NewSocials-token-socials">
               {token.icons.map((icon, i) => (
                 <span key={i} className="NewSocials-social-icon">
                   {icon === 'monitor' && <Monitor size={16} />}
                   {icon === 'mail' && <Mail size={16} />}
-                  {icon === 'send' && <Send size={16} />}
-                  {icon === 'twitter' && <Twitter size={16} />}
-                  {icon === 'plus' && <Plus size={16} />}
+                  {icon === 'twitter' && <FaXTwitter size={16} />}
+                  {icon === 'telegram' && <FaTelegram size={16} />}
                 </span>
               ))}
             </div>
@@ -62,29 +95,35 @@ const NewSocials = () => {
       <div className="NewSocials-token-grid">
         {tokens.slice(3).map((token, index) => (
           <div key={index} className="NewSocials-token-card">
+          <div className="NewSocials-token-info-box">
             <div className="NewSocials-token-info">
-              <div className="NewSocials-token-icon">{token.name[0]}</div>
+              <div className="NewSocials-token-icon">
+                <img src={token.image} alt="" />
+              </div>
               <div className="NewSocials-token-details">
                 <h3>{token.name}</h3>
                 <p>{token.symbol}</p>
               </div>
             </div>
             <div className="NewSocials-token-network">
-              <span className="NewSocials-ethereum-icon">Ξ</span>
-              <span>Ethereum</span>
+              <div className="NewSocials-ethereum-icon">
+                <img src={token.iconimg} alt="" />
+                <span>{token.title}</span>
+              </div>
               <span>{token.time}</span>
             </div>
-            <div className="NewSocials-token-socials">
-              {token.icons.map((icon, i) => (
-                <span key={i} className="NewSocials-social-icon">
-                  {icon === 'monitor' && <Monitor size={16} />}
-                  {icon === 'mail' && <Mail size={16} />}
-                  {icon === 'send' && <Send size={16} />}
-                  {icon === 'twitter' && <Twitter size={16} />}
-                </span>
-              ))}
-            </div>
           </div>
+          <div className="NewSocials-token-socials">
+            {token.icons.map((icon, i) => (
+              <span key={i} className="NewSocials-social-icon">
+                {icon === 'monitor' && <Monitor size={16} />}
+                {icon === 'mail' && <Mail size={16} />}
+                {icon === 'twitter' && <FaXTwitter size={16} />}
+                {icon === 'telegram' && <FaTelegram size={16} />}
+              </span>
+            ))}
+          </div>
+        </div>
         ))}
       </div>
     </div>
