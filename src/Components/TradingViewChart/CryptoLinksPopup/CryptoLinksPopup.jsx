@@ -1,13 +1,17 @@
 import React from 'react';
-import { X, Globe, Mail, MessageCircle, Twitter, Youtube, Instagram, Facebook, BookOpen, FileText, ChevronRight } from 'lucide-react';
+import { X, Globe, Mail, MessageCircle, Twitter, Youtube, Instagram, Facebook, BookOpen, ChevronRight } from 'lucide-react';
 import './CryptoLinksPopup.css';
+import iconimg1 from '../Image/cmc-icon-blue.jpeg';
+import iconimg2 from '../Image/oklink.png';
+import iconimg3 from '../Image/ether-scan.png';
+import iconimg4 from '../Image/coingecko.png';
+import iconimg5 from '../Image/bubblemaps.png';
+import { FaBitbucket, FaDiscord, FaGithub, FaLink, FaReddit } from 'react-icons/fa';
+import { RiNftFill } from 'react-icons/ri';
+import iconimg6 from '../Image/metamask.svg';
 
 // Custom TikTok icon component
-const TikTokIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 19.75 4h-2.52A4.278 4.278 0 0 0 16.6 5.82zM8 11.8V10c-.7.1-1.3.3-1.9.6C4 11.9 2.6 14.3 2.5 17c-.1 3.3 1.8 6.3 4.7 7.6 1.4.6 2.8.9 4.3.8H8v-2c-2.2-.2-4-2-4-4.3 0-2.3 1.8-4.1 4-4.3zm12.4-1.3c-.8-.5-1.6-.9-2.4-1.1V8c-1.9 0-3.5-1-4.4-2.4V17c-.1 3.3-2.8 5.9-6.1 5.9-1.2 0-2.4-.4-3.4-1v.1c1.9 1.9 4.6 2.9 7.3 2.5 4.1-.6 7.1-4.1 7.1-8.3V5.5c1.4 1 2.4 2.5 2.9 4.2v.8z" fill="currentColor"/>
-  </svg>
-);
+
 
 const CryptoLinksPopup = ({ onClose }) => {
   return (
@@ -21,21 +25,21 @@ const CryptoLinksPopup = ({ onClose }) => {
           <div className="CryptoLinksPopup-column">
             <h4>Token</h4>
             <ul>
-              <li><img src="/api/placeholder/20/20" alt="CoinMarketCap" /> CoinMarketCap</li>
-              <li><img src="/api/placeholder/20/20" alt="View Contract" /> View Contract</li>
-              <li><img src="/api/placeholder/20/20" alt="View Contract" /> View Contract</li>
-              <li><img src="/api/placeholder/20/20" alt="Coingecko" /> Coingecko</li>
-              <li><img src="/api/placeholder/20/20" alt="Bubblemaps" /> Bubblemaps</li>
-              <li className="CryptoLinksPopup-disabled"><img src="/api/placeholder/20/20" alt="Metamask" /> Metamask</li>
+              <li><img src={iconimg1} alt="CoinMarketCap" /> CoinMarketCap</li>
+              <li><img src={iconimg2} alt="View Contract" /> View Contract</li>
+              <li><img src={iconimg3} alt="View Contract" /> View Contract</li>
+              <li><img src={iconimg4} alt="Coingecko" /> Coingecko</li>
+              <li><img src={iconimg5} alt="Bubblemaps" /> Bubblemaps</li>
+              <li className="CryptoLinksPopup-disabled"><img src={iconimg6} alt="Metamask" /> Metamask</li>
             </ul>
             <h4>NFT</h4>
             <ul>
-              <li className="CryptoLinksPopup-disabled"><img src="/api/placeholder/20/20" alt="NFT" /> NFT Collection</li>
+              <li className="CryptoLinksPopup-disabled"><RiNftFill size={20} /> NFT Collection</li>
             </ul>
             <h4>Repositories</h4>
             <ul>
-              <li className="CryptoLinksPopup-disabled"><img src="/api/placeholder/20/20" alt="GitHub" /> GitHub</li>
-              <li className="CryptoLinksPopup-disabled"><img src="/api/placeholder/20/20" alt="Bitbucket" /> Bitbucket</li>
+              <li className="CryptoLinksPopup-disabled"><FaGithub size={20} /> GitHub</li>
+              <li className="CryptoLinksPopup-disabled"><FaBitbucket size={20} /> Bitbucket</li>
             </ul>
           </div>
           <div className="CryptoLinksPopup-column">
@@ -45,14 +49,14 @@ const CryptoLinksPopup = ({ onClose }) => {
               <li><Mail size={20} /> Email</li>
               <li><MessageCircle size={20} /> Telegram</li>
               <li><Twitter size={20} /> Twitter</li>
-              <li><img src="/api/placeholder/20/20" alt="Discord" /> Discord</li>
+              <li><FaDiscord size={20} /> Discord</li>
               <li><Youtube size={20} /> Youtube</li>
               <li><Instagram size={20} /> Instagram</li>
-              <li><TikTokIcon /> Tiktok</li>
+              {/* <li><TikTokIcon /> Tiktok</li> */}
               <li className="CryptoLinksPopup-disabled"><Facebook size={20} /> Facebook</li>
               <li><BookOpen size={20} /> Medium</li>
-              <li><img src="/api/placeholder/20/20" alt="Reddit" /> Reddit</li>
-              <li><FileText size={20} /> Extra info</li>
+              <li><FaReddit size={20} /> Reddit</li>
+              <li><FaLink size={20} /> Extra info</li>
             </ul>
           </div>
         </div>

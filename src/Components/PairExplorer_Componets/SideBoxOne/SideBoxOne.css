@@ -1,3 +1,21 @@
+
+.sideboxone-main-container{
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.sideboxone-logo-container {
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+  position: relative;
+}
+
+.sideboxone-logo-container img{
+  width: 100%;
+  height: 100px;
+}
+
 .sideboxone-container {
     background-color: var(--sidebar-bg);
     color: var(--text-color);
@@ -13,11 +31,6 @@
     margin-bottom: 16px;
   }
   
-  .sideboxone-logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
   .sideboxone-logo, .sideboxone-robot-logo {
     width: 24px;
     height: 24px;
@@ -25,27 +38,35 @@
   }
   
   .sideboxone-pool-info {
+    gap: 5px;
     display: flex;
     align-items: center;
   }
+
+  .sideboxone-pool-info img {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--text-color2);
+  }
   
   .sideboxone-pool-badge {
-    background-color: #ff3b9a;
     color: var(--badge-text);
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 12px;
-    margin-right: 8px;
+    font-size: 14px;
   }
   
   .sideboxone-pool-name {
     color: var(--text-color2);
     font-size: 14px;
-    margin-right: 8px;
   }
   
   .sideboxone-binoculars {
-    font-size: 16px;
+    cursor: pointer;
+    color: var(--text-color2);
+  }
+
+  .sideboxone-binoculars:hover{
+    color: #39c1da;
   }
   
   .sideboxone-pair-info {
@@ -59,18 +80,26 @@
   }
   
   .sideboxone-pair-label {
-    color: var(--text-color);
+    color: var(--text-color2);
     font-size: 12px;
   }
   
   .sideboxone-pair-value {
-    color: var(--text-color2);
+    color: #39c1da;
     font-size: 12px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
   }
   
   .sideboxone-copy-icon {
     margin-left: 4px;
     cursor: pointer;
+    color: var(--text-color);
+  }
+
+  .sideboxone-copy-icon:hover{
+    color: var(--text-color2);
   }
   
   .sideboxone-defi-label {
@@ -79,9 +108,17 @@
     display: inline-flex;
     align-items: center;
     padding: 4px 8px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    gap: 5px;
     border-radius: 4px;
     font-size: 12px;
     margin-bottom: 16px;
+  }
+
+  .sideboxone-defi-label img{
+    width: 18px;
   }
   
   .sideboxone-defi-icon {
@@ -97,7 +134,11 @@
   
   .sideboxone-metric-item {
     display: flex;
+    padding: 5px;
+    border-radius: 8px;
+    align-items: center;
     flex-direction: column;
+    background-color: #0b1217;
   }
   
   .sideboxone-metric-label {
@@ -124,8 +165,11 @@
   }
   
   .sideboxone-more-info {
-    text-align: center;
     color: var(--text-color);
     font-size: 12px;
     cursor: pointer;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }

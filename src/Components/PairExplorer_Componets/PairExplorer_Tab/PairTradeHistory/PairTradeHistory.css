@@ -27,6 +27,7 @@
   .PairTradeHistory-tableWrapper {
     max-height: 600px;
     overflow-y: auto;
+    width: 100%;
   }
   
   .PairTradeHistory-table {
@@ -105,7 +106,7 @@
     color: var(--text-color2);
   }
   
-  .PairTradeHistory-table td:last-child {
+  .PairTradeHistory-action-box {
     display: flex;
     align-items: center;
   }

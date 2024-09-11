@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './SideboxTop.css';
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import iconimg1 from '../Image/dext logo.png';
+import iconimg2 from '../Image/ether.png';
 
 const SideboxTop = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -21,25 +24,25 @@ const SideboxTop = () => {
           </svg>
           DEXTswap
         </span>
-        <span className={`SideboxTop-arrow ${isOpen ? 'open' : ''}`}>^</span>
+        <span className={`SideboxTop-arrow ${isOpen ? 'open' : ''}`}><IoIosArrowUp /></span>
       </div>
       {isOpen && (
         <div className="SideboxTop-content">
           <div className="SideboxTop-token-input">
             <input type="number" value={selectedTokens.from.amount} readOnly />
             <button className="SideboxTop-token-selector">
-              <img src="https://cryptologos.cc/logos/dextrust-dext-logo.png" alt="DEXT" />
+              <img src={iconimg1} alt="DEXT" />
               <span>DEXT</span>
-              <span className="SideboxTop-dropdown-arrow">▼</span>
+              <span className="SideboxTop-dropdown-arrow"><IoIosArrowDown size={18} /></span>
             </button>
           </div>
           <div className="SideboxTop-swap-icon">⇅</div>
           <div className="SideboxTop-token-input">
             <input type="number" value={selectedTokens.to.amount} readOnly />
             <button className="SideboxTop-token-selector">
-              <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" alt="ETH" />
+              <img src={iconimg2} alt="ETH" />
               <span>ETH</span>
-              <span className="SideboxTop-dropdown-arrow">▼</span>
+              <span className="SideboxTop-dropdown-arrow"><IoIosArrowDown size={18} /></span>
             </button>
           </div>
           <button className="SideboxTop-connect-wallet">Connect wallet</button>
@@ -56,7 +59,7 @@ const SideboxTop = () => {
               <span>Provider</span>
               <span className="SideboxTop-provider">
                 <img src="https://cryptologos.cc/logos/okb-okb-logo.png" alt="Provider" />
-                <span className="SideboxTop-dropdown-arrow">▼</span>
+                <span className="SideboxTop-dropdown-arrow"><IoIosArrowDown size={18} /></span>
               </span>
             </div>
           </div>

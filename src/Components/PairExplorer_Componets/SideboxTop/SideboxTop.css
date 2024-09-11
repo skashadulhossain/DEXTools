@@ -25,7 +25,6 @@
     overflow: hidden;
     font-family: var(--font-family);
     color: var(--text-color);
-  
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -102,6 +101,7 @@
     width: 24px;
     height: 24px;
     margin-right: 5px;
+    border-radius: 50%;
 }
 
 .SideboxTop-dropdown-arrow {

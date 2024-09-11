@@ -20,15 +20,19 @@
   .PairTab-container {
     font-family: var(--font-family);
     background-color: var(--sidebar-bg);
+    border-radius: 8px;
+    margin-top: 10px;
     padding: 10px;
   }
   
   .PairTab-tabList {
+    gap: 5px;
     display: flex;
-    border-bottom: 1px solid var(--sidebar-border);
     overflow-x: auto;
+    padding-bottom: 10px;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    border-bottom: 1px solid var(--sidebar-border);
   }
   
   .PairTab-tabList::-webkit-scrollbar {
@@ -38,6 +42,7 @@
   .PairTab-tabButton {
     background: none;
     border: none;
+    border-radius: 8px;
     color: var(--text-color);
     padding: 10px 15px;
     cursor: pointer;
@@ -53,7 +58,7 @@
   
   .PairTab-tabButton.PairTab-active {
     color: var(--active-text-color);
-    background-color: var(--active-bg);
+    background-color: var(--main-bg);
   }
   
   .PairTab-newBadge {

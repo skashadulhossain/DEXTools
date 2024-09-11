@@ -51,9 +51,11 @@ const PairTradeHistory = () => {
                 <td>{trade.amountWeth.toFixed(4)}</td>
                 <td>{trade.maker}</td>
                 <td>
-                  {trade.others.map((icon, i) => (
-                    <span key={i} className="PairTradeHistory-icon">{icon}</span>
-                  ))}
+                  <div className="PairTradeHistory-action-box">
+                    {trade.others.map((icon, i) => (
+                      <span key={i} className="PairTradeHistory-icon">{icon}</span>
+                    ))}
+                  </div>
                 </td>
               </tr>
             ))}

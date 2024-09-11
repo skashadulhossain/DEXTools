@@ -1,33 +1,46 @@
 import React from 'react';
 import './SideBoxOne.css';
+import animationimg from '../Image/download.gif';
+import iconimg1 from '../Image/uniswap.png';
+import iconimg2 from '../Image/2.svg';
+import { FaBinoculars } from 'react-icons/fa';
+import { FiCopy } from 'react-icons/fi';
+import { IoIosArrowDown } from 'react-icons/io';
+import { FaCircleInfo } from 'react-icons/fa6';
 
 const SideBoxOne = () => {
   return (
-    <div className="sideboxone-container">
+    <div className="sideboxone-main-container">
+      <div className="sideboxone-logo-container">
+        <img src={animationimg} alt="DEXTools" className="sideboxone-logo" />
+      </div>
+      <div className="sideboxone-container">
       <div className="sideboxone-header">
-        <div className="sideboxone-logo-container">
-          <img src="/path-to-dextools-logo.png" alt="DEXTools" className="sideboxone-logo" />
-          <img src="/path-to-robot-logo.png" alt="Robot" className="sideboxone-robot-logo" />
-        </div>
         <div className="sideboxone-pool-info">
           <span className="sideboxone-pool-badge">POOL</span>
+          <img src={iconimg1} alt="" />
           <span className="sideboxone-pool-name">UNISWAP V2</span>
-          <span className="sideboxone-binoculars">👀</span>
         </div>
+        <span className="sideboxone-binoculars"><FaBinoculars size={16}/></span>
       </div>
       <div className="sideboxone-pair-info">
         <div className="sideboxone-pair-row">
           <span className="sideboxone-pair-label">DEXT:</span>
-          <span className="sideboxone-pair-value">0XFB7...C75A <span className="sideboxone-copy-icon">📋</span></span>
+          <div className="sideboxone-pair-value">
+            0XFB7...C75A <span className="sideboxone-copy-icon"><FiCopy /></span>
+          </div>
         </div>
         <div className="sideboxone-pair-row">
           <span className="sideboxone-pair-label">PAIR:</span>
-          <span className="sideboxone-pair-value">0XA29...7D6D <span className="sideboxone-copy-icon">📋</span></span>
+          <div className="sideboxone-pair-value">
+            0XA29...7D6D <span className="sideboxone-copy-icon"><FiCopy /></span>
+          </div>
         </div>
       </div>
-      <div className="sideboxone-defi-label">
-        <span className="sideboxone-defi-icon">🔄</span> DeFi
-      </div>
+      <button className="sideboxone-defi-label">
+        <img src={iconimg2} alt="" /> 
+        <span>DeFi</span>
+      </button>
       <div className="sideboxone-metrics-grid">
         <div className="sideboxone-metric-item">
           <span className="sideboxone-metric-label">MARKET CAP</span>
@@ -58,14 +71,16 @@ const SideBoxOne = () => {
           <span className="sideboxone-metric-value">127.55M</span>
         </div>
         <div className="sideboxone-metric-item">
-          <span className="sideboxone-metric-label">VOLATILITY <span className="sideboxone-info-icon">ℹ</span></span>
+          <span className="sideboxone-metric-label">VOLATILITY <span className="sideboxone-info-icon"><FaCircleInfo size={12} /></span></span>
           <span className="sideboxone-metric-value">0.2699</span>
         </div>
       </div>
       <div className="sideboxone-more-info">
-        <span>More info ▼</span>
+        <span>More info</span>
+        <IoIosArrowDown size={18} />
       </div>
     </div>
+  </div>
   );
 };
 

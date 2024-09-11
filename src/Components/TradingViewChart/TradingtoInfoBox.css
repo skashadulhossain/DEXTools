@@ -67,9 +67,10 @@
 }
 
 .crypto-icon {
-  width: 20px;
-  height: 20px;
-  /* padding: 5px; */
+  width: 34px;
+  height: 34px;
+  padding: 8px;
+  border-radius: 50%;
   color: var(--icon-color);
   cursor: pointer;
   transition: color 0.3s ease;
@@ -89,6 +90,29 @@
   border-radius: 12px;
   border: 1px solid #2d3c47;
   justify-content: space-between;
+}
+
+.crypto-icon-box{
+  gap: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.crypto-icon-2{
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.crypto-icon-2:hover{
+  color: var(--text-color2);
+}
+
+.crypto-icon-box img{
+  width: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--text-color2);
 }
 
 .crypto-icon-text {
