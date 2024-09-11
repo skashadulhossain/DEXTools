@@ -15,9 +15,7 @@
     font-family: var(--font-family);
     padding: 20px;
     width: 100%;
-   min-height: 80vh;
-   
-    margin: 0 auto;
+    min-height: 80vh;
   }
   
   .UserAreaComponents-steps {

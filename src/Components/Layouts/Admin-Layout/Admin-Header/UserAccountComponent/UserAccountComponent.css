@@ -18,10 +18,10 @@
   }
   
   .UserAcComponent-container {
-    background-color: var(--sidebar-bg);
     color: var(--text-color);
     font-family: var(--font-family);
-    padding: 20px;
+    height: 80vh;
+    padding:  020px;
   }
   
   .UserAcComponent-title {
@@ -42,7 +42,7 @@
   }
   
   .UserAcComponent-step {
-    background-color: var(--hover-bg);
+    background-color: var(--sidebar-bg);
     border-radius: 10px;
     padding: 20px;
     flex: 1;
