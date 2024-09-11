@@ -20,7 +20,7 @@
   .LiquidityUnlocks-container {
     font-family: var(--font-family);
     background-color: var(--bg-color);
-    color: var(--text-color);
+    color: var(--text-color2);
     padding: 5px;
     overflow-x: auto ;
     scrollbar-width: thin;
@@ -46,6 +46,10 @@
   .LiquidityUnlocks-table td {
     padding: 15px 16px;
     text-align: left;
+  }
+
+  .LiquidityUnlocks-table th:last-child{
+    text-align: right;
   }
 
   .LiquidityUnlocks-table td {
@@ -112,10 +116,26 @@
     display: flex;
     flex-direction: column;
   }
+
+  .LiquidityUnlocks-pair-title{
+    gap: 3px;
+    display: flex;
+    align-items: center;
+  }
+
+  .LiquidityUnlocks-table tbody tr:hover
+  .LiquidityUnlocks-pair-title span:first-child{
+    color: #00c9ff;
+  }
+  
+  .LiquidityUnlocks-pair-title span:last-child{
+    font-size: 12px;
+    color: var(--text-color);
+  }
   
   .LiquidityUnlocks-address {
     font-size: 0.8em;
-    color: var(--text-color);
+    color: var(--text-color2);
     display: flex;
     align-items: center;
   }
@@ -123,7 +143,7 @@
   .LiquidityUnlocks-copy-icon {
     margin-left: 5px;
     cursor: pointer;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.2s ease-in-out;
     color: white;
   }
@@ -145,20 +165,40 @@
   .LiquidityUnlocks-clock-icon {
     margin-right: 4px;
   }
+
+  .LiquidityUnlocks-lock-icon-box{
+    gap: 5px;
+    display: flex;
+    color: var(--text-color);
+    align-items: center;
+  }
+
+  .LiquidityUnlocks-lock-icon{
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 20px;
+    border: 1px solid var(--text-color);
+  }
   
   .LiquidityUnlocks-actions {
     display: flex;
     gap: 10px;
+    justify-content: flex-end;
   }
   
   .LiquidityUnlocks-action-btn {
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--text-color);
+    color: var(--text-color2);
     padding: 0;
+    font-size: 18px;
   }
   
-  .LiquidityUnlocks-action-btn:hover {
-    color: var(--hover-text-color);
+  .LiquidityUnlocks-actions button:hover {
+    color: #00c9ff;
+  }
+
+  .LiquidityUnlocks-actions button:last-child:hover {
+    color: var(--audit-badge-bg);
   }

@@ -25,14 +25,71 @@
     padding: 10px 0px; 
   }
 
-  .token-list p{
+  .token-title-box {
+    margin-bottom: 15px;
+    color: var(--text-color2);
+  }
+  
+  .token-title-box h1 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .token-title-box img {
+    margin-right: 5px;
+    width: 28px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #00b8d8; 
+  }
+  
+  .token-title-box h1 span {
+    font-weight: 400;
+    color: var(--text-color); 
+  }
+  
+  .token-title-box p {
+    font-size: 16px;
+    color: var(--text-color2);
+  }
+  
+  .token-title-box p strong {
+    color: var(--text-color2);
+  }
+  
+  .token-title-box button {
+    background-color: #00b8d8;
+    color: var(--text-color2);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  
+  .token-title-box button:hover {
+    background-color: #00a0c0; 
+  }
+  
+  .token-title-box span {
+    margin-left: 5px;
+    font-size: 16px;
+    color: var(--text-color);
+  }  
+
+  .token-subtitle{
     font-size: 14px;
     margin: 20px 0;
   }
   
   .token-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
   }
   
@@ -40,6 +97,17 @@
     background-color: var(--card-bg);
     border-radius: 8px;
     padding: 22px 15px;
+  }
+
+  .token-grid-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .token-card-2{
+    width: 100%;
+    max-width: 380px;
   }
   
   .token-info {
@@ -137,4 +205,28 @@
   
   .copy-icon:hover {
     color: var(--text-color2);
+  }
+
+  @media (max-width: 1024px) {
+    .token-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .NewSocials-top-tokens {
+      flex-direction: column;
+    }
+  
+    .NewSocials-top-tokens .NewSocials-token-card {
+      max-width: 100%;
+    }
+  
+    .NewSocials-token-card {
+      width: 100%;
+    }
+  
+    .token-grid {
+      grid-template-columns: 1fr;
+    }
   }

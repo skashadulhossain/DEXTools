@@ -21,20 +21,28 @@
     display: flex;
     align-items: center;
     background-color: var(--sidebar-bg);
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     font-family: var(--font-family);
     overflow: hidden;
+    border-radius: 30px;
   }
   
   .PairNavigation-leftSection {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 10px;
     position: relative;
   }
   
   .PairNavigation-dropdown {
     cursor: pointer;
+  }
+
+  .PairNavigation-dropdow-btn{
+    gap: 2px;
+    width: 120px;
+    display: flex;
+    align-items: center;
   }
   
   .PairNavigation-hotPairs {
@@ -129,23 +137,24 @@
   .PairNavigation-rightSection {
     display: flex;
     align-items: center;
-    margin-left: auto;
     background-color: #2c2f36;
     border-radius: 20px;
     padding: 5px 10px;
+    width: 440px;
   }
   
   .PairNavigation-dextForce {
     color: var(--text-color2);
     font-weight: bold;
-    margin-right: 10px;
+    font-size: 14px;
   }
   
   .PairNavigation-joinButton {
     background-color: #ff4081;
     color: white;
     border: none;
-    padding: 8px 16px;
+    font-size: 14px;
+    padding: 8px 12px;
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;

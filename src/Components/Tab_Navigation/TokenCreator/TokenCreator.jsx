@@ -51,9 +51,14 @@ const TokenCreator = () => {
 
   return (
     <div className="token-list">
-      <div className="token-grid">
+      <div className="token-title-box">
+        <h1><img src={iconimg1} alt="" /> Token Creator <span>by DEXTools</span></h1>
+        <p><strong>Safety </strong> for traders. <strong>Visibility </strong> for your projects.
+        <button>Create Token</button> <span>and update social info for free!</span></p>
+      </div>
+      <div className="token-grid token-grid-2">
         {tokens1.map((token, index) => (
-          <div key={index} className="token-card">
+          <div key={index} className="token-card token-card-2">
             <div className="token-info">
               <div className="token-name-wrapper">
                 <div className="token-img-box">
@@ -80,7 +85,7 @@ const TokenCreator = () => {
           </div>
         ))}
       </div>
-      <p>Below is a list of the cryptocurrencies and token social links
+      <p className='token-subtitle'>Below is a list of the cryptocurrencies and token social links
         that have been created with Token Creator most recently.</p>
       <div className="token-grid">
         {tokens2.map((token, index) => (

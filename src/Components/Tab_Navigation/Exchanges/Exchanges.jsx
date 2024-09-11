@@ -1,8 +1,7 @@
 import React from 'react';
 import './Exchanges.css';
-import { HiOutlineArrowUpRight } from 'react-icons/hi2';
 import { PiCaretUpDown } from 'react-icons/pi';
-import { FaCircleInfo } from 'react-icons/fa6';
+import { FaCircleInfo, FaShare } from 'react-icons/fa6';
 import ppimg1 from './Image/download.png';
 import ppimg2 from './Image/pumpfun.webp';
 import ppimg3 from './Image/orca.svg';
@@ -64,7 +63,7 @@ const Exchanges = () => {
               <td>{exchange.swaps}</td>
               <td>
                 <button className="Exchanges-action-button">
-                  <HiOutlineArrowUpRight />
+                  <FaShare size={14} />
                 </button>
               </td>
             </tr>

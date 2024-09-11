@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './PairNavigation.css';
+import { IoIosArrowDown } from 'react-icons/io';
 
 const PairNavigation = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -8,8 +9,10 @@ const PairNavigation = () => {
     <nav className="PairNavigation-nav">
       <div className="PairNavigation-leftSection">
         <div className="PairNavigation-dropdown" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
-          <span className="PairNavigation-hotPairs">HOT PAIRS</span>
-          <span className="PairNavigation-dropdownIcon">▼</span>
+          <div className="PairNavigation-dropdow-btn">
+            <span className="PairNavigation-hotPairs">HOT PAIRS</span>
+            <IoIosArrowDown size={18} className="PairNavigation-dropdownIcon" />
+          </div>
           {isDropdownOpen && (
             <div className="PairNavigation-dropdownMenu">
               <div className="PairNavigation-dropdownItem">

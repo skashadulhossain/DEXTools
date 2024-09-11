@@ -44,6 +44,7 @@
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
+  justify-content: center;
 }
 
 .NewSocials-token-card {
@@ -51,6 +52,11 @@
   border-radius: 8px;
   padding: 20px 25px;
   width: 100%;
+}
+
+.NewSocials-top-tokens .NewSocials-token-card {
+  width: 100%;
+  max-width: 380px;
 }
 
 .NewSocials-token-info-box{
@@ -154,11 +160,15 @@
 }
 
 @media (max-width: 768px) {
-  .NewSocials-top-tokens {
+  .token-grid-2 {
     flex-direction: column;
   }
 
-  .NewSocials-token-card {
+  .token-grid-2 .token-card-2 {
+    max-width: 100%;
+  }
+
+  .token-card {
     width: 100%;
   }
 
