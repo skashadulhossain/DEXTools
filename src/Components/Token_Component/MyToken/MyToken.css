@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --white: #fff;
+    --dark: #1f2937;
+    --grey: #cacedb;
+    --blue: #06b6d4;
+    --dark-bg: #111827;
+    --light-blue: #22d3ee;
+}
+
+.MyToken-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.MyToken-container{
+    width: 100%;
+    height: 80vh;
+    padding: 20px 30px;
+    background-color: var(--dark-bg);
+}
+
+.MyToken-content-box{
+    margin-top: 3rem;
+    padding: 2rem 24px;
+    border-radius: 8px;
+    background-color: var(--dark);
+}
+
+.MyToken-btn-container{
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #4a4c50;
+}
+
+.MyToken-btn-box{
+    display: flex;
+    gap: 20px;
+}
+
+.MyToken-btn-box button{
+    gap: 8px;
+    display: flex;
+    outline: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 12px;
+    align-items: center;
+    border-radius: 25px;
+    color: var(--light-blue);
+    background-color: transparent;
+    border: 1px solid var(--light-blue);
+    white-space: nowrap;
+}
+
+.MyToken-btn-box button:hover{
+    background-color: #22d3ee10;
+}
+
+.MyToken-icon{
+    width: 18px;
+    height: 18px;
+}
+
+.MyToken-dropdown-btn-box button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    padding: 10px 12px;
+    font-size: 16px;
+    color: var(--grey);
+    background-color: var(--dark-bg);
+    border: 1px solid #4a4c50;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.MyToken-dropdown-btn-box span {
+    margin-right: auto; 
+}
+
+.MyToken-dropdown-list {
+    position: absolute;
+    background-color: var(--dark-bg);
+    border: 1px solid #4a4c50;
+    margin-top: 10px;
+    padding: 10px;
+    list-style: none;
+    border-radius: 5px;
+    width: 200px;
+    z-index: 1000; 
+}
+  
+  .MyToken-dropdown-list li {
+    gap: 8px;
+    padding: 10px;
+    font-size: 14px;
+    color: var(--grey);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s ease;
+  }
+
+.MyToken-dropdown-list li img,
+.MyToken-dropdown-btn-box button img {
+  width: 20px; 
+  height: 20px; 
+  margin-right: 8px; 
+}
+  
+  .MyToken-dropdown-list li:hover {
+    background-color: #2a3545;
+  }
+  
+  .MyToken-dropdown-btn-box {
+    position: relative; 
+  }
+  
+
+.MyToken-title-container {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #4a4c50;
+    border-bottom: 1px solid #4a4c50;
+    overflow-x: auto; 
+    white-space: nowrap; 
+}
+
+.MyToken-title-container::-webkit-scrollbar {
+    height: 0px;
+}
+
+.MyToken-title-container button{
+    gap: 5px;
+    width: 220px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 12px 5px;
+    text-align: left;
+    display: flex;
+    color: var(--grey);
+    align-items: center;
+    background: transparent;
+}
+
+.MyToken-title-container button:hover{
+    background-color: #2a3545;
+}
+
+.MyToken-title-container button:focus{
+    background-color: #254351;
+}
+
+.MyToken-title-btn-icon{
+    width: 18px;
+    height: 18px;
+}
+
+.MyToken-title-container h3{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--grey);
+    margin: 0 5rem 0 10px;
+}
+
+.MyToken-subtitle-container{
+    padding: 15px 5px;
+    border-bottom: 1px solid #4a4c50;
+}
+
+.MyToken-subtitle-container p{
+    font-size: 16px;
+    color: var(--grey);
+}
+
+@media (max-width: 768px) {
+    .MyToken-container {
+        padding: 10px 15px;
+    }
+    .MyToken-btn-container {
+        gap: 10px;
+        flex-direction: column;
+        align-items: stretch; 
+    }
+    .MyToken-btn-box button {
+        justify-content: center;
+    }
+    .MyToken-btn-box span{
+        display: none;
+    }
+    .MyToken-dropdown-btn-box button {
+        width: 100%; 
+        max-width: none;
+    }
+    .MyToken-title-container button,
+    .MyToken-title-container h3 {
+        font-size: 12px;
+        padding: 8px 5px;
+    }
+    .MyToken-title-container button{
+        padding: 12px 20px;
+    }
+}

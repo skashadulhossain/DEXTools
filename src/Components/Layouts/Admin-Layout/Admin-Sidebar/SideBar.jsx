@@ -15,7 +15,7 @@ const mainRoutes = [
   { path: '/TokenCreator', name: 'Token Creator', icon: <FaPlus /> },
   { path: '/MultiChart', name: 'Multichart', icon: <AiFillPieChart /> },
   { path: '/Multiswap', name: 'Multiswap', icon: <AiFillSetting /> },
-  { path: '/Stats', name: 'Stats', icon: <FaSearch /> },
+  { path: '/Status', name: 'Stats', icon: <FaSearch /> },
   { path: '/WalletInfo', name: 'Wallet Info', icon: <FaWallet /> },
   { path: '/UserArea', name: 'User Area', icon: <FaUser /> },
   { path: '/Products', name: 'Products', icon: <FaCogs /> },
