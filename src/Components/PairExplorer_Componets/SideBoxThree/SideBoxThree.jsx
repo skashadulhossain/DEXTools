@@ -1,5 +1,6 @@
 import React from 'react';
 import './SideBoxThree.css';
+import { GoInfo } from 'react-icons/go';
 
 const SideBoxThree = () => {
   return (
@@ -22,29 +23,29 @@ const SideBoxThree = () => {
       </div>
       <div className="sideboxthree-audit-section">
         <div className="sideboxthree-audit-header">
-          <span>Audit ⓘ</span>
+          <span>Audit <GoInfo size={18} /></span>
           <span className="sideboxthree-verify">△ Verify external audits</span>
         </div>
         <div className="sideboxthree-audit-item">
-          <span>ⓘ Contract Verified</span>
+          <span><GoInfo size={18} /> Contract Verified</span>
           <span className="sideboxthree-status sideboxthree-yes">Yes</span>
         </div>
         <div className="sideboxthree-audit-item">
-          <span>ⓘ Honeypot</span>
+          <span><GoInfo size={18} /> Honeypot</span>
           <span className="sideboxthree-status sideboxthree-no">No</span>
         </div>
         <div className="sideboxthree-audit-item">
-          <span>ⓘ Buy Tax</span>
+          <span><GoInfo size={18} /> Buy Tax</span>
           <span className="sideboxthree-status sideboxthree-zero">0%</span>
         </div>
         <div className="sideboxthree-audit-item">
-          <span>ⓘ Sell Tax</span>
+          <span><GoInfo size={18} /> Sell Tax</span>
           <span className="sideboxthree-status sideboxthree-zero">0%</span>
         </div>
       </div>
       <button className="sideboxthree-check-audits">✓ Check Audits</button>
       <div className="sideboxthree-community-trust">
-        <div className="sideboxthree-trust-header">COMMUNITY TRUST (3002 votes) ⓘ</div>
+        <div className="sideboxthree-trust-header">COMMUNITY TRUST (3002 votes) <GoInfo size={18} /></div>
         <div className="sideboxthree-trust-bar">
           <span className="sideboxthree-thumbs-up">👍</span>
           <div className="sideboxthree-bar-container">

@@ -3,6 +3,7 @@ import './SideboxTop.css';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import iconimg1 from '../Image/dext logo.png';
 import iconimg2 from '../Image/ether.png';
+import WalletConnectPopup from '../../Layouts/Admin-Layout/Admin-Header/UserAccountComponent/WalletConnectPopup/WalletConnectPopup';
 
 const SideboxTop = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -15,16 +16,26 @@ const SideboxTop = () => {
     setIsOpen(!isOpen);
   };
 
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const handleConnectClick = () => {
+    setIsPopupOpen(true);
+  };
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+  };
+
   return (
     <div className="SideboxTop-accordion">
-      <div className="SideboxTop-header" onClick={toggleAccordion}>
+      <div className={`SideboxTop-header ${isOpen ? 'open' : ''}`} onClick={toggleAccordion}>
         <span className="SideboxTop-title">
           <svg className="SideboxTop-icon" viewBox="0 0 24 24" width="24" height="24">
             <path fill="currentColor" d="M19,8L15,12H18A6,6 0 0,1 12,18C11,18 10.03,17.75 9.2,17.3L7.74,18.76C8.97,19.54 10.43,20 12,20A8,8 0 0,0 20,12H23L19,8M6,12A6,6 0 0,1 12,6C13,6 13.97,6.25 14.8,6.7L16.26,5.24C15.03,4.46 13.57,4 12,4A8,8 0 0,0 4,12H1L5,16L9,12H6Z" />
           </svg>
           DEXTswap
         </span>
-        <span className={`SideboxTop-arrow ${isOpen ? 'open' : ''}`}><IoIosArrowUp /></span>
+        <span className={`SideboxTop-arrow ${isOpen ? 'open' : ''}`}><IoIosArrowUp size={20} /></span>
       </div>
       {isOpen && (
         <div className="SideboxTop-content">
@@ -45,7 +56,7 @@ const SideboxTop = () => {
               <span className="SideboxTop-dropdown-arrow"><IoIosArrowDown size={18} /></span>
             </button>
           </div>
-          <button className="SideboxTop-connect-wallet">Connect wallet</button>
+          <button className="SideboxTop-connect-wallet" onClick={handleConnectClick}>Connect wallet</button>
           <div className="SideboxTop-info">
             <div className="SideboxTop-info-row">
               <span>Price per DEXT</span>
@@ -71,6 +82,7 @@ const SideboxTop = () => {
           </div>
         </div>
       )}
+      {isPopupOpen && <WalletConnectPopup onClose={handleClosePopup} />}
     </div>
   );
 };

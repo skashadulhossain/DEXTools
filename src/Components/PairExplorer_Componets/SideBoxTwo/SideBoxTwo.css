@@ -1,118 +1,117 @@
 .sideboxtwo-container {
-    background-color: var(--sidebar-bg);
-    color: var(--text-color);
-    font-family: var(--font-family);
-    padding: 16px;
-    border-radius: 8px;
-  }
-  
-  .sideboxtwo-time-periods {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 8px;
-  }
-  
-  .sideboxtwo-time {
-    font-size: 12px;
-    cursor: pointer;
-  }
-  
-  .sideboxtwo-active {
-    background-color: var(--active-bg);
-    color: var(--active-text-color);
-    padding: 2px 8px;
-    border-radius: 4px;
-  }
-  
-  .sideboxtwo-percentages {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 16px;
-  }
-  
-  .sideboxtwo-percentage {
-    font-size: 14px;
-    font-weight: bold;
-    margin-left: 8px;
-  }
-  
-  .sideboxtwo-positive {
-    color: #4caf50;
-  }
-  
-  .sideboxtwo-negative {
-    color: #f44336;
-  }
-  
-  .sideboxtwo-stats {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 16px;
-  }
-  
-  .sideboxtwo-stat-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .sideboxtwo-stat-label {
-    font-size: 12px;
-    color: var(--text-color);
-  }
-  
-  .sideboxtwo-stat-value {
-    font-size: 14px;
-    color: var(--text-color2);
-    font-weight: bold;
-  }
-  
-  .sideboxtwo-bar-container {
-    margin-bottom: 16px;
-  }
-  
-  .sideboxtwo-bar {
-    height: 4px;
-    background-color: var(--badge-bg);
-    display: flex;
-  }
-  
-  .sideboxtwo-bar-buys {
-    background-color: #4caf50;
-    height: 100%;
-  }
-  
-  .sideboxtwo-bar-sells {
-    background-color: #f44336;
-    height: 100%;
-  }
-  
-  .sideboxtwo-trades {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .sideboxtwo-buys,
-  .sideboxtwo-sells {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .sideboxtwo-trade-label {
-    font-size: 12px;
-    color: var(--text-color);
-  }
-  
-  .sideboxtwo-trade-value {
-    font-size: 14px;
-    color: var(--text-color2);
-    font-weight: bold;
-  }
-  
-  .sideboxtwo-buys .sideboxtwo-trade-value {
-    color: #4caf50;
-  }
-  
-  .sideboxtwo-sells .sideboxtwo-trade-value {
-    color: #f44336;
-  }
+  background-color: var(--sidebar-bg);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.sideboxtwo-time-periods {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.sideboxtwo-time {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.sideboxtwo-active {
+  background-color: var(--active-bg);
+  color: var(--active-text-color);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.sideboxtwo-percentages {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.sideboxtwo-percentage {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.sideboxtwo-positive {
+  color: #4caf50;
+}
+
+.sideboxtwo-negative {
+  color: #f44336;
+}
+
+.sideboxtwo-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.sideboxtwo-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sideboxtwo-stat-label {
+  font-size: 12px;
+  color: var(--text-color);
+}
+
+.sideboxtwo-stat-value {
+  font-size: 14px;
+  color: var(--text-color2);
+  font-weight: bold;
+}
+
+.sideboxtwo-bar-container {
+  margin-bottom: 16px;
+}
+
+.sideboxtwo-bar {
+  height: 4px;
+  background-color: var(--badge-bg);
+  display: flex;
+}
+
+.sideboxtwo-bar-buys {
+  background-color: #4caf50;
+  height: 100%;
+}
+
+.sideboxtwo-bar-sells {
+  background-color: #f44336;
+  height: 100%;
+}
+
+.sideboxtwo-trades {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sideboxtwo-buys,
+.sideboxtwo-sells {
+  display: flex;
+  flex-direction: column;
+}
+
+.sideboxtwo-trade-label {
+  font-size: 12px;
+  color: var(--text-color);
+}
+
+.sideboxtwo-trade-value {
+  font-size: 14px;
+  color: var(--text-color2);
+  font-weight: bold;
+}
+
+.sideboxtwo-buys .sideboxtwo-trade-value {
+  color: #4caf50;
+}
+
+.sideboxtwo-sells .sideboxtwo-trade-value {
+  color: #f44336;
+}

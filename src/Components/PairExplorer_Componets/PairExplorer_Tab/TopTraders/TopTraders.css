@@ -21,21 +21,21 @@
     background-color: var(--sidebar-bg);
     color: var(--text-color);
     font-family: var(--font-family);
-    padding: 20px;
+    /* padding: 20px; */
   }
   
   .TopTraders-header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
   
   .TopTraders-switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 40px;
+    height: 20px;
     margin: 0 10px;
   }
   
@@ -60,10 +60,10 @@
   .TopTraders-slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 14px;
+    width: 14px;
     left: 4px;
-    bottom: 4px;
+    bottom: 3px;
     background-color: white;
     transition: .4s;
     border-radius: 50%;
@@ -74,7 +74,7 @@
   }
   
   .TopTraders-switch input:checked + .TopTraders-slider:before {
-    transform: translateX(26px);
+    transform: translateX(18px);
   }
   
   .TopTraders-table {

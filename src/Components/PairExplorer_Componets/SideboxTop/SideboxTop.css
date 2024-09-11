@@ -32,9 +32,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 8px 15px;
     cursor: pointer;
+    background-color: #00b8d8;
     border-bottom: 1px solid var(--sidebar-border);
+    transition: background-color 0.3s ease;
+}
+
+.SideboxTop-header.open {
+    background-color: transparent;
 }
 
 .SideboxTop-title {
@@ -46,11 +52,11 @@
 
 .SideboxTop-icon {
     margin-right: 8px;
-    color: var(--icon-color);
+    color: var(--icon-color2);
 }
 
 .SideboxTop-arrow {
-    color: var(--text-color);
+    color: var(--text-color2);
     transition: transform 0.3s ease;
 }
 
