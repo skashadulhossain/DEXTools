@@ -1,0 +1,98 @@
+
+:root{
+    --white: #fff;
+    --dark: #1f2937;
+    --grey: #cacedb;
+    --blue: #06b6d4;
+    --light-blue: #22d3ee;
+}
+
+
+.Token-Header{
+    height: 10vh;
+    display: flex;
+    padding: 10px 12px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark);
+}
+
+.Token-header-title-box{
+    gap: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.Token-header-logo-box a{
+    gap: 8px;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+    align-items: center;
+    text-decoration: none;
+}
+
+.Token-header-link-box a{
+    margin: 0 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.Token-header-btn-box{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.Token-header-icon{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    color: var(--grey);
+}
+
+.Token-header-btn-box button{
+    gap: 8px;
+    display: flex;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 8px 12px;
+    align-items: center;
+    border-radius: 25px;
+    color: var(--light-blue);
+    background-color: transparent;
+    border: 1px solid var(--light-blue);
+}
+
+.Token-header-btn-box button:hover{
+    background-color: #22d3ee10;
+}
+
+.Token-header-icon-2{
+    width: 22px;
+    height: 22px;
+}
+
+@media (max-width: 768px){
+    .Token-Header{
+        height: auto;
+    }
+    .Token-header-title-box{
+        gap: 20px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px){
+    .Token-header-logo-box a{
+        font-size: 18px;
+    }
+    .Token-header-link-box a{
+        font-size: 12px;
+        margin: 0 5px;
+    }
+}
