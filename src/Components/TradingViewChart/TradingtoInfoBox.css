@@ -17,6 +17,12 @@
   --font-family: 'Poppins', sans-serif;
 }
 
+.crypto-info-box{
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: var(--sidebar-bg);
+}
+
 .crypto-info-container {
   background-color: var(--sidebar-bg);
   color: var(--text-color2);
@@ -29,10 +35,13 @@
 }
 
 .crypto-info-header {
+  padding: 10px ;
+}
+
+.crypto-info-content{
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  justify-content: space-between;
 }
 
 .crypto-info-left {
@@ -42,6 +51,7 @@
 }
 
 .crypto-logo {
+  width: 38px;
   border-radius: 50%;
 }
 
@@ -59,9 +69,11 @@
 .crypto-icon {
   width: 20px;
   height: 20px;
+  /* padding: 5px; */
   color: var(--icon-color);
   cursor: pointer;
   transition: color 0.3s ease;
+  background-color: #23323c;
 }
 
 .crypto-icon:hover {
@@ -72,6 +84,11 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 10px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid #2d3c47;
+  justify-content: space-between;
 }
 
 .crypto-icon-text {
@@ -101,15 +118,26 @@
   text-align: right;
 }
 
+.crypto-info-right{
+  gap: 12px;
+  display: flex;
+  align-items: center;
+}
+
 .crypto-price {
+  padding: 10px;
   font-size: 18px;
   font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
   color: var(--text-color2);
+  background-color: #23323c;
 }
 
 .crypto-change {
   color: #ff4136;
   font-size: 14px;
+  font-weight: 400;
 }
 
 .crypto-change-time {

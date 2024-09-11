@@ -1,178 +1,184 @@
 :root {
-    --sidebar-bg: #142028;
-    --text-color: #818ea3;
-    --text-color2: #ffffff;
-    --hover-bg: #2c2f36;
-    --hover-text-color: #fff;
-    --active-bg: #2c2f36;
-    --active-text-color: #fff;
-    --logo-bg: #142028;
-    --icon-color: #818ea3;
-    --badge-bg: #3a3f50;
-    --badge-text: #fff;
-    --offer-badge-bg: #4caf50;
-    --offer-badge-text: #fff;
-    --sidebar-border: #2f3336;
-    --extra-header-color: #818ea3;
-    --font-family: 'Poppins', sans-serif;
-  }
-  
+  --sidebar-bg: #142028;
+  --text-color: #818ea3;
+  --text-color2: #ffffff;
+  --hover-bg: #2c2f36;
+  --hover-text-color: #fff;
+  --active-bg: #2c2f36;
+  --active-text-color: #fff;
+  --logo-bg: #142028;
+  --icon-color: #818ea3;
+  --badge-bg: #3a3f50;
+  --badge-text: #fff;
+  --offer-badge-bg: #4caf50;
+  --offer-badge-text: #fff;
+  --sidebar-border: #2f3336;
+  --extra-header-color: #818ea3;
+  --font-family: 'Poppins', sans-serif;
+}
+
+.PairNavigation-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--sidebar-bg);
+  font-family: var(--font-family);
+  border-radius: 30px;
+}
+
+.PairNavigation-leftSection {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.PairNavigation-dropdown {
+  cursor: pointer;
+}
+
+.PairNavigation-dropdow-btn {
+  gap: 2px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.PairNavigation-hotPairs {
+  color: var(--text-color);
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.PairNavigation-dropdownIcon {
+  color: var(--text-color);
+  font-size: 12px;
+}
+
+.PairNavigation-dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--sidebar-bg);
+  border: 1px solid var(--sidebar-border);
+  border-radius: 4px;
+  padding: 5px 0;
+  z-index: 1000;
+}
+
+.PairNavigation-dropdownItem {
+  padding: 5px 10px;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+
+.PairNavigation-dropdownItem:hover {
+  background-color: var(--hover-bg);
+}
+
+.PairNavigation-scrollContainer {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.PairNavigation-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  animation: scrollRight 15s linear infinite;
+}
+
+.PairNavigation-list:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollRight {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.PairNavigation-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.PairNavigation-icon {
+  margin-right: 5px;
+}
+
+.PairNavigation-number {
+  color: var(--text-color);
+  margin-right: 5px;
+}
+
+.PairNavigation-name {
+  color: var(--text-color2);
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.PairNavigation-percentage {
+  font-weight: bold;
+}
+
+.PairNavigation-positive {
+  color: #4caf50;
+}
+
+.PairNavigation-negative {
+  color: #f44336;
+}
+
+.PairNavigation-rightSection {
+  display: flex;
+  align-items: center;
+  background-color: #fc2ba5;
+  border-radius: 20px;
+}
+
+.PairNavigation-dextForce {
+  height: 100%;
+  display: flex;
+  padding: 10px 10px;
+  align-items: center;
+  background-color: #1f313c;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.PairNavigation-dextForce img {
+  width: 80px;
+}
+
+.PairNavigation-joinButton {
+  background-color: transparent;
+  color: white;
+  border: none;
+  width: 110px;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
   .PairNavigation-nav {
-    display: flex;
-    align-items: center;
-    background-color: var(--sidebar-bg);
-    /* padding: 10px 20px; */
-    font-family: var(--font-family);
-    overflow: hidden;
-    border-radius: 30px;
-  }
-  
-  .PairNavigation-leftSection {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-    position: relative;
-  }
-  
-  .PairNavigation-dropdown {
-    cursor: pointer;
+    flex-wrap: wrap;
   }
 
-  .PairNavigation-dropdow-btn{
-    gap: 2px;
-    width: 120px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .PairNavigation-hotPairs {
-    color: var(--text-color);
-    font-weight: bold;
-    margin-right: 5px;
-  }
-  
-  .PairNavigation-dropdownIcon {
-    color: var(--text-color);
-    font-size: 12px;
-  }
-  
-  .PairNavigation-dropdownMenu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: var(--sidebar-bg);
-    border: 1px solid var(--sidebar-border);
-    border-radius: 4px;
-    padding: 5px 0;
-    z-index: 1000;
-  }
-  
-  .PairNavigation-dropdownItem {
-    padding: 5px 10px;
-    color: var(--text-color);
-    display: flex;
-    align-items: center;
-  }
-  
-  .PairNavigation-dropdownItem:hover {
-    background-color: var(--hover-bg);
-  }
-  
   .PairNavigation-scrollContainer {
-    flex-grow: 1;
-    overflow: hidden;
+    order: 3;
+    width: 100%;
+    margin-top: 10px;
   }
-  
-  .PairNavigation-list {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    white-space: nowrap;
-    animation: scrollRight 15s linear infinite;
-  }
-  
-  .PairNavigation-list:hover {
-    animation-play-state: paused;
-  }
-  
-  @keyframes scrollRight {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-  }
-  
-  .PairNavigation-item {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-  }
-  
-  .PairNavigation-icon {
-    margin-right: 5px;
-  }
-  
-  .PairNavigation-number {
-    color: var(--text-color);
-    margin-right: 5px;
-  }
-  
-  .PairNavigation-name {
-    color: var(--text-color2);
-    font-weight: bold;
-    margin-right: 5px;
-  }
-  
-  .PairNavigation-percentage {
-    font-weight: bold;
-  }
-  
-  .PairNavigation-positive {
-    color: #4caf50;
-  }
-  
-  .PairNavigation-negative {
-    color: #f44336;
-  }
-  
+
   .PairNavigation-rightSection {
-    display: flex;
-    align-items: center;
-    background-color: #2c2f36;
-    border-radius: 20px;
-    padding: 5px 10px;
-    width: 440px;
+    order: 2;
   }
-  
-  .PairNavigation-dextForce {
-    color: var(--text-color2);
-    font-weight: bold;
-    font-size: 14px;
-  }
-  
-  .PairNavigation-joinButton {
-    background-color: #ff4081;
-    color: white;
-    border: none;
-    font-size: 14px;
-    padding: 8px 12px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  /* Add responsiveness */
-  @media (max-width: 768px) {
-    .PairNavigation-nav {
-      flex-wrap: wrap;
-    }
-  
-    .PairNavigation-scrollContainer {
-      order: 3;
-      width: 100%;
-      margin-top: 10px;
-    }
-  
-    .PairNavigation-rightSection {
-      order: 2;
-    }
-  }
+}

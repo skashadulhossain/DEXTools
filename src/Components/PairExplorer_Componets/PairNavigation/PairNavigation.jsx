@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './PairNavigation.css';
 import { IoIosArrowDown } from 'react-icons/io';
+import logoimg from './Image/dext_force_festival_dark.gif';
 
 const PairNavigation = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -85,7 +86,9 @@ const PairNavigation = () => {
         </ul>
       </div>
       <div className="PairNavigation-rightSection">
-        <span className="PairNavigation-dextForce">DEXT FORCE</span>
+        <div className="PairNavigation-dextForce">
+          <img src={logoimg} alt="#" />
+        </div>
         <button className="PairNavigation-joinButton">Join the party</button>
       </div>
     </nav>
