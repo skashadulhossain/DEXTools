@@ -1,0 +1,70 @@
+:root {
+    --sidebar-bg: #142028;
+    --text-color: #818ea3;
+    --text-color2: #ffffff;
+    --hover-bg: #2c2f36;
+    --hover-text-color: #fff;
+    --active-bg: #2c2f36;
+    --active-text-color: #fff;
+    --logo-bg: #142028;
+    --icon-color: #818ea3;
+    --badge-bg: #3a3f50;
+    --badge-text: #fff;
+    --offer-badge-bg: #4caf50;
+    --offer-badge-text: #fff;
+    --sidebar-border: #2f3336;
+    --extra-header-color: #818ea3;
+    --font-family: 'Poppins', sans-serif;
+  }
+  
+  .Multiswap-container {
+  
+    color: var(--text-color);
+    font-family: var(--font-family);
+    padding: 20px;
+  }
+  
+  .Multiswap-title {
+    color: var(--text-color2);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .Multiswap-description {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .Multiswap-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .Multiswap-info-icon {
+    color: var(--icon-color);
+    margin-right: 5px;
+  }
+  
+  .Multiswap-info-text {
+    font-size: 12px;
+  }
+  
+  .Multiswap-search-container {
+    position: relative;
+  }
+  
+  .Multiswap-search-input {
+    width: 50%;
+    padding: 10px 15px;
+    background-color: var(--sidebar-bg);
+    border: 1px solid var(--hover-bg);
+    border-radius: 5px;
+    color: var(--text-color2);
+    font-size: 14px;
+  }
+  
+  .Multiswap-search-input::placeholder {
+    color: var(--text-color);
+  }

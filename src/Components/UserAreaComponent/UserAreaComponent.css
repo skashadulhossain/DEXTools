@@ -1,0 +1,146 @@
+/* WalletConnect.css */
+:root {
+    --background-color: #0e1419;
+    --text-color: #818ea3;
+    --text-color2: #ffffff;
+    --active-color: #00b8d8;
+    --content-bg: #142028;
+    --button-bg: #1c2731;
+    --font-family: 'Poppins', sans-serif;
+  }
+  
+  .UserAreaComponents-wallet-connect {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    padding: 20px;
+    width: 100%;
+   min-height: 80vh;
+   
+    margin: 0 auto;
+  }
+  
+  .UserAreaComponents-steps {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #242f3b;
+  }
+  
+  .UserAreaComponents-step {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
+  .UserAreaComponents-step-number {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-right: 8px;
+  }
+  
+  .UserAreaComponents-step-text {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .UserAreaComponents-active .UserAreaComponents-step-number {
+    background-color: var(--active-color);
+  }
+  
+  .UserAreaComponents-active .UserAreaComponents-step-text {
+    color: var(--active-color);
+  }
+  
+  .UserAreaComponents-content {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .UserAreaComponents-step-content {
+    background-color: var(--content-bg);
+    border-radius: 8px;
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 250px;
+  }
+  
+  .UserAreaComponents-step-title {
+    color: var(--text-color);
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  
+  .UserAreaComponents-step-subtitle {
+    color: var(--text-color2);
+    font-size: 18px;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+  
+  .UserAreaComponents-step-description {
+    color: var(--text-color);
+    font-size: 14px;
+    margin-bottom: 20px;
+    max-width: 80%;
+  }
+  
+  .UserAreaComponents-connect-button {
+    background-color: var(--button-bg);
+    color: var(--active-color);
+    border: 1px solid var(--active-color);
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .UserAreaComponents-connect-button:hover {
+    background-color: var(--active-color);
+    color: var(--text-color2);
+  }
+  
+  .UserAreaComponents-connect-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: currentColor;
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z'/%3E%3C/svg%3E");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    margin-right: 8px;
+  }
+  
+  .UserAreaComponents-inactive-step {
+    opacity: 0.5;
+  }
+  
+  @media (max-width: 768px) {
+    .UserAreaComponents-content {
+      flex-direction: column;
+    }
+    
+    .UserAreaComponents-steps {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

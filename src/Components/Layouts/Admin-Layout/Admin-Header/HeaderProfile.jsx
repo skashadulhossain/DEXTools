@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './HeaderProfile.css';
 import { FaSearch, FaCog, FaStar } from 'react-icons/fa';
 import { MdKeyboardArrowDown } from 'react-icons/md';
@@ -11,6 +12,8 @@ import SearchPopup from '../../SearchPopup/SearchPopup';
 
 
 const AdminHeader = ({ isOpen }) => {
+
+  const navigate = useNavigate();
   const [showChainSelection, setShowChainSelection] = useState(false); 
   const [isSettingOpen, setIsSettingOpen] = useState(false); 
   const [isStarOpen, setIsStarOpen] = useState(false); 
@@ -48,7 +51,7 @@ const AdminHeader = ({ isOpen }) => {
       <div className="AdminHeader-icons">
         <FaCog onClick={toggleSetting} />
         <FaStar onClick={toggleStar} />
-        <button className="AdminHeader-connect">Connect</button>
+        <button className="AdminHeader-connect"  onClick={() => { navigate('/UserAccount') }}>Connect</button>
       </div>
 
       {/* Render other components */}

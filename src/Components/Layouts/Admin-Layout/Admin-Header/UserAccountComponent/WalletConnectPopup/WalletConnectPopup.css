@@ -1,0 +1,170 @@
+:root {
+    --sidebar-bg: #142028;
+    --text-color: #818ea3;
+    --text-color2: #ffffff;
+    --hover-bg: #2c2f36;
+    --hover-text-color: #fff;
+    --active-bg: #2c2f36;
+    --active-text-color: #fff;
+    --logo-bg: #142028;
+    --icon-color: #818ea3;
+    --badge-bg: #3a3f50;
+    --badge-text: #fff;
+    --offer-badge-bg: #4caf50;
+    --offer-badge-text: #fff;
+    --sidebar-border: #2f3336;
+    --extra-header-color: #818ea3;
+    --font-family: 'Poppins', sans-serif;
+  }
+  
+  .WalletConnectPopup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .WalletConnectPopup-content {
+    background-color: var(--sidebar-bg);
+    border-radius: 12px;
+    padding: 25px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .WalletConnectPopup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .WalletConnectPopup-info-icon {
+    color: var(--text-color);
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .WalletConnectPopup-info-icon:hover {
+    color: var(--hover-text-color);
+  }
+  
+  .WalletConnectPopup-title {
+    color: var(--text-color2);
+    font-size: 22px;
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+    font-weight: 600;
+  }
+  
+  .WalletConnectPopup-close-button {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 26px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .WalletConnectPopup-close-button:hover {
+    color: var(--hover-text-color);
+  }
+  
+  .WalletConnectPopup-wallet-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .WalletConnectPopup-wallet-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  .WalletConnectPopup-wallet-item:hover {
+    background-color: var(--hover-bg);
+  }
+  
+  .WalletConnectPopup-wallet-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-color: var(--logo-bg);
+    padding: 5px;
+  }
+  
+  .WalletConnectPopup-wallet-item span {
+    color: var(--text-color2);
+    flex-grow: 1;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .WalletConnectPopup-qr-button {
+    background-color: var(--badge-bg);
+    color: var(--badge-text);
+    border: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .WalletConnectPopup-qr-button:hover {
+    background-color: var(--offer-badge-bg);
+  }
+  
+  .WalletConnectPopup-wallet-count {
+    background-color: var(--badge-bg);
+    color: var(--badge-text);
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .WalletConnectPopup-terms {
+    color: var(--text-color);
+    font-size: 12px;
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  .WalletConnectPopup-terms a {
+    color: var(--text-color2);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .WalletConnectPopup-terms a:hover {
+    color: var(--hover-text-color);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

@@ -1,0 +1,82 @@
+:root {
+    --sidebar-bg: #142028;
+    --text-color: #818ea3;
+    --text-color2: #ffffff;
+    --hover-bg: #2c2f36;
+    --hover-text-color: #fff;
+    --active-bg: #2c2f36;
+    --active-text-color: #fff;
+    --logo-bg: #142028;
+    --icon-color: #818ea3;
+    --badge-bg: #3a3f50;
+    --badge-text: #fff;
+    --offer-badge-bg: #4caf50;
+    --offer-badge-text: #fff;
+    --sidebar-border: #2f3336;
+    --extra-header-color: #818ea3;
+    --font-family: 'Poppins', sans-serif;
+  }
+  
+  .UserAcComponent-container {
+    background-color: var(--sidebar-bg);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    padding: 20px;
+  }
+  
+  .UserAcComponent-title {
+    color: var(--text-color2);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .UserAcComponent-subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .UserAcComponent-steps-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .UserAcComponent-step {
+    background-color: var(--hover-bg);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .UserAcComponent-step-title {
+    color: var(--text-color2);
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .UserAcComponent-step-subtitle {
+    color: var(--text-color2);
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .UserAcComponent-step-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .UserAcComponent-connect-button {
+    background-color: #00b8d8;
+    color: var(--text-color2);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .UserAcComponent-step-title-inactive,
+  .UserAcComponent-step-subtitle-inactive,
+  .UserAcComponent-step-description-inactive {
+    color: var(--text-color);
+  }
