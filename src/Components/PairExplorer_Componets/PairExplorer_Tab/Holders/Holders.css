@@ -1,108 +1,95 @@
-:root {
-    --sidebar-bg: #142028;
-    --text-color: #818ea3;
-    --text-color2: #ffffff;
-    --hover-bg: #2c2f36;
-    --hover-text-color: #fff;
-    --active-bg: #2c2f36;
-    --active-text-color: #fff;
-    --logo-bg: #142028;
-    --icon-color: #818ea3;
-    --badge-bg: #3a3f50;
-    --badge-text: #fff;
-    --offer-badge-bg: #4caf50;
-    --offer-badge-text: #fff;
-    --sidebar-border: #2f3336;
-    --extra-header-color: #818ea3;
-    --font-family: 'Poppins', sans-serif;
-    --progress-bg: #1d2a34;
-    --progress-fill: #3772ff;
-}
-
-.Holders-container {
-    background-color: var(--sidebar-bg);
-    color: var(--text-color);
-    font-family: var(--font-family);
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.Holders-header {
+.token-holders-chart {
+    color: #818ea3;
+    font-family: Arial, sans-serif;
+  }
+  
+  .chart-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-}
-
-.Holders-title {
-    color: var(--text-color2);
-    font-weight: bold;
+  }
+  
+  .chart-title {
+    color: #ffffff;
+    font-size: 14px;
+    gap: 8px;
     display: flex;
+    cursor: pointer;
     align-items: center;
-    background-color: var(--badge-bg);
-    padding: 8px 12px;
+    background-color: #1c2631;
+    padding: 10px 12px;
     border-radius: 6px;
-}
+    border: 1px solid #66748b;
+  }
 
-.Holders-icon {
+  .chart-title:hover{
+    background-color: #29394b;
+  }
+  
+  .chart-icon {
     margin-right: 8px;
-}
-
-.Holders-total {
-    color: var(--text-color2);
-}
-
-.Holders-table {
+  }
+  
+  .total-holders {
+    color: #ffffff;
+  }
+  
+  .holders-table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0 8px;
-}
-
-.Holders-table th {
+  }
+  
+  .holders-table th {
     text-align: left;
-    color: var(--text-color);
+    color: #818ea3;
     font-weight: normal;
     padding: 8px;
-}
-
-.Holders-table td {
+  }
+  
+  .holders-table td {
     padding: 8px;
-    color: var(--text-color2);
-}
-
-.Holders-address {
-    color: #3772ff;
-}
-
-.Holders-copy {
+    color: #ffffff;
+  }
+  
+  .address {
+    color: #0dcaf0;
+  }
+  
+  .copy-icon {
     cursor: pointer;
     margin-left: 5px;
     vertical-align: middle;
-    color: var(--text-color);
-}
-
-.Holders-copy:hover {
-    color: var(--text-color2);
-}
-
-.Holders-bar-container {
+    color: #818ea3;
+  }
+  
+  .copy-icon:hover {
+    color: #ffffff;
+  }
+  
+  .bar-cell {
+    width: 50%;
+  }
+  
+  .progress-bar {
     width: 100%;
-    background-color: var(--progress-bg);
+    background-color: #1d2a34;
     height: 6px;
     border-radius: 3px;
     overflow: hidden;
-}
-
-.Holders-bar {
+  }
+  
+  .progress {
     height: 100%;
-    background-color: var(--progress-fill);
+    background-color: #ffffff;
     border-radius: 3px;
-}
-
-.Holders-remaining td {
-    color: var(--text-color);
-}
-
-.Holders-remaining .Holders-bar {
-    background-color: var(--text-color);
-}
+  }
+  
+  .progress.remaining {
+    background-color: #ffffff;
+  }
+  
+  tfoot td {
+    color: #818ea3;
+  }

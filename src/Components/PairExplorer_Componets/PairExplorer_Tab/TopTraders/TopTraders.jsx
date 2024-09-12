@@ -1,5 +1,7 @@
 import React from 'react';
 import './TopTraders.css';
+import { FiCopy } from 'react-icons/fi';
+import { FaCircleInfo, FaFilter } from 'react-icons/fa6';
 
 const TopTraders = () => {
   const traders = [
@@ -33,11 +35,11 @@ const TopTraders = () => {
           <tr>
             <th>#</th>
             <th>Maker</th>
-            <th>Total <span className="TopTraders-info">ⓘ</span></th>
-            <th>PNL <span className="TopTraders-info">ⓘ</span></th>
+            <th>Total <span className="TopTraders-info"><FaCircleInfo /></span></th>
+            <th>PNL <span className="TopTraders-info"><FaCircleInfo /></span></th>
             <th>Speed</th>
-            <th>Unrealized <span className="TopTraders-info">ⓘ</span></th>
-            <th>External PNL <span className="TopTraders-info">ⓘ</span></th>
+            <th>Unrealized <span className="TopTraders-info"><FaCircleInfo /></span></th>
+            <th>External PNL <span className="TopTraders-info"><FaCircleInfo /></span></th>
             <th>Bought</th>
             <th>Sold</th>
             <th>Balance</th>
@@ -48,7 +50,12 @@ const TopTraders = () => {
           {traders.map((trader) => (
             <tr key={trader.id} className="TopTraders-row">
               <td>{trader.id}</td>
-              <td>{trader.maker}</td>
+              <td>
+                <div className="TopTraders-copy-box">
+                  <span>{trader.maker}</span>
+                  <FiCopy className='TopTraders-copy' />
+                </div>
+              </td>
               <td className="TopTraders-green">${trader.total}</td>
               <td className="TopTraders-green">${trader.pnl}</td>
               <td>
@@ -59,12 +66,20 @@ const TopTraders = () => {
               <td>{trader.unrealized}</td>
               <td className="TopTraders-yellow">${trader.externalPnl}</td>
               <td className="TopTraders-green">{trader.bought !== '-' && '$'}{trader.bought}</td>
-              <td className="TopTraders-red">${trader.sold}</td>
-              <td className="TopTraders-balance">{trader.balance}</td>
               <td>
-                <span className="TopTraders-unknown">{trader.txns}</span>
-                <span className="TopTraders-dropdown">▼</span>
+                <div className="TopTraders-td-box">
+                  <span className="TopTraders-red">${trader.sold}</span>
+                  <span className="TopTraders-balance">{trader.balance}
+                  </span>
+                </div>
               </td>
+              <td>
+                <span className="TopTraders-unknown">
+                  {trader.txns}
+                  <FaCircleInfo size={14} />
+                </span>
+              </td>
+              <td><FaFilter size={14} /></td>
             </tr>
           ))}
         </tbody>

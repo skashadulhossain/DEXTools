@@ -24,6 +24,7 @@
     font-family: var(--font-family);
     padding: 20px;
     border-radius: 8px;
+    margin: 10px 0;
 }
 
 .PairAccordion-header {
@@ -45,16 +46,19 @@
 }
 
 .PairAccordion-update {
-    background-color: transparent;
-    color: #3498db;
+    background-color: #00b8d825;
+    color: #00b8d8;
     border: none;
     cursor: pointer;
+    padding: 3px 8px;
     margin-right: 10px;
+    border-radius: 10px;
 }
 
 .PairAccordion-logo {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
     margin-right: 10px;
 }
 
@@ -78,7 +82,8 @@
 }
 
 .PairAccordion-question {
-    background-color: var(--hover-bg);
+    background-color: var(--sidebar-bg);
+    border: 1px solid #3c4047;
     color: var(--text-color2);
     border-radius: 8px;
     overflow: hidden;
@@ -94,7 +99,7 @@
 }
 
 .PairAccordion-question-header:hover {
-    background-color: var(--active-bg);
+    background-color: var(--table-row-hover);
 }
 
 .PairAccordion-arrow {
@@ -119,7 +124,7 @@
 }
 
 .PairAccordion-answer-content {
-    padding: 0 15px 15px;
+    padding: 10px 15px;
     color: var(--text-color);
     font-size: 0.9em;
     line-height: 1.6;

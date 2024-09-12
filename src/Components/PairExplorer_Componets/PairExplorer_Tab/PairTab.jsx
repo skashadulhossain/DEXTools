@@ -10,6 +10,7 @@ import TopTraders from './TopTraders/TopTraders';
 import Holders from './Holders/Holders';
 import PriceAlerts from './PriceAlerts/PriceAlerts';
 import MySwaps from './MySwaps/MySwaps';
+import PairAccordion from '../PairAccordion/PairAccordion';
 
 const PairTab = () => {
   const [activeTab, setActiveTab] = useState('TopTraders');
@@ -36,6 +37,8 @@ const PairTab = () => {
   };
 
   return (
+    <>
+    
     <div className="PairTab-container">
       <div className="PairTab-tabList">
         {tabs.map((tab) => (
@@ -53,6 +56,9 @@ const PairTab = () => {
         {renderContent()}
       </div>
     </div>
+    <PairAccordion/>
+    
+    </>
   );
 };
 

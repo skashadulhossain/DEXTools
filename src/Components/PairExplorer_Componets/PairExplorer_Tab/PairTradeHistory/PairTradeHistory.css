@@ -22,19 +22,25 @@
     color: var(--text-color);
     font-family: var(--font-family);
     font-size: 14px;
-  }
-  
-  .PairTradeHistory-tableWrapper {
-    max-height: 600px;
-    overflow-y: auto;
     width: 100%;
   }
   
-  .PairTradeHistory-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-  }
+.PairTradeHistory-tableWrapper {
+  max-height: 600px;
+  overflow-y: auto;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  width: 100%;
+  scrollbar-width: thin;
+  white-space: nowrap; /* Prevents table cells from wrapping */
+}
+
+.PairTradeHistory-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 1200px; /* Adjust this to the minimum width you need */
+}
+
   
   .PairTradeHistory-table th,
   .PairTradeHistory-table td {
@@ -53,11 +59,15 @@
     text-transform: uppercase;
     z-index: 1;
   }
+
+  .PairTradeHistory-table-head{
+    gap: 3px;
+    display: flex;
+    align-items: center;
+  }
   
-  .PairTradeHistory-filter {
+  .PairTradeHistory-table-icon {
     cursor: pointer;
-    margin-left: 5px;
-    opacity: 0.5;
   }
   
   .PairTradeHistory-row {
@@ -65,7 +75,7 @@
   }
   
   .PairTradeHistory-row:hover {
-    background-color: var(--hover-bg);
+    background-color: var(--table-row-hover);
   }
   
   .PairTradeHistory-row.buy {
@@ -83,6 +93,22 @@
   .PairTradeHistory-icon {
     margin-right: 5px;
     font-size: 16px;
+  }
+
+  .PairTradeHistory-td-icon-box{
+    gap: 3px;
+    display: flex;
+    align-items: center;
+  }
+
+  .PairTradeHistory-td-icon{
+    font-size: 12px;
+    cursor: pointer;
+    color: var(--text-color);
+  }
+
+  .PairTradeHistory-td-icon:hover{
+    color: var(--text-color2);
   }
   
   /* Custom scrollbar styles */
@@ -107,13 +133,27 @@
   }
   
   .PairTradeHistory-action-box {
+    gap: 5px;
     display: flex;
     align-items: center;
+    color: var(--text-color);
+  }
+
+  .PairTradeHistory-action-box img{
+    width: 18px;
+    height: 18px;
+  }
+
+  .PairTradeHistory-action-box img:nth-child(2){
+    padding: 1px;
+    border-radius: 50%;
+    background-color: #fff;
   }
   
-  .PairTradeHistory-table td:last-child .PairTradeHistory-icon {
-    background-color: rgba(255, 255, 255, 0.1);
+  .PairTradeHistory-action-box span {
+    background-color: rgba(255, 255, 255, 0.397);
+    color: var(--text-color2);
     border-radius: 4px;
-    padding: 2px 4px;
+    padding: 0px 5px;
     margin-right: 4px;
   }

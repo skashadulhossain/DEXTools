@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import './PairAccordion.css';
+import logoimg from './Image/Logo img.png';
 
 const PairAccordion = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -48,16 +49,16 @@ const PairAccordion = () => {
         <h2 className="PairAccordion-title">DEXTools Live Price and Buy Information</h2>
         <div className="PairAccordion-controls">
           <button className="PairAccordion-update">Update</button>
-          <img className="PairAccordion-logo" src="/api/placeholder/24/24" alt="DEXT Logo" />
+          <img className="PairAccordion-logo" src={logoimg} alt="DEXT Logo" />
           <button className="PairAccordion-toggle">
             {expandedIndex !== null ? '−' : '+'}
           </button>
         </div>
       </div>
-      <p className="PairAccordion-info">
-        The DEXTools live price is $0.415 USD with a market cap of $34.46M USD, a 24-hour trading volume of $166.33K USD, a 0.0059% increase in the last 24 hours, and a circulating supply of 84.38M DEXT coins out of a maximum of 127.55M.
-      </p>
       <div className="PairAccordion-questions">
+        <p className="PairAccordion-info">
+          The DEXTools live price is $0.415 USD with a market cap of $34.46M USD, a 24-hour trading volume of $166.33K USD, a 0.0059% increase in the last 24 hours, and a circulating supply of 84.38M DEXT coins out of a maximum of 127.55M.
+        </p>
         {accordionData.map((item, index) => (
           <div key={index} className="PairAccordion-question">
             <div className="PairAccordion-question-header" onClick={() => toggleAccordion(index)}>

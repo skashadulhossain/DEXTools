@@ -21,14 +21,17 @@
     background-color: var(--sidebar-bg);
     color: var(--text-color);
     font-family: var(--font-family);
-    /* padding: 20px; */
+    scrollbar-width: thin;
+    max-height: 600px;
+    overflow-y: auto;
+    width: 100%;
   }
   
   .TopTraders-header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /* margin-bottom: 20px; */
+    margin-right: 20px;
   }
   
   .TopTraders-switch {
@@ -79,20 +82,28 @@
   
   .TopTraders-table {
     width: 100%;
+    min-width: 1200px;
     border-collapse: separate;
     border-spacing: 0 8px;
   }
   
   .TopTraders-table th,
   .TopTraders-table td {
-    padding: 12px;
+    padding:  5px 12px;
     text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
   
   .TopTraders-table th {
+    position: sticky;
+    top: 0;
+    background-color: var(--sidebar-bg);
     color: var(--extra-header-color);
-    font-weight: normal;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    z-index: 1;
+    padding: 12px;
   }
   
   .TopTraders-info {
@@ -100,13 +111,32 @@
     font-size: 12px;
     margin-left: 5px;
   }
-  
-  .TopTraders-row {
-    background-color: rgba(255, 255, 255, 0.05);
-  }
-  
+
   .TopTraders-row:hover {
-    background-color: var(--hover-bg);
+    background-color: var(--table-row-hover);
+  }
+
+  .TopTraders-copy-box{
+    gap: 3px;
+    display: flex;
+    align-items: center;
+    color: #40aedd;
+  }
+
+  .TopTraders-copy{
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--text-color);
+  }
+
+  .TopTraders-copy:hover{
+    color: var(--text-color2);
+  }
+
+  .TopTraders-td-box{
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
   }
   
   .TopTraders-green {
@@ -143,14 +173,14 @@
   }
   
   .TopTraders-unknown {
-    background-color: var(--badge-bg);
-    color: var(--badge-text);
-    padding: 2px 6px;
-    border-radius: 4px;
     font-size: 12px;
+    gap: 3px;
+    display: flex;
+    color: #f4b731;
+    align-items: center;
   }
   
   .TopTraders-dropdown {
     margin-left: 5px;
-    font-size: 10px;
+    font-size: 14px;
   }
