@@ -1,0 +1,160 @@
+.PairExplorerTokenPopup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.PairExplorerTokenPopup-content {
+    background-color: #142028;
+    border-radius: 15px;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #1e1e1e;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.PairExplorerTokenPopup-top-title-box {
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.PairExplorerTokenPopup-top-title-box h2 {
+    color: white;
+    font-size: 18px;
+}
+
+.PairExplorerTokenPopup-close-icon{
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+}
+
+.PairExplorerTokenPopup-search-content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.PairExplorerTokenPopup-search-box {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+}
+
+.PairExplorerTokenPopup-search-box input {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    background-color: #1d2a34;
+    border: 1px solid #3a4249;
+    border-radius: 8px;
+    color: white;
+}
+
+.PairExplorerTokenPopup-search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 20px;
+}
+
+.PairExplorerTokenPopup-title-box h2 {
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-top: 1px solid #3a4249;
+    border-bottom: 1px solid #3a4249;
+}
+
+.PairExplorerTokenPopup-container {
+    max-height: 320px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #333;
+}
+
+.PairExplorerTokenPopup-content-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    border-bottom: 1px solid #3a4249;
+}
+
+.PairExplorerTokenPopup-content-item:hover{
+    background-color: #1e2c36;
+}
+
+.PairExplorerTokenPopup-img-box{
+    position: relative;
+}
+
+.PairExplorerTokenPopup-img-box img:first-child {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.PairExplorerTokenPopup-img-box img:last-child{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: -5px;
+}
+
+.PairExplorerTokenPopup-box-title {
+    flex-grow: 1;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.token-title {
+    font-size: 14px;
+    color: white;
+}
+
+.token-subtitle {
+    font-size: 12px;
+    color: #888;
+}
+
+.PairExplorerTokenPopup-copy {
+    display: flex;
+    align-items: center;
+}
+
+.PairExplorerTokenPopup-copy span {
+    color: #00c8ff;
+    margin-right: 8px;
+}
+
+.PairExplorerTokenPopup-copy-icon{
+    cursor: pointer;
+}
+
+.PairExplorerTokenPopup-copy-icon:hover{
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

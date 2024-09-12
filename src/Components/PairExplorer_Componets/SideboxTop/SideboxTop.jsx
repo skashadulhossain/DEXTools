@@ -4,6 +4,7 @@ import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import iconimg1 from '../Image/dext logo.png';
 import iconimg2 from '../Image/ether.png';
 import WalletConnectPopup from '../../Layouts/Admin-Layout/Admin-Header/UserAccountComponent/WalletConnectPopup/WalletConnectPopup';
+import PairExplorerTokenPopup from '../PairExplorer_TokenPopup/PairExplorerTokenPopup';
 
 const SideboxTop = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -26,6 +27,16 @@ const SideboxTop = () => {
     setIsPopupOpen(false);
   };
 
+  const [isTokenPopupOpen, setIsTokenPopupOpen] = useState(false);
+
+  const handleSelectTokenPopupClick = () => {
+    setIsTokenPopupOpen(true);
+  };
+
+  const handleCloseTokenPopup = () => {
+    setIsTokenPopupOpen(false);
+  };
+
   return (
     <div className="SideboxTop-accordion">
       <div className={`SideboxTop-header ${isOpen ? 'open' : ''}`} onClick={toggleAccordion}>
@@ -41,7 +52,7 @@ const SideboxTop = () => {
         <div className="SideboxTop-content">
           <div className="SideboxTop-token-input">
             <input type="number" value={selectedTokens.from.amount} readOnly />
-            <button className="SideboxTop-token-selector">
+            <button className="SideboxTop-token-selector" onClick={handleSelectTokenPopupClick}>
               <img src={iconimg1} alt="DEXT" />
               <span>DEXT</span>
               <span className="SideboxTop-dropdown-arrow"><IoIosArrowDown size={18} /></span>
@@ -50,7 +61,7 @@ const SideboxTop = () => {
           <div className="SideboxTop-swap-icon">⇅</div>
           <div className="SideboxTop-token-input">
             <input type="number" value={selectedTokens.to.amount} readOnly />
-            <button className="SideboxTop-token-selector">
+            <button className="SideboxTop-token-selector" onClick={handleSelectTokenPopupClick}>
               <img src={iconimg2} alt="ETH" />
               <span>ETH</span>
               <span className="SideboxTop-dropdown-arrow"><IoIosArrowDown size={18} /></span>
@@ -83,6 +94,7 @@ const SideboxTop = () => {
         </div>
       )}
       {isPopupOpen && <WalletConnectPopup onClose={handleClosePopup} />}
+      {isTokenPopupOpen && <PairExplorerTokenPopup onClose={handleCloseTokenPopup} />}
     </div>
   );
 };
