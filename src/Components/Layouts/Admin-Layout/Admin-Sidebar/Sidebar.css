@@ -165,6 +165,7 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     font-size: 14px;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -209,6 +210,9 @@
 
 /* Style for the badge with Offer text */
 .badge.offer-badge {
+    position: absolute;
+    right: -12px;
+    top: -8px;
     background-color: #ffcc80; /* Light orange background */
     color: #000; /* Black text color */
     font-weight: bold; /* Bold text */

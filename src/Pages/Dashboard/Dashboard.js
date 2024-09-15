@@ -1,4 +1,5 @@
 import React from 'react'
+import './Dashboard.css'
 import Sidebar from '../../Components/Layouts/Admin-Layout/Admin-Sidebar/SideBar'
 import Footer from '../../Components/Layouts/Admin-Layout/Admin-Footer/AdminFooter'
 import CardSlider from '../../Components/CardSlider/CardSlider'
@@ -18,8 +19,12 @@ const Dashboard = () => {
     <DEXTboardHeader/>
     <CryptoDashboard/>
     <TabNavigation/>
-    <CryptoNewsComponent/>
-      <Footer/>
+    <div className='Dashboard-CryptoNews'>
+      <CryptoNewsComponent/>
+    </div>
+    <div className='Dashboard-footer'>
+      <Footer/> 
+    </div>
     </div>
     </Sidebar>
   )

@@ -3,6 +3,9 @@ import './CreateToken.css';
 import { Lock, ChevronDown, ChevronUp, ArrowRight } from 'lucide-react';
 import TokenHeader from '../TokenHeader/TokenHeader';
 import Footer from '../../Layouts/Admin-Layout/Admin-Footer/AdminFooter';
+import { FiLock } from 'react-icons/fi';
+import { IoIosPower } from 'react-icons/io';
+import WalletConnectPopup from '../../Layouts/Admin-Layout/Admin-Header/UserAccountComponent/WalletConnectPopup/WalletConnectPopup';
 
 
 const TokenCreationInterface = () => {
@@ -20,12 +23,22 @@ const TokenCreationInterface = () => {
     { question: "How can I get help?", answer: "Information on getting help would be provided here." }
   ];
 
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const handleConnectClick = () => {
+    setIsPopupOpen(true);
+  };
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+  };
+
   return (
     <>
     
     <TokenHeader/>
     <div className="token-creation-interface">
-      <div className="container">
+      <div className="token-container">
         <div className="mode-toggle">
           <button className="active">BASIC</button>
           <button>ADVANCED</button>
@@ -55,11 +68,7 @@ const TokenCreationInterface = () => {
             </div>
             <div className="form-group">
               <label>Symbol*</label>
-              <div className="input-with-icon">
-                <Lock size={16} />
-                <input type="text" placeholder="ETH" disabled />
-              </div>
-              <button className="connect-button">CONNECT</button>
+              <input type="text" placeholder="ETH" />
             </div>
             <div className="form-group">
               <label>Blockchain*</label>
@@ -70,6 +79,13 @@ const TokenCreationInterface = () => {
             <div className="form-group">
               <label>Total Supply*</label>
               <input type="number" placeholder="0" />
+            </div>
+            <div className="createtoken-overlay-container">
+              <FiLock size={22} />
+              <p>You need to connect your wallet</p>
+              <button className="connect-button" onClick={handleConnectClick}> 
+                <IoIosPower size={18} />CONNECT
+              </button>
             </div>
           </div>
           
@@ -104,14 +120,8 @@ const TokenCreationInterface = () => {
         .token-creation-interface {
           background-color: #111827;
           color: white;
-          min-height: 100vh;
-          padding: 2rem;
+          padding: 5rem 30px;
           font-family: Arial, sans-serif;
-        }
-
-        .container {
-          max-width: 1200px;
-          margin: 0 auto;
         }
 
         .mode-toggle {
@@ -180,13 +190,17 @@ const TokenCreationInterface = () => {
         .content {
           display: flex;
           gap: 2rem;
+          padding: 0 1rem;
         }
 
         .token-info{
           flex: 1;
+          display: flex;
+          position: relative;
+          flex-direction: column;
           background-color: #1f2937;
-          padding: 1.5rem;
           border-radius: 0.5rem;
+          border: 1px solid #4f545a;
         }
 
         .faq {
@@ -194,52 +208,68 @@ const TokenCreationInterface = () => {
           gap: 5px,
           display: flex,
           padding: 1.5rem;
-          flex-direction: column
+          flex-direction: column;
           border-radius: 0.5rem;
         }
 
-        .form-group {
-          margin-bottom: 1rem;
+        .token-info h2{
+          width: 100%;
+          font-size: 20px;
+          padding: 15px 25px;
+          border-bottom: 1px solid #4f545a;
         }
 
-        .form-group label {
-          display: block;
-          margin-bottom: 0.5rem;
+        .form-group {
+          width: 100%;
+          display: flex;
+          padding: 0 30px;
+          align-items: center;
+          justify-content: space-between;
+          margin: 1rem 0;
         }
 
         .form-group input, .form-group select {
           width: 100%;
-          padding: 0.5rem;
+          max-width: 250px;
+          padding: 15px 0.5rem;
           background-color: #111827;
           border: none;
           border-radius: 0.25rem;
           color: white;
         }
 
-        .input-with-icon {
-          position: relative;
-        }
-
-        .input-with-icon svg {
+        .createtoken-overlay-container{
           position: absolute;
-          left: 0.5rem;
+          height: 100%;
+          width: 100%;
+          gap: 10px;
           top: 50%;
-          transform: translateY(-50%);
-          color: #a0aec0;
-        }
-
-        .input-with-icon input {
-          padding-left: 2rem;
+          left: 50%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          backdrop-filter: blur(1px);
+          background: rgb(0, 0, 0, 0.1);
+          transform: translate(-50%,-50%);
         }
 
         .connect-button {
-          background-color: #06b6d4;
-          color: white;
-          padding: 0.5rem 1rem;
-          border: none;
-          border-radius: 0.25rem;
+          gap: 5px;
+          display: flex;
+          outline: none;
           cursor: pointer;
-          margin-top: 0.5rem;
+          font-weight: 600;
+          padding: 10px 12px;
+          align-items: center;
+          border-radius: 25px;
+          color: var(--light-blue);
+          background-color: transparent;
+          border: 1px solid var(--light-blue);
+        }
+
+        .connect-button:hover{
+          background-color: #22d3ee10;
         }
 
         .faq-item {
@@ -256,6 +286,7 @@ const TokenCreationInterface = () => {
           color: white;
           cursor: pointer;
           display: flex;
+          border: 1px solid #4f545a;
           justify-content: space-between;
           align-items: center;
         }
@@ -273,20 +304,28 @@ const TokenCreationInterface = () => {
         }
 
         .next-button {
-          background-color: #06b6d4;
-          color: white;
-          padding: 0.5rem 1rem;
-          border: none;
-          border-radius: 9999px;
-          cursor: pointer;
+          gap: 8px;
           display: flex;
+          outline: none;
+          cursor: pointer;
+          font-weight: 600;
+          padding: 12px 2rem;
           align-items: center;
+          border-radius: 25px;
+          color: var(--light-blue);
+          background-color: transparent;
+          border: 1px solid var(--light-blue);
+        }
+
+        .next-button:hover{
+          background-color: #22d3ee10;
         }
 
         .next-button svg {
           margin-left: 0.5rem;
         }
       `}</style>
+      {isPopupOpen && <WalletConnectPopup onClose={handleClosePopup} />}
     </div>
     <Footer/>
 

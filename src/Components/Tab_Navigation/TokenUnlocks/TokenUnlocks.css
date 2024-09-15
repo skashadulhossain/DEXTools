@@ -79,7 +79,7 @@
   }
   
   .TokenUnlocks-table tbody tr:hover {
-    background-color: var(--hover-bg);
+    background-color: var(--row-bg);
   }
   
   .TokenUnlocks-pair {

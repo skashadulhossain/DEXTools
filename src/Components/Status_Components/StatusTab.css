@@ -20,7 +20,7 @@
 .Status-container {
     color: var(--text-color);
     font-family: var(--font-family);
-    padding: 20px;
+    padding: 10px;
     height: calc(100vh - 180px); /* Adjust height to ensure full screen without scrolling */
     display: flex;
     flex-direction: column;

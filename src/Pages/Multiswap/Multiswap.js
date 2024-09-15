@@ -1,11 +1,14 @@
 import React from 'react';
 import './Multiswap.css';
 import Sidebar from '../../Components/Layouts/Admin-Layout/Admin-Sidebar/SideBar';
+import PairNavigation from '../../Components/PairExplorer_Componets/PairNavigation/PairNavigation';
+import Footer from '../../Components/Layouts/Admin-Layout/Admin-Footer/AdminFooter';
 
 const MultiSwap = () => {
   return (
     <>
     <Sidebar>
+    <PairNavigation />
     <div className="Multiswap-container">
       <h1 className="Multiswap-title">MULTISWAP</h1>
       <p className="Multiswap-description">
@@ -24,6 +27,9 @@ const MultiSwap = () => {
           placeholder="Find by symbol, name, contract or token"
         />
       </div>
+    </div>
+    <div className="Multiswap-footer">
+      <Footer />
     </div>
     </Sidebar>
     </>

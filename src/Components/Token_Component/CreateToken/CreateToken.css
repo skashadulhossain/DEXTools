@@ -15,4 +15,5 @@ body{
     --blue: #06b6d4;
     --dark-bg: #111827;
     --light-blue: #22d3ee;
+    border-bottom: 1px solid #4f545a;
 }

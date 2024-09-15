@@ -8,8 +8,8 @@ import ChainSelection from './Header_Dropdown/HeaderDropdown';
 import HeaderSetting from './Header_Setting/HeaderSetting';
 import StarComponent from './Header_Star/HeaderStar';
 import SearchPopup from '../../SearchPopup/SearchPopup';
-
-
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css'; 
 
 const AdminHeader = ({ isOpen }) => {
 
@@ -17,13 +17,13 @@ const AdminHeader = ({ isOpen }) => {
   const [showChainSelection, setShowChainSelection] = useState(false); 
   const [isSettingOpen, setIsSettingOpen] = useState(false); 
   const [isStarOpen, setIsStarOpen] = useState(false); 
-  const [isSearchPopupOpen, setIsSearchPopupOpen] = useState(false); // State to control popup
+  const [isSearchPopupOpen, setIsSearchPopupOpen] = useState(false); 
 
   const toggleChainSelection = () => setShowChainSelection(!showChainSelection);
   const toggleSetting = () => setIsSettingOpen(!isSettingOpen);
   const toggleStar = () => setIsStarOpen(!isStarOpen);
 
-  const toggleSearchPopup = () => setIsSearchPopupOpen(!isSearchPopupOpen); // Toggle popup
+  const toggleSearchPopup = () => setIsSearchPopupOpen(!isSearchPopupOpen); 
 
   return (
     <div className={`AdminHeader ${isOpen ? 'sidebar-open' : ''}`}>
@@ -49,9 +49,13 @@ const AdminHeader = ({ isOpen }) => {
       </div>
 
       <div className="AdminHeader-icons">
-        <FaCog onClick={toggleSetting} />
+        <Tippy content="Setting">
+          <span>
+            <FaCog onClick={toggleSetting} />
+          </span>
+        </Tippy>
         <FaStar onClick={toggleStar} />
-        <button className="AdminHeader-connect"  onClick={() => { navigate('/UserAccount') }}>Connect</button>
+        <button className="AdminHeader-connect" onClick={() => { navigate('/UserAccount') }}>Connect</button>
       </div>
 
       {/* Render other components */}
@@ -62,7 +66,6 @@ const AdminHeader = ({ isOpen }) => {
 
       {/* Conditionally render the SearchPopup */}
       <SearchPopup isOpen={isSearchPopupOpen} onClose={toggleSearchPopup} />
-
     </div>
   );
 };

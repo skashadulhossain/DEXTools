@@ -21,10 +21,6 @@
     background-color: var(--sidebar-bg);
     color: var(--text-color);
     font-family: var(--font-family);
-    scrollbar-width: thin;
-    max-height: 600px;
-    overflow-y: auto;
-    width: 100%;
   }
   
   .TopTraders-header {
@@ -79,10 +75,22 @@
   .TopTraders-switch input:checked + .TopTraders-slider:before {
     transform: translateX(18px);
   }
+
+  .TopTraders-table-main-container{
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+
+  .TopTraders-table-container{
+    max-height: 600px;
+    overflow-y: auto;
+    width: 150%;
+    scrollbar-width: thin;
+  }
   
   .TopTraders-table {
     width: 100%;
-    min-width: 1200px;
     border-collapse: separate;
     border-spacing: 0 8px;
   }

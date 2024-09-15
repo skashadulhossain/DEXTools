@@ -13,7 +13,7 @@ import MySwaps from './MySwaps/MySwaps';
 import PairAccordion from '../PairAccordion/PairAccordion';
 
 const PairTab = () => {
-  const [activeTab, setActiveTab] = useState('TopTraders');
+  const [activeTab, setActiveTab] = useState('TradeHistory');
 
   const tabs = [
     { id: 'TradeHistory', label: 'Trade History' },

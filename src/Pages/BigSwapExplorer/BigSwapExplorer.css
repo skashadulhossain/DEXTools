@@ -10,53 +10,53 @@
     --buy-color: #22c55e;
     --sell-color: #ef4444;
     --font-family: 'Inter', sans-serif;
-}
-
-.BigSwapContainer {
-    background-color: var(--background-color);
+  }
+  
+  .BigSwapContainer {
     color: var(--text-color);
     font-family: var(--font-family);
-    padding: 20px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.BigSwapTitle {
+    min-height: 100vh;
+    margin-top: 20px;
+  }
+  
+  .BigSwapTitle {
     color: var(--text-color-lighter);
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
-}
-
-.BigSwapControls {
-    display: flex;
-    flex-direction: column;
+  }
+  
+  .BigSwapControls {
     margin-bottom: 20px;
-}
-
-.BigSwapDescription {
+  }
+  
+  .BigSwapDescription {
     margin-bottom: 10px;
-}
-
-.BigSwapEthereumText {
+  }
+  
+  .BigSwapEthereumText {
     color: var(--accent-color);
-}
-
-.BigSwapFilters {
+  }
+  
+  .BigSwapFilters {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.BigSwapToggle {
+    margin-top: 10px;
+  }
+  
+  .BigSwapToggle {
     display: flex;
     align-items: center;
     color: var(--text-color-light);
     font-size: 14px;
-}
+  }
 
-.BigSwapToggleSlider {
+  .BigSwapToggle input{
+    display: none;
+  }
+  
+  .BigSwapToggleSlider {
     width: 44px;
     height: 22px;
     background-color: var(--table-header-bg);
@@ -64,9 +64,9 @@
     border-radius: 11px;
     position: relative;
     cursor: pointer;
-}
-
-.BigSwapToggleSlider::before {
+  }
+  
+  .BigSwapToggleSlider::before {
     content: '';
     position: absolute;
     width: 18px;
@@ -76,153 +76,161 @@
     top: 2px;
     left: 2px;
     transition: 0.3s;
-}
-
-.BigSwapToggle input:checked + .BigSwapToggleSlider {
+  }
+  
+  .BigSwapToggle input:checked + .BigSwapToggleSlider {
     background-color: var(--accent-color);
-}
-
-.BigSwapToggle input:checked + .BigSwapToggleSlider::before {
+  }
+  
+  .BigSwapToggle input:checked + .BigSwapToggleSlider::before {
     transform: translateX(22px);
     background-color: var(--text-color-lighter);
-}
-
-.BigSwapInfoIcon {
+  }
+  
+  .BigSwapInfoIcon {
     color: var(--text-color);
     font-size: 14px;
     cursor: help;
-}
-
-.BigSwapSearch, .BigSwapAmount {
+  }
+  
+  .BigSwapSearch, .BigSwapAmount {
     background-color: var(--table-header-bg);
     border: none;
     color: var(--text-color-light);
     padding: 8px 12px;
     border-radius: 4px;
     font-size: 14px;
-}
-
-.BigSwapSearch {
+  }
+  
+  .BigSwapSearch {
     flex-grow: 1;
-}
-
-.BigSwapTableContainer {
-    flex-grow: 1;
-    overflow: hidden;
-}
-
-.BigSwapTable {
+  }
+  
+  .BigSwapTableContainer {
+    overflow-x: auto;
+  }
+  
+  .BigSwapTable {
     width: 100%;
+    min-width: 1150px;
     border-collapse: separate;
     border-spacing: 0 2px;
-}
-
-.BigSwapTable thead {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
-.BigSwapTable th {
-    background-color: var(--table-header-bg);
-    padding: 10px;
+  }
+  
+  .BigSwapTable th {
     text-align: left;
-    color: var(--text-color);
-    font-weight: normal;
-    font-size: 12px;
-}
+    padding: 12px 15px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--text-color2);
+    background-color: var(--sidebar-bg);
+  }
 
-.BigSwapTable tbody {
-    display: block;
-    overflow-y: auto;
-    height: calc(100vh - 200px);
-}
+  .BigSwapTable thead th:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .BigSwapTable thead th:last-child {
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
 
-.BigSwapTable thead, .BigSwapTable tbody tr {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-}
-
-.BigSwapTable td {
+  .BigSwapTable-icon{
+    cursor: pointer;
+  }
+  
+  .SortIcon {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  
+  .BigSwapTable td {
+    font-size: 14px;
     padding: 10px;
-    background-color: var(--table-row-bg);
-    color: var(--text-color-light);
-}
-
-.BigSwapTable tr:hover td {
-    background-color: var(--table-row-hover-bg);
-}
-
-.BigSwapPair {
+    color: var(--text-color2);
+  }
+  
+  .BigSwapTable tr:hover {
+    background-color: var(--row-bg);
+  }
+  
+  .BigSwapPair {
     display: flex;
     align-items: center;
-}
-
-.BigSwapPair img {
-    width: 24px;
-    height: 24px;
+  }
+  
+  .BigSwapPair img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
     margin-right: 10px;
-}
-
-.BigSwapPairName {
+  }
+  
+  .BigSwapPairName {
     color: var(--text-color-lighter);
-    display: block;
+    gap: 5px;
+    display: flex;
     font-size: 14px;
-}
+    align-items: center;
+  }
 
-.BigSwapContractAddress {
+  .BigSwapTable tr:hover 
+  .BigSwapPairName span:first-child{
+    color: #28c6ff;
+  }
+
+  .BigSwapPairName span:last-child{
+    font-size: 12px;
     color: var(--text-color);
-    font-size: 12px;
-    display: block;
-}
-
-.BigSwapTypeBuy {
-    color: var(--buy-color);
-    font-weight: bold;
-}
-
-.BigSwapTypeSell {
-    color: var(--sell-color);
-    font-weight: bold;
-}
-
-.BigSwapVariation {
-    background-color: var(--table-header-bg);
-    color: var(--text-color-light);
-    padding: 2px 5px;
-    border-radius: 4px;
-    font-size: 12px;
-}
-
-.BigSwapMaker {
-    color: var(--accent-color);
+  }
+  
+  .BigSwapContractAddress {
+    color: var(--text-color2);
     font-size: 14px;
-}
+    display: block;
+  }
+  
+  .BigSwapTypeBuy {
+    color: var(--text-color2);
+    font-size: 12px;
+    background-color: rgb(34, 197, 94);
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+  
+  .BigSwapTypeSell {
+    color: var(--text-color2);
+    background-color: rgb(239, 68, 68);
+    padding: 2px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
 
-.BigSwapActionButton {
-    background: none;
-    border: none;
+  .BigSwapActionButton-box{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .BigSwapActionButton{
     cursor: pointer;
-    font-size: 16px;
-    color: var(--text-color);
-    margin-right: 5px;
-}
+  }
 
-.BigSwapActionButton:hover {
-    color: var(--text-color-lighter);
-}
+  .BigSwapActionButton:hover{
+    color: #28c6ff;
+  }
 
-/* Customize scrollbar */
-.BigSwapTable tbody::-webkit-scrollbar {
-    width: 8px;
-}
+  .BigSwapActionButton-box img:last-child{
+    width: 22px;
+    height: 22px;
+    padding: 1px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
 
-.BigSwapTable tbody::-webkit-scrollbar-track {
-    background: var(--background-color);
-}
-
-.BigSwapTable tbody::-webkit-scrollbar-thumb {
-    background-color: var(--text-color);
-    border-radius: 4px;
-}
+  .BigSwapExplorer-footer{
+    margin: 50px -20px;
+  }

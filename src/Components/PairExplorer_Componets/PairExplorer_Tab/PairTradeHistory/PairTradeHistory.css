@@ -23,24 +23,22 @@
     font-family: var(--font-family);
     font-size: 14px;
     width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: thin;
   }
   
 .PairTradeHistory-tableWrapper {
   max-height: 600px;
   overflow-y: auto;
-  overflow-x: auto; /* Enables horizontal scrolling */
-  width: 100%;
+  width: 150%;
   scrollbar-width: thin;
-  white-space: nowrap; /* Prevents table cells from wrapping */
 }
 
 .PairTradeHistory-table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
-  min-width: 1200px; /* Adjust this to the minimum width you need */
 }
-
   
   .PairTradeHistory-table th,
   .PairTradeHistory-table td {

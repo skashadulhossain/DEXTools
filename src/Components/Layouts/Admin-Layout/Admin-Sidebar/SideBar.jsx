@@ -10,7 +10,7 @@ import AdminHeader from '../Admin-Header/HeaderProfile';
 const mainRoutes = [
   { path: '/', name: 'DEXTboard', icon: <FaHome /> },
   { path: '/Pairexplorer', name: 'Pair Explorer', icon: <BsGraphUp /> },
-  { path: '/LiveNewPairs', name: 'Live New Pairs', icon: <FaRocket /> },
+  { path: '/LiveNewPair', name: 'Live New Pairs', icon: <FaRocket /> },
   { path: '/BigSwapExplorer', name: 'Big Swap Explorer', icon: <FaExchangeAlt /> },
   { path: '/TokenCreator', name: 'Token Creator', icon: <FaPlus /> },
   { path: '/MultiChart', name: 'Multichart', icon: <AiFillPieChart /> },

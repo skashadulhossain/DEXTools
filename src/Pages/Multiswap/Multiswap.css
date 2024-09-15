@@ -18,10 +18,11 @@
   }
   
   .Multiswap-container {
-  
     color: var(--text-color);
     font-family: var(--font-family);
-    padding: 20px;
+    margin: 20px 0;
+    padding: 0 10px;
+    height: 80vh;
   }
   
   .Multiswap-title {
@@ -67,4 +68,8 @@
   
   .Multiswap-search-input::placeholder {
     color: var(--text-color);
+  }
+
+  .Multiswap-footer{
+    margin: 50px -20px;
   }

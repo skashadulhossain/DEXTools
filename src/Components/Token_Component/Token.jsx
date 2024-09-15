@@ -13,10 +13,14 @@ import Tokenimage3 from './Image/pair-explorer.webp';
 import aboutimg from './Image/graph.webp';
 import TokenHeader from './TokenHeader/TokenHeader';
 import Footer from '../Layouts/Admin-Layout/Admin-Footer/AdminFooter';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Token = () => {
+
+    const navigate = useNavigate();
+
   return (
     <>
 
@@ -39,8 +43,8 @@ const Token = () => {
                         <p>Create your token easily in just minutes.</p>
                     </div>
                     <div className="Token-hero-btn-box">
-                        <button><HiOutlineArrowRight className="Token-hero-btn-icon" />CREATE TOKEN</button>
-                        <button><AiOutlineBars className="Token-hero-btn-icon" />MY TOKENS</button>
+                        <button onClick={() => { navigate('/TokenCreationInterface') }}><HiOutlineArrowRight className="Token-hero-btn-icon" />CREATE TOKEN</button>
+                        <button onClick={() => { navigate('/MyToken') }}><AiOutlineBars className="Token-hero-btn-icon" />MY TOKENS</button>
                     </div>
                     <div className="Token-hero-subtitle-box-2">
                         <h2>Secured and audited by <a href="#">CTDSEC</a></h2>
@@ -75,7 +79,7 @@ const Token = () => {
                     </div>
                 </div>
                 <div className="Token-card-btn-box">
-                    <button><HiOutlineArrowRight /> I WANT MY TOKEN</button>
+                    <button onClick={() => { navigate('/TokenCreationInterface') }}><HiOutlineArrowRight /> I WANT MY TOKEN</button>
                 </div>
             </section>
 
@@ -108,8 +112,8 @@ const Token = () => {
                           and follow the steps to boost your project to the next level.</p>
                     </div>
                     <div className="Token-About-btn-box">
-                        <button><HiOutlineArrowRight className="Token-About-btn-icon" />CREATE TOKEN</button>
-                        <button><AiOutlineBars className="Token-About-btn-icon" />MY TOKENS</button>
+                        <button onClick={() => { navigate('/TokenCreationInterface') }}><HiOutlineArrowRight className="Token-About-btn-icon" />CREATE TOKEN</button>
+                        <button onClick={() => { navigate('/MyToken') }}><AiOutlineBars className="Token-About-btn-icon" />MY TOKENS</button>
                     </div>
                 </div>
             </section>

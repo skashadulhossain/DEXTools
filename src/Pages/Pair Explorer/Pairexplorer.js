@@ -51,7 +51,9 @@ const Pairexplorer = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <div className="Pairexplorer-footer">
+        <Footer/>
+      </div>
     </Sidebar>
   );
 };

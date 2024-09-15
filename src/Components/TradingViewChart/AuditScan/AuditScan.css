@@ -22,6 +22,7 @@
     background-color: #142028;
     color: #818ea3;
     overflow-y: auto;
+    scrollbar-width: thin;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
   }
@@ -140,6 +141,7 @@
     max-height: 300px;
     overflow-y: auto;
     margin-bottom: 20px;
+    scrollbar-width: thin;
   }
   
   .AuditScan_alert-list h3 {
@@ -160,6 +162,7 @@
   .AuditScan_alert-name {
     display: flex;
     align-items: center;
+    flex: 1 1 100%;
   }
   
   .AuditScan_alert-name::before {
@@ -180,6 +183,7 @@
     width: 50px;
     text-align: center;
     color: #ffffff;
+    flex: 1 1 80%;
   }
   
   .AuditScan_alert-value::after {
@@ -218,6 +222,10 @@
   .AuditScan_more-info.open .AuditScan_more-info-content {
     display: block;
   }
+
+  .AuditScan_token-sniffer-container{
+    margin-top: 10px;
+  }
   
   .AuditScan_token-sniffer {
     color: #4caf50;
@@ -230,7 +238,7 @@
     border: none;
     color: #ffffff;
     padding: 12px;
-    margin-top: 20px;
+    margin-top: 10px;
     cursor: pointer;
     border-radius: 8px;
     font-size: 14px;
@@ -240,7 +248,7 @@
   .AuditScan_share-buttons {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   
   .AuditScan_share-button {

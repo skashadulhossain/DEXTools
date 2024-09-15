@@ -20,8 +20,8 @@
   .UserAcComponent-container {
     color: var(--text-color);
     font-family: var(--font-family);
-    height: 80vh;
-    padding:  020px;
+    height: 78vh;
+    padding: 0 10px;
   }
   
   .UserAcComponent-title {

@@ -1,7 +1,7 @@
 .container {
   font-family: Arial, sans-serif;
   color: white;
-  background-color: #0f1724;
+  background-color: #101a21;
   padding: 60px 40px;
   width: 100%;
   box-sizing: border-box;
@@ -45,8 +45,8 @@
 
 .flex-container {
   display: flex;
+  gap: 10px;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .container .card {
@@ -67,7 +67,7 @@
 .card-title {
   color: #4cc9f0;
   margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   display: flex;
   align-items: center;

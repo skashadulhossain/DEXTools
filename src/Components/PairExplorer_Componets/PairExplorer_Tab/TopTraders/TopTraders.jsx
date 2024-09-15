@@ -30,6 +30,8 @@ const TopTraders = () => {
         </label>
         <span>PNL</span>
       </div>
+      <div className="TopTraders-table-main-container">
+      <div className="TopTraders-table-container">
       <table className="TopTraders-table">
         <thead>
           <tr>
@@ -84,6 +86,8 @@ const TopTraders = () => {
           ))}
         </tbody>
       </table>
+     </div>
+      </div>
     </div>
   );
 };
